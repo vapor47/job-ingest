@@ -1,0 +1,152 @@
+# Curated Bay Area companies, one per line. Blank lines and # comments ignored.
+# Complements the YC directory, which skews small and early-stage.
+# A name here is only a candidate: the probe confirms or rejects it.
+
+Stripe
+Databricks
+Figma
+Notion
+Airbnb
+Anthropic
+OpenAI
+Scale AI
+Ramp
+Rippling
+Brex
+Plaid
+Affirm
+Coinbase
+Robinhood
+Instacart
+DoorDash
+Lyft
+Uber
+Pinterest
+Reddit
+Discord
+Slack
+Dropbox
+Twilio
+Segment
+Asana
+Atlassian
+Airtable
+Retool
+Vercel
+Netlify
+Supabase
+PlanetScale
+Cloudflare
+Fastly
+Datadog
+Snowflake
+Confluent
+MongoDB
+Elastic
+HashiCorp
+GitLab
+GitHub
+Sourcegraph
+Linear
+Amplitude
+Mixpanel
+Heap
+LaunchDarkly
+Split
+Optimizely
+Sentry
+Honeycomb
+Grafana Labs
+Chronosphere
+Temporal
+Render
+Fly.io
+Modal
+Replicate
+Hugging Face
+Weights and Biases
+Perplexity
+Sierra
+Harvey
+Glean
+Abridge
+Cursor
+Anysphere
+Codeium
+Sourcegraph
+Mistral
+Cohere
+Runway
+Luma AI
+Ironclad
+Checkr
+Gusto
+Deel
+Remote
+Lattice
+Carta
+Mercury
+Chime
+Marqeta
+Bolt
+Fivetran
+dbt Labs
+Airbyte
+Census
+Hightouch
+Hex
+Sigma Computing
+ThoughtSpot
+Looker
+Benchling
+Recursion
+Verily
+Ginkgo Bioworks
+Zymergen
+Color
+Grail
+Guardant Health
+Tempus
+Flexport
+Samsara
+Verkada
+Nuro
+Waymo
+Zoox
+Aurora
+Applied Intuition
+Skydio
+Anduril
+Rigetti
+PsiQuantum
+Astranis
+Planet Labs
+Relativity Space
+Faire
+Whatnot
+StockX
+Grammarly
+Duolingo
+Coursera
+Udemy
+Chegg
+Khan Academy
+Zillow
+Opendoor
+Compass
+Roofstock
+Divvy Homes
+Webflow
+Squarespace
+Wix
+Shopify
+Faire
+Rippling
+Alchemy
+OpenSea
+Anchorage Digital
+Gemini
+Kraken
+Circle
+Blockchain.com
+Ripple

@@ -1,0 +1,3041 @@
+{
+  "generatedAt": "2026-09-10T23:31:04.162Z",
+  "hitRate": {
+    "overall": 0.459,
+    "curated": {
+      "probed": 145,
+      "found": 96,
+      "hitRate": 0.662
+    },
+    "yc": {
+      "probed": 511,
+      "found": 205,
+      "hitRate": 0.401
+    },
+    "byAts": {
+      "greenhouse": 95,
+      "ashby": 180,
+      "lever": 26
+    },
+    "byMatchKind": {
+      "exact": 137,
+      "yc-slug": 164
+    },
+    "companiesProbed": 656,
+    "probeRequests": 2089,
+    "transportErrors": 0,
+    "errorReasons": {}
+  },
+  "tokens": [
+    {
+      "company": "Abridge",
+      "token": "abridge",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 39,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Accord",
+      "token": "accord",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Affirm",
+      "token": "affirm",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Affirm",
+      "openJobs": 203,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "AfterQuery",
+      "token": "afterquery",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 35,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Agave",
+      "token": "agave",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "AgentMail",
+      "token": "agentmail",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "AIOS",
+      "token": "aios",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 17,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "AiPrise",
+      "token": "aiprise",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 15,
+      "teamSize": 65,
+      "source": "yc"
+    },
+    {
+      "company": "Airbnb",
+      "token": "airbnb",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Airbnb",
+      "openJobs": 167,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Airbyte",
+      "token": "airbyte",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 13,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Airtable",
+      "token": "airtable",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Airtable",
+      "openJobs": 16,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Alchemy",
+      "token": "alchemy",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 20,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Alpaca",
+      "token": "alpaca",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Alpaca ",
+      "openJobs": 60,
+      "teamSize": 150,
+      "source": "yc"
+    },
+    {
+      "company": "Amplitude",
+      "token": "amplitude",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Amplitude ",
+      "openJobs": 39,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Angle Health",
+      "token": "anglehealth",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "Anjuna",
+      "token": "anjuna",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 55,
+      "source": "yc"
+    },
+    {
+      "company": "Ansa Biotechnologies",
+      "token": "ansabiotechnologies",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Ansa Biotechnologies",
+      "openJobs": 6,
+      "teamSize": 72,
+      "source": "yc"
+    },
+    {
+      "company": "Anthropic",
+      "token": "anthropic",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Anthropic",
+      "openJobs": 594,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Apollo.io",
+      "token": "apollo-io",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 800,
+      "source": "yc"
+    },
+    {
+      "company": "Archil",
+      "token": "archil",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 11,
+      "source": "yc"
+    },
+    {
+      "company": "Arini",
+      "token": "arini",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 17,
+      "source": "yc"
+    },
+    {
+      "company": "Artie",
+      "token": "artie",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 16,
+      "source": "yc"
+    },
+    {
+      "company": "Artisan",
+      "token": "artisan",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Asana",
+      "token": "asana",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Asana",
+      "openJobs": 103,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Ashby",
+      "token": "ashby",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 68,
+      "teamSize": 110,
+      "source": "yc"
+    },
+    {
+      "company": "Astranis",
+      "token": "astranis",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Astranis",
+      "openJobs": 89,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Astro Mechanica",
+      "token": "astro-mechanica",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 43,
+      "teamSize": 52,
+      "source": "yc"
+    },
+    {
+      "company": "Atlas",
+      "token": "atlas",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 18,
+      "source": "yc"
+    },
+    {
+      "company": "AtoB",
+      "token": "atob",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 75,
+      "source": "yc"
+    },
+    {
+      "company": "Atomic",
+      "token": "atomic",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 25,
+      "source": "yc"
+    },
+    {
+      "company": "Beacons",
+      "token": "beacons",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 35,
+      "source": "yc"
+    },
+    {
+      "company": "Benchling",
+      "token": "benchling",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 48,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Bitmovin",
+      "token": "bitmovin",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Bitmovin",
+      "openJobs": 10,
+      "teamSize": 145,
+      "source": "yc"
+    },
+    {
+      "company": "Blueberry Pediatrics",
+      "token": "blueberrypediatrics",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 10,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Bluedot",
+      "token": "bluedot",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Bolt",
+      "token": "bolt",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Bretton AI",
+      "token": "brettonai",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 8,
+      "teamSize": 34,
+      "source": "yc"
+    },
+    {
+      "company": "Brex",
+      "token": "brex",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Brex",
+      "openJobs": 270,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Bunkerhill Health",
+      "token": "bunkerhillhealth",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Cairns Health",
+      "token": "cairns-health",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 17,
+      "source": "yc"
+    },
+    {
+      "company": "Cambio",
+      "token": "cambio",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 60,
+      "source": "yc"
+    },
+    {
+      "company": "Campfire",
+      "token": "campfire",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 32,
+      "teamSize": 105,
+      "source": "yc"
+    },
+    {
+      "company": "Candid Health",
+      "token": "candidhealth",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 38,
+      "teamSize": 200,
+      "source": "yc"
+    },
+    {
+      "company": "CaptivateIQ",
+      "token": "captivateiq",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 27,
+      "teamSize": 280,
+      "source": "yc"
+    },
+    {
+      "company": "Carta",
+      "token": "carta",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Carta",
+      "openJobs": 63,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Casca",
+      "token": "casca",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Castle",
+      "token": "castle",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Charge Robotics",
+      "token": "charge-robotics",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 14,
+      "teamSize": 25,
+      "source": "yc"
+    },
+    {
+      "company": "Checkr",
+      "token": "checkr",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Checkr",
+      "openJobs": 48,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Chime",
+      "token": "chime",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Chime Financial, Inc",
+      "openJobs": 68,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Circle",
+      "token": "circle",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 10,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "ClassDojo",
+      "token": "classdojo",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 10,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "Clipboard",
+      "token": "clipboard",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 34,
+      "teamSize": 1000,
+      "source": "yc"
+    },
+    {
+      "company": "Cloudflare",
+      "token": "cloudflare",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Cloudflare",
+      "openJobs": 353,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Cohere",
+      "token": "cohere",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 142,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Coinbase",
+      "token": "coinbase",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Coinbase",
+      "openJobs": 220,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "CoinTracker",
+      "token": "cointracker",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 70,
+      "source": "yc"
+    },
+    {
+      "company": "Conduit",
+      "token": "conduit",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Confluent",
+      "token": "confluent",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 21,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Copia",
+      "token": "copia",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Cortex",
+      "token": "cortex",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Cortex",
+      "openJobs": 7,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "Corvus Robotics",
+      "token": "corvus-robotics",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Coursera",
+      "token": "coursera",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Coursera",
+      "openJobs": 22,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "CTGT",
+      "token": "ctgt",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Culdesac",
+      "token": "culdesac",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "Culture Biosciences",
+      "token": "culturebiosciences",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Culture Biosciences",
+      "openJobs": 2,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Cursor",
+      "token": "cursor",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 128,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "d_model",
+      "token": "dmodel",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Dagger",
+      "token": "dagger",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Dagger",
+      "openJobs": 0,
+      "teamSize": 22,
+      "source": "yc"
+    },
+    {
+      "company": "Databricks",
+      "token": "databricks",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Databricks",
+      "openJobs": 874,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Datadog",
+      "token": "datadog",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Datadog",
+      "openJobs": 451,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "David AI",
+      "token": "david-ai",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 13,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Daybreak Health",
+      "token": "daybreakhealth",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Daybreak Health",
+      "openJobs": 26,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Dedalus Labs",
+      "token": "dedalus-labs",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Deel",
+      "token": "deel",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Deepgram",
+      "token": "deepgram",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 91,
+      "teamSize": 115,
+      "source": "yc"
+    },
+    {
+      "company": "DeepSource",
+      "token": "deepsource",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Discord",
+      "token": "discord",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Discord",
+      "openJobs": 44,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Distro",
+      "token": "distro",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 219,
+      "teamSize": 11,
+      "source": "yc"
+    },
+    {
+      "company": "Ditto",
+      "token": "ditto",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 14,
+      "source": "yc"
+    },
+    {
+      "company": "Dots 💸",
+      "token": "dots",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Dots",
+      "openJobs": 1,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Dropbox",
+      "token": "dropbox",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Dropbox",
+      "openJobs": 43,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Duolingo",
+      "token": "duolingo",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Duolingo",
+      "openJobs": 85,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Elastic",
+      "token": "elastic",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Elastic",
+      "openJobs": 344,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Electric Air",
+      "token": "electricair",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 18,
+      "source": "yc"
+    },
+    {
+      "company": "Ello",
+      "token": "ello",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 45,
+      "source": "yc"
+    },
+    {
+      "company": "Event Horizon Labs",
+      "token": "event-horizon-labs",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Eventual",
+      "token": "eventual",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 18,
+      "source": "yc"
+    },
+    {
+      "company": "Exa",
+      "token": "exa",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 55,
+      "teamSize": 75,
+      "source": "yc"
+    },
+    {
+      "company": "Faire",
+      "token": "faire",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Faire",
+      "openJobs": 61,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Fastly",
+      "token": "fastly",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Fastly",
+      "openJobs": 46,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Fathom",
+      "token": "fathom",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 95,
+      "source": "yc"
+    },
+    {
+      "company": "Fieldguide",
+      "token": "fieldguide",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 43,
+      "teamSize": 200,
+      "source": "yc"
+    },
+    {
+      "company": "Figma",
+      "token": "figma",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Figma",
+      "openJobs": 158,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Finch",
+      "token": "finch",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 73,
+      "source": "yc"
+    },
+    {
+      "company": "Fivetran",
+      "token": "fivetran",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Fivetran ",
+      "openJobs": 197,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Flai",
+      "token": "flai",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 23,
+      "source": "yc"
+    },
+    {
+      "company": "FleetWorks",
+      "token": "fleetworks",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Flexport",
+      "token": "flexport",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Flexport",
+      "openJobs": 176,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "FlutterFlow",
+      "token": "flutterflow",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 55,
+      "source": "yc"
+    },
+    {
+      "company": "Focal Systems",
+      "token": "focalsystems",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Focal Systems",
+      "openJobs": 34,
+      "teamSize": 170,
+      "source": "yc"
+    },
+    {
+      "company": "Formal",
+      "token": "formal",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Freshpaint",
+      "token": "freshpaint",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 120,
+      "source": "yc"
+    },
+    {
+      "company": "FurtherAI",
+      "token": "furtherai",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 13,
+      "teamSize": 36,
+      "source": "yc"
+    },
+    {
+      "company": "Gemini",
+      "token": "gemini",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Gemini",
+      "openJobs": 33,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "General Proximity",
+      "token": "generalproximity",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "General Proximity",
+      "openJobs": 8,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Gigs",
+      "token": "gigs",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Gigs",
+      "openJobs": 45,
+      "teamSize": 150,
+      "source": "yc"
+    },
+    {
+      "company": "Ginkgo Bioworks",
+      "token": "ginkgobioworks",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Ginkgo Bioworks Inc.",
+      "openJobs": 19,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "GitLab",
+      "token": "gitlab",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "GitLab",
+      "openJobs": 228,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Glide",
+      "token": "glide",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Glide",
+      "openJobs": 1,
+      "teamSize": 46,
+      "source": "yc"
+    },
+    {
+      "company": "GoLinks",
+      "token": "golinks",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 70,
+      "source": "yc"
+    },
+    {
+      "company": "Grafana Labs",
+      "token": "grafanalabs",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Grafana Labs",
+      "openJobs": 126,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Great Question",
+      "token": "greatquestion",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 41,
+      "source": "yc"
+    },
+    {
+      "company": "Greptile",
+      "token": "greptile",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 18,
+      "teamSize": 35,
+      "source": "yc"
+    },
+    {
+      "company": "Grey",
+      "token": "grey",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "GREY ",
+      "openJobs": 14,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Gridware",
+      "token": "gridware",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 22,
+      "teamSize": 125,
+      "source": "yc"
+    },
+    {
+      "company": "Gumloop",
+      "token": "gumloop",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 44,
+      "source": "yc"
+    },
+    {
+      "company": "Gusto",
+      "token": "gusto",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Gusto, Inc.",
+      "openJobs": 95,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Harvey",
+      "token": "harvey",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 334,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Hex",
+      "token": "hex",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 32,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Hightouch",
+      "token": "hightouch",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Hightouch",
+      "openJobs": 86,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "HockeyStack",
+      "token": "hockeystack",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 65,
+      "source": "yc"
+    },
+    {
+      "company": "Honeycomb",
+      "token": "honeycomb",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Honeycomb.io",
+      "openJobs": 12,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "HUD",
+      "token": "hud",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 13,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Human Archive",
+      "token": "humanarchive",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 20,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "Human Interest",
+      "token": "humaninterest",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Human Interest",
+      "openJobs": 73,
+      "teamSize": 765,
+      "source": "yc"
+    },
+    {
+      "company": "Hyperbound",
+      "token": "hyperbound",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "idler",
+      "token": "idler",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Infisical",
+      "token": "infisical",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Inkeep",
+      "token": "inkeep",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 18,
+      "source": "yc"
+    },
+    {
+      "company": "Instacart",
+      "token": "instacart",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Instacart",
+      "openJobs": 104,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Instawork",
+      "token": "instawork",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Instawork",
+      "openJobs": 53,
+      "teamSize": 500,
+      "source": "yc"
+    },
+    {
+      "company": "Invert",
+      "token": "invert",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 25,
+      "source": "yc"
+    },
+    {
+      "company": "Juicebox",
+      "token": "juicebox",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 26,
+      "teamSize": 65,
+      "source": "yc"
+    },
+    {
+      "company": "Julius",
+      "token": "julius",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Kastle",
+      "token": "kastle",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 13,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "KERNEL",
+      "token": "kernel",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 22,
+      "source": "yc"
+    },
+    {
+      "company": "Khan Academy",
+      "token": "khanacademy",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Khan Academy",
+      "openJobs": 22,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Kinter",
+      "token": "kinter",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Kivo Health",
+      "token": "kivo-health",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Kraken",
+      "token": "kraken",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Lago",
+      "token": "lago",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 45,
+      "source": "yc"
+    },
+    {
+      "company": "Lance",
+      "token": "lance",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "LanceDB",
+      "token": "lancedb",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 35,
+      "source": "yc"
+    },
+    {
+      "company": "Latent",
+      "token": "latent",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Latent",
+      "openJobs": 0,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Lattice",
+      "token": "lattice",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Lattice",
+      "openJobs": 8,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "LaunchDarkly",
+      "token": "launchdarkly",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "LaunchDarkly",
+      "openJobs": 52,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Legalist",
+      "token": "legalist",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Legalist",
+      "openJobs": 9,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Legion Health",
+      "token": "legionhealth",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 157,
+      "teamSize": 11,
+      "source": "yc"
+    },
+    {
+      "company": "Linear",
+      "token": "linear",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 30,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "LiteLLM",
+      "token": "litellm",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 12,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Living Carbon",
+      "token": "livingcarbon",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Luma AI",
+      "token": "lumaai",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 45,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Luminai",
+      "token": "luminai",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 15,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Lyft",
+      "token": "lyft",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Lyft",
+      "openJobs": 162,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Mach9",
+      "token": "mach9",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 25,
+      "source": "yc"
+    },
+    {
+      "company": "Magic Patterns",
+      "token": "magicpatterns",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Mashgin",
+      "token": "mashgin",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 15,
+      "teamSize": 150,
+      "source": "yc"
+    },
+    {
+      "company": "Mastra",
+      "token": "mastra",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Mem0",
+      "token": "mem0",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Mercury",
+      "token": "mercury",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Mercury",
+      "openJobs": 59,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Meru Health",
+      "token": "meruhealth",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Meru Health",
+      "openJobs": 1,
+      "teamSize": 55,
+      "source": "yc"
+    },
+    {
+      "company": "Mesh",
+      "token": "mesh",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Mesh",
+      "openJobs": 10,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Metriport",
+      "token": "metriport",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 14,
+      "teamSize": 29,
+      "source": "yc"
+    },
+    {
+      "company": "Middesk",
+      "token": "middesk",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 17,
+      "teamSize": 130,
+      "source": "yc"
+    },
+    {
+      "company": "Mintlify",
+      "token": "mintlify",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 19,
+      "teamSize": 75,
+      "source": "yc"
+    },
+    {
+      "company": "Mistral",
+      "token": "mistral",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Mixpanel",
+      "token": "mixpanel",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Mixpanel",
+      "openJobs": 83,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Modal",
+      "token": "modal",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 31,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Modern Treasury",
+      "token": "moderntreasury",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 160,
+      "source": "yc"
+    },
+    {
+      "company": "Momentic",
+      "token": "momentic",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Momentic Studios",
+      "openJobs": 26,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "MongoDB",
+      "token": "mongodb",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "MongoDB",
+      "openJobs": 404,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Multiply Labs",
+      "token": "multiplylabs",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 36,
+      "source": "yc"
+    },
+    {
+      "company": "Mux",
+      "token": "mux",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 95,
+      "source": "yc"
+    },
+    {
+      "company": "NanoNets",
+      "token": "nanonets",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 102,
+      "source": "yc"
+    },
+    {
+      "company": "Nash",
+      "token": "nash",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 22,
+      "teamSize": 11,
+      "source": "yc"
+    },
+    {
+      "company": "Netlify",
+      "token": "netlify",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Netlify",
+      "openJobs": 1,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "NimbleRx",
+      "token": "nimblerx",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 130,
+      "source": "yc"
+    },
+    {
+      "company": "Notion",
+      "token": "notion",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 127,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Numeral",
+      "token": "numeral",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 22,
+      "teamSize": 110,
+      "source": "yc"
+    },
+    {
+      "company": "Nuro",
+      "token": "nuro",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Nuro",
+      "openJobs": 110,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Observe.AI",
+      "token": "observeai",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Observe.AI",
+      "openJobs": 17,
+      "teamSize": 240,
+      "source": "yc"
+    },
+    {
+      "company": "OneSchema",
+      "token": "oneschema",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "OpenAI",
+      "token": "openai",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 784,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "OpenSea",
+      "token": "opensea",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Outschool",
+      "token": "outschool",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Outschool",
+      "openJobs": 5,
+      "teamSize": 107,
+      "source": "yc"
+    },
+    {
+      "company": "Outset",
+      "token": "outset",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 18,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Overview",
+      "token": "overview",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 38,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Pair Team",
+      "token": "pairteam",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Pair Team",
+      "openJobs": 18,
+      "teamSize": 500,
+      "source": "yc"
+    },
+    {
+      "company": "Parallel Bio",
+      "token": "parallel-bio",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Pave",
+      "token": "pave",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 170,
+      "source": "yc"
+    },
+    {
+      "company": "People.ai",
+      "token": "people-ai",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 300,
+      "source": "yc"
+    },
+    {
+      "company": "Perplexity",
+      "token": "perplexity",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 112,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Pinterest",
+      "token": "pinterest",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Pinterest",
+      "openJobs": 180,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Plaid",
+      "token": "plaid",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 102,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Plane",
+      "token": "plane",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 33,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Planet Labs",
+      "token": "planetlabs",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Planet",
+      "openJobs": 116,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "PlanetScale",
+      "token": "planetscale",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "PlanetScale",
+      "openJobs": 13,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Posh",
+      "token": "posh",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 14,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "PostHog",
+      "token": "posthog",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 10,
+      "teamSize": 150,
+      "source": "yc"
+    },
+    {
+      "company": "Prelim",
+      "token": "prelim",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 49,
+      "source": "yc"
+    },
+    {
+      "company": "Probably Genetic",
+      "token": "probablygenetic",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 17,
+      "source": "yc"
+    },
+    {
+      "company": "Prodigal",
+      "token": "prodigal",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Prodigal",
+      "openJobs": 13,
+      "teamSize": 99,
+      "source": "yc"
+    },
+    {
+      "company": "Promise",
+      "token": "promise",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 10,
+      "teamSize": 80,
+      "source": "yc"
+    },
+    {
+      "company": "PsiQuantum",
+      "token": "psiquantum",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "PsiQuantum",
+      "openJobs": 74,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Pulley",
+      "token": "pulley",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Pulley",
+      "openJobs": 0,
+      "teamSize": 68,
+      "source": "yc"
+    },
+    {
+      "company": "Pulse",
+      "token": "pulse",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Pulse Healthcare",
+      "openJobs": 2652,
+      "teamSize": 22,
+      "source": "yc"
+    },
+    {
+      "company": "Pyka",
+      "token": "pyka",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 19,
+      "teamSize": 75,
+      "source": "yc"
+    },
+    {
+      "company": "Quantstamp",
+      "token": "quantstamp",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 80,
+      "source": "yc"
+    },
+    {
+      "company": "Ramen VR",
+      "token": "ramenvr",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Ramp",
+      "token": "ramp",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 144,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Reach",
+      "token": "reach",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 45,
+      "source": "yc"
+    },
+    {
+      "company": "Reacher",
+      "token": "reacher",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 8,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Ready",
+      "token": "ready",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 60,
+      "source": "yc"
+    },
+    {
+      "company": "Recurrency",
+      "token": "recurrency",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Reddit",
+      "token": "reddit",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Reddit",
+      "openJobs": 147,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Reducto",
+      "token": "reducto",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 41,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Reflex",
+      "token": "reflex",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Reflex",
+      "openJobs": 6,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Remote",
+      "token": "remote",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "General Assembly Remote Jobs ",
+      "openJobs": 2,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Render",
+      "token": "render",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 35,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Replit",
+      "token": "replit",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 78,
+      "teamSize": 65,
+      "source": "yc"
+    },
+    {
+      "company": "Replo",
+      "token": "replo",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Retell AI",
+      "token": "retell-ai",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 34,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "RevenueCat",
+      "token": "revenuecat",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 18,
+      "teamSize": 160,
+      "source": "yc"
+    },
+    {
+      "company": "Rigetti",
+      "token": "rigetti",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Ripple",
+      "token": "ripple",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Ripple ",
+      "openJobs": 126,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Robinhood",
+      "token": "robinhood",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Robinhood",
+      "openJobs": 129,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Roboflow",
+      "token": "roboflow",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 27,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "Roofr",
+      "token": "roofr",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Roofr",
+      "openJobs": 8,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Roofstock",
+      "token": "roofstock",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Roofstock",
+      "openJobs": 29,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Runway",
+      "token": "runway",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "SafetyKit",
+      "token": "safetykit",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "SalesPatriot",
+      "token": "salespatriot",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Salient",
+      "token": "salient",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Samsara",
+      "token": "samsara",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Samsara",
+      "openJobs": 264,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Sazabi",
+      "token": "sazabi",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 8,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Scale AI",
+      "token": "scaleai",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Scale AI",
+      "openJobs": 222,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Scout",
+      "token": "scout",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Semble",
+      "token": "semble",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 14,
+      "source": "yc"
+    },
+    {
+      "company": "Sendbird",
+      "token": "sendbird",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Sendbird",
+      "openJobs": 10,
+      "teamSize": 300,
+      "source": "yc"
+    },
+    {
+      "company": "Sentry",
+      "token": "sentry",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 41,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Shasqi",
+      "token": "shasqi",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 28,
+      "source": "yc"
+    },
+    {
+      "company": "Shepherd",
+      "token": "shepherd",
+      "ats": "greenhouse",
+      "matchKind": "yc-slug",
+      "boardName": "Shepherd",
+      "openJobs": 0,
+      "teamSize": 60,
+      "source": "yc"
+    },
+    {
+      "company": "Short Story",
+      "token": "shortstory",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 19,
+      "teamSize": 120,
+      "source": "yc"
+    },
+    {
+      "company": "Sierra",
+      "token": "sierra",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 209,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Sieve",
+      "token": "sieve",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 10,
+      "teamSize": 34,
+      "source": "yc"
+    },
+    {
+      "company": "Sigma Computing",
+      "token": "sigmacomputing",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Sigma Computing",
+      "openJobs": 64,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "SigNoz",
+      "token": "signoz",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 16,
+      "teamSize": 38,
+      "source": "yc"
+    },
+    {
+      "company": "Simple AI",
+      "token": "simple-ai",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 9,
+      "teamSize": 11,
+      "source": "yc"
+    },
+    {
+      "company": "Skydio",
+      "token": "skydio",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 131,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Slope",
+      "token": "slope",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 16,
+      "source": "yc"
+    },
+    {
+      "company": "Snackpass",
+      "token": "snackpass",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 38,
+      "source": "yc"
+    },
+    {
+      "company": "SnapMagic",
+      "token": "snapmagic",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 23,
+      "source": "yc"
+    },
+    {
+      "company": "Snappr",
+      "token": "snappr",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 21,
+      "teamSize": 250,
+      "source": "yc"
+    },
+    {
+      "company": "Snowflake",
+      "token": "snowflake",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 368,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Speak",
+      "token": "speak",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 37,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Spellbrush",
+      "token": "spellbrush",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 30,
+      "source": "yc"
+    },
+    {
+      "company": "Sphinx",
+      "token": "sphinx",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 8,
+      "teamSize": 14,
+      "source": "yc"
+    },
+    {
+      "company": "Squarespace",
+      "token": "squarespace",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Squarespace",
+      "openJobs": 27,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "STARK BANK",
+      "token": "starkbank",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 8,
+      "teamSize": 70,
+      "source": "yc"
+    },
+    {
+      "company": "StockX",
+      "token": "stockx",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "StockX",
+      "openJobs": 34,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Stream",
+      "token": "stream",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 8,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Stripe",
+      "token": "stripe",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Stripe",
+      "openJobs": 622,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Substack",
+      "token": "substack",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 15,
+      "teamSize": 90,
+      "source": "yc"
+    },
+    {
+      "company": "Suger",
+      "token": "suger",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Supabase",
+      "token": "supabase",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 59,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Svix",
+      "token": "svix",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 3,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Tamarind Bio",
+      "token": "tamarindbio",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Tavus",
+      "token": "tavus",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 14,
+      "teamSize": 75,
+      "source": "yc"
+    },
+    {
+      "company": "Teleport",
+      "token": "teleport",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 255,
+      "source": "yc"
+    },
+    {
+      "company": "Temporal",
+      "token": "temporal",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 70,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Tesorio",
+      "token": "tesorio",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 53,
+      "source": "yc"
+    },
+    {
+      "company": "Thunkable",
+      "token": "thunkable",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Tolmo",
+      "token": "tolmo",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Toma",
+      "token": "toma",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 20,
+      "source": "yc"
+    },
+    {
+      "company": "Treasury Prime",
+      "token": "treasuryprime",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Treasury Prime",
+      "openJobs": 0,
+      "teamSize": 100,
+      "source": "yc"
+    },
+    {
+      "company": "TRM Labs",
+      "token": "trm-labs",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 110,
+      "teamSize": 400,
+      "source": "yc"
+    },
+    {
+      "company": "Twilio",
+      "token": "twilio",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Twilio",
+      "openJobs": 151,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Two Dots",
+      "token": "two-dots",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 28,
+      "source": "yc"
+    },
+    {
+      "company": "Udemy",
+      "token": "udemy",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Udemy",
+      "openJobs": 11,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Uplane",
+      "token": "uplane",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 7,
+      "teamSize": 22,
+      "source": "yc"
+    },
+    {
+      "company": "Usul",
+      "token": "usul",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 6,
+      "teamSize": 15,
+      "source": "yc"
+    },
+    {
+      "company": "Vanta",
+      "token": "vanta",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 105,
+      "teamSize": 700,
+      "source": "yc"
+    },
+    {
+      "company": "Vapi",
+      "token": "vapi",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 34,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "Vercel",
+      "token": "vercel",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Vercel",
+      "openJobs": 84,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Verge Genomics",
+      "token": "verge-genomics",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 1,
+      "teamSize": 50,
+      "source": "yc"
+    },
+    {
+      "company": "VergeSense",
+      "token": "vergesense",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 0,
+      "teamSize": 70,
+      "source": "yc"
+    },
+    {
+      "company": "Verifiable",
+      "token": "verifiable",
+      "ats": "lever",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Veritus",
+      "token": "veritus",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Verkada",
+      "token": "verkada",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Verkada",
+      "openJobs": 293,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Vitalize",
+      "token": "vitalize",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 12,
+      "teamSize": 28,
+      "source": "yc"
+    },
+    {
+      "company": "Vooma",
+      "token": "vooma",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 40,
+      "source": "yc"
+    },
+    {
+      "company": "Vori",
+      "token": "vori",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 11,
+      "teamSize": 29,
+      "source": "yc"
+    },
+    {
+      "company": "Vorticity",
+      "token": "vorticity",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 2,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Wafer",
+      "token": "wafer",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 4,
+      "teamSize": 10,
+      "source": "yc"
+    },
+    {
+      "company": "Waymo",
+      "token": "waymo",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Waymo",
+      "openJobs": 339,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Weave",
+      "token": "weave",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Weave",
+      "openJobs": 7,
+      "teamSize": 14,
+      "source": "yc"
+    },
+    {
+      "company": "Webflow",
+      "token": "webflow",
+      "ats": "greenhouse",
+      "matchKind": "exact",
+      "boardName": "Webflow",
+      "openJobs": 26,
+      "teamSize": null,
+      "source": "curated"
+    },
+    {
+      "company": "Zensors",
+      "token": "zensors",
+      "ats": "ashby",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 5,
+      "teamSize": 12,
+      "source": "yc"
+    },
+    {
+      "company": "Zip",
+      "token": "zip",
+      "ats": "ashby",
+      "matchKind": "yc-slug",
+      "boardName": null,
+      "openJobs": 125,
+      "teamSize": 500,
+      "source": "yc"
+    },
+    {
+      "company": "Zoox",
+      "token": "zoox",
+      "ats": "lever",
+      "matchKind": "exact",
+      "boardName": null,
+      "openJobs": 244,
+      "teamSize": null,
+      "source": "curated"
+    }
+  ]
+}

@@ -1,0 +1,3536 @@
+[
+  {
+    "name": "Isengard Industries Inc",
+    "slug": "isengard-industries-inc",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Tolmo",
+    "slug": "tolmo",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Synphony",
+    "slug": "synphony",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "InstaAgent",
+    "slug": "instaagent",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Hub",
+    "slug": "hub",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Pocket",
+    "slug": "pocket",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Sazabi",
+    "slug": "sazabi",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Human Archive",
+    "slug": "human-archive",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Parameter",
+    "slug": "parameter",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Luel",
+    "slug": "luel",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Lance",
+    "slug": "lance",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Didit",
+    "slug": "didit",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Ploy",
+    "slug": "ploy",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Lexi",
+    "slug": "lexi",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Sunflower",
+    "slug": "sunflower",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Semble",
+    "slug": "semble",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "MOVEdot",
+    "slug": "movedot",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Uplane",
+    "slug": "uplane",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Efference",
+    "slug": "efference",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Freya",
+    "slug": "freya",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Veritus",
+    "slug": "veritus",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Duranium",
+    "slug": "duranium",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Magnetic",
+    "slug": "magnetic",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "KERNEL",
+    "slug": "kernel",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Reacher",
+    "slug": "reacher",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "idler",
+    "slug": "idler",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Flai",
+    "slug": "flai",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "cocreate",
+    "slug": "cocreate",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Wafer",
+    "slug": "wafer",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Lanesurf",
+    "slug": "lanesurf",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "AgentMail",
+    "slug": "agentmail",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Dedalus Labs",
+    "slug": "dedalus-labs",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "GETASAP",
+    "slug": "getasap",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Godela",
+    "slug": "godela",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Vision Lab",
+    "slug": "vision-lab",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Besimple AI",
+    "slug": "besimple-ai",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "QualGent",
+    "slug": "qualgent",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Sixtyfour",
+    "slug": "sixtyfour",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Bluejay",
+    "slug": "bluejay",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Synthio Labs",
+    "slug": "synthio-labs",
+    "teamSize": 29,
+    "source": "yc"
+  },
+  {
+    "name": "Mentra",
+    "slug": "mentra",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Proception Inc",
+    "slug": "proception-inc",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Mastra",
+    "slug": "mastra",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "AfterQuery",
+    "slug": "afterquery",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Fuse AI",
+    "slug": "fuse-ai",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Harper",
+    "slug": "harper",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Calltree",
+    "slug": "calltree",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "AthenaHQ",
+    "slug": "athenahq",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Bindwell",
+    "slug": "bindwell",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Pickle",
+    "slug": "pickle-2",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "HUD",
+    "slug": "hud",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "SalesPatriot",
+    "slug": "salespatriot",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Weave",
+    "slug": "weave-3",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Toothy AI",
+    "slug": "toothy-ai",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Contrario",
+    "slug": "contrario",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Leaping AI",
+    "slug": "leaping-ai",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Ember",
+    "slug": "ember",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Laminar",
+    "slug": "laminar-com",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Origami",
+    "slug": "origami-2",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Sphinx",
+    "slug": "sphinx",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "CTGT",
+    "slug": "ctgt",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Cekura",
+    "slug": "cekura-ai",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Archil",
+    "slug": "archil",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Revyl",
+    "slug": "revyl",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Syntra",
+    "slug": "syntra",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Pipeshift",
+    "slug": "pipeshift",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Usul",
+    "slug": "usul",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Oway",
+    "slug": "oway",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Assembly HOA",
+    "slug": "assembly-hoa",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Kontigo",
+    "slug": "kontigo",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Vendra",
+    "slug": "vendra",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "ZeroPath",
+    "slug": "zeropath",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Cartage",
+    "slug": "cartage",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Simple AI",
+    "slug": "simple-ai",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Brighterway",
+    "slug": "brighterway",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Intryc",
+    "slug": "intryc",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Distro",
+    "slug": "distro",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "David AI",
+    "slug": "david-ai",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Pax",
+    "slug": "pax",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Kastle",
+    "slug": "kastle",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "TaxGPT",
+    "slug": "taxgpt",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "d_model",
+    "slug": "d_model",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Pulse",
+    "slug": "pulse-3",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Weave Robotics",
+    "slug": "weave-robotics",
+    "teamSize": 26,
+    "source": "yc"
+  },
+  {
+    "name": "Tandem",
+    "slug": "tandem-2",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Parahelp",
+    "slug": "parahelp",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Wordware",
+    "slug": "wordware",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Corgi Insurance",
+    "slug": "corgi-insurance",
+    "teamSize": 250,
+    "source": "yc"
+  },
+  {
+    "name": "Entangl",
+    "slug": "entangl",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "mdhub",
+    "slug": "mdhub",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Mem0",
+    "slug": "mem0",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Domu Technology Inc.",
+    "slug": "domu-technology-inc",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Coval",
+    "slug": "coval",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "RetailReady",
+    "slug": "retailready",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "TrueClaim",
+    "slug": "trueclaim",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Reform",
+    "slug": "reform",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Deepnight",
+    "slug": "deepnight",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Retell AI",
+    "slug": "retell-ai",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Stacksync",
+    "slug": "stacksync",
+    "teamSize": 34,
+    "source": "yc"
+  },
+  {
+    "name": "Zep AI",
+    "slug": "zep-ai",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Cleva",
+    "slug": "cleva",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Conduit",
+    "slug": "conduit-ai",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Toma",
+    "slug": "toma",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Carma",
+    "slug": "carma",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Astro Mechanica",
+    "slug": "astro-mechanica",
+    "teamSize": 52,
+    "source": "yc"
+  },
+  {
+    "name": "CodeAnt AI",
+    "slug": "codeant-ai",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Open",
+    "slug": "open",
+    "teamSize": 21,
+    "source": "yc"
+  },
+  {
+    "name": "sync.",
+    "slug": "sync-2",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Tamarind Bio",
+    "slug": "tamarind-bio",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Respan",
+    "slug": "respan",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "Trellis AI",
+    "slug": "trellis-ai",
+    "teamSize": 34,
+    "source": "yc"
+  },
+  {
+    "name": "Artisan",
+    "slug": "artisan",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "FurtherAI",
+    "slug": "furtherai",
+    "teamSize": 36,
+    "source": "yc"
+  },
+  {
+    "name": "Arini",
+    "slug": "arini",
+    "teamSize": 17,
+    "source": "yc"
+  },
+  {
+    "name": "Basalt",
+    "slug": "basalt",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Alex",
+    "slug": "alex-com",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Momentic",
+    "slug": "momentic",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Reducto",
+    "slug": "reducto",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Andon Labs",
+    "slug": "andon-labs",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Ubicloud",
+    "slug": "ubicloud",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Greptile",
+    "slug": "greptile",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Event Horizon Labs",
+    "slug": "event-horizon-labs",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Gumloop",
+    "slug": "gumloop",
+    "teamSize": 44,
+    "source": "yc"
+  },
+  {
+    "name": "Giga",
+    "slug": "giga",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "ParadeDB",
+    "slug": "paradedb",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Strada",
+    "slug": "strada",
+    "teamSize": 21,
+    "source": "yc"
+  },
+  {
+    "name": "HappyRobot",
+    "slug": "happyrobot",
+    "teamSize": 80,
+    "source": "yc"
+  },
+  {
+    "name": "Inventive AI",
+    "slug": "inventive-ai",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "SyntheticFi",
+    "slug": "syntheticfi",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Andromeda Surgical",
+    "slug": "andromeda-surgical",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "SafetyKit",
+    "slug": "safetykit",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Energent AI",
+    "slug": "energent-ai",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Bolto",
+    "slug": "bolto",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "AgentCollect",
+    "slug": "agentcollect",
+    "teamSize": 42,
+    "source": "yc"
+  },
+  {
+    "name": "Bretton AI",
+    "slug": "bretton-ai",
+    "teamSize": 34,
+    "source": "yc"
+  },
+  {
+    "name": "refine",
+    "slug": "refine",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Numen",
+    "slug": "numen",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "Skyvern",
+    "slug": "skyvern",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "FleetWorks",
+    "slug": "fleetworks",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Outset",
+    "slug": "outset",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Campfire",
+    "slug": "campfire-2",
+    "teamSize": 105,
+    "source": "yc"
+  },
+  {
+    "name": "Electric Air",
+    "slug": "electric-air-2",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "Every",
+    "slug": "every",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Casca",
+    "slug": "casca",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Readily",
+    "slug": "readily",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Bland AI",
+    "slug": "bland-ai",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "AIVideo.com",
+    "slug": "aivideo-com",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Hyperbound",
+    "slug": "hyperbound",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Artie",
+    "slug": "artie",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "HockeyStack",
+    "slug": "hockeystack",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "Pierre",
+    "slug": "pierre",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "LiteLLM",
+    "slug": "litellm",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Conduit",
+    "slug": "conduit",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Diffuse Bio",
+    "slug": "diffuse-bio",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "CombineHealth",
+    "slug": "combinehealth",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Vitalize",
+    "slug": "vitalize",
+    "teamSize": 28,
+    "source": "yc"
+  },
+  {
+    "name": "Variance",
+    "slug": "variance",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "1stCollab",
+    "slug": "1stcollab",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Truewind",
+    "slug": "truewind",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Inkeep",
+    "slug": "inkeep",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "Bluedot",
+    "slug": "bluedot",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Kivo Health",
+    "slug": "kivo-health",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Suger",
+    "slug": "suger",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Vooma",
+    "slug": "vooma",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "loopfour",
+    "slug": "loopfour",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Omnistrate",
+    "slug": "omnistrate",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Salient",
+    "slug": "salient",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Numeral",
+    "slug": "numeral",
+    "teamSize": 110,
+    "source": "yc"
+  },
+  {
+    "name": "Hammr",
+    "slug": "hammr",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Latent",
+    "slug": "latent",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Magic Patterns",
+    "slug": "magic-patterns",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Syncly",
+    "slug": "syncly",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Reflex",
+    "slug": "reflex",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Middleware",
+    "slug": "middleware",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Infisical",
+    "slug": "infisical",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Rubbrband",
+    "slug": "rubbrband",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Polymath Robotics",
+    "slug": "polymath-robotics",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Cambio",
+    "slug": "cambio-2",
+    "teamSize": 60,
+    "source": "yc"
+  },
+  {
+    "name": "Pump.co",
+    "slug": "pump-co",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "PrimeVault",
+    "slug": "primevault",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "AiPrise",
+    "slug": "aiprise",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "Metriport",
+    "slug": "metriport",
+    "teamSize": 29,
+    "source": "yc"
+  },
+  {
+    "name": "Hedgehog",
+    "slug": "hedgehog-2",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Coris",
+    "slug": "coris",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Juicebox",
+    "slug": "juicebox",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "Activepieces",
+    "slug": "activepieces",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "CodeCrafters",
+    "slug": "codecrafters",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Array Labs",
+    "slug": "array-labs",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Dr. Treat",
+    "slug": "dr-treat",
+    "teamSize": 21,
+    "source": "yc"
+  },
+  {
+    "name": "Two Dots",
+    "slug": "two-dots",
+    "teamSize": 28,
+    "source": "yc"
+  },
+  {
+    "name": "SigmaMind AI",
+    "slug": "sigmamind-ai",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Julius",
+    "slug": "julius",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Stream",
+    "slug": "stream",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Layerup",
+    "slug": "layerup",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Medplum",
+    "slug": "medplum",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Eventual",
+    "slug": "eventual",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "AirMyne",
+    "slug": "airmyne",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Humand",
+    "slug": "humand",
+    "teamSize": 270,
+    "source": "yc"
+  },
+  {
+    "name": "RTHM",
+    "slug": "rthm",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "UNISON",
+    "slug": "unison",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Cypher",
+    "slug": "cypher",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Joon Health",
+    "slug": "joon-health",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Broccoli AI",
+    "slug": "broccoli-ai",
+    "teamSize": 85,
+    "source": "yc"
+  },
+  {
+    "name": "Vimmerse",
+    "slug": "vimmerse",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Nash",
+    "slug": "nash-2",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Arintra",
+    "slug": "arintra",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Glep",
+    "slug": "glep",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Grey",
+    "slug": "grey",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Posh",
+    "slug": "posh",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Velt",
+    "slug": "velt",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Mintlify",
+    "slug": "mintlify",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "IOMETE",
+    "slug": "iomete",
+    "teamSize": 21,
+    "source": "yc"
+  },
+  {
+    "name": "Flagright",
+    "slug": "flagright",
+    "teamSize": 31,
+    "source": "yc"
+  },
+  {
+    "name": "HOKALI",
+    "slug": "hokali",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Dart",
+    "slug": "dart",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "LanceDB",
+    "slug": "lancedb",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Unlayer",
+    "slug": "unlayer",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Atlas",
+    "slug": "atlas-2",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "Koala",
+    "slug": "koala",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Invert",
+    "slug": "invert",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Dynamo AI",
+    "slug": "dynamo-ai",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Gym Class",
+    "slug": "gym-class",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Blaze",
+    "slug": "blaze",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Sieve",
+    "slug": "sieve",
+    "teamSize": 34,
+    "source": "yc"
+  },
+  {
+    "name": "Scout",
+    "slug": "scout-2",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Agave",
+    "slug": "agave",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "GrowthBook",
+    "slug": "growthbook",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Mederva",
+    "slug": "mederva",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Optery",
+    "slug": "optery",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Careerist",
+    "slug": "careerist",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Sully.ai",
+    "slug": "sully-ai",
+    "teamSize": 49,
+    "source": "yc"
+  },
+  {
+    "name": "Exa",
+    "slug": "exa",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "Nash",
+    "slug": "nash",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Charge Robotics",
+    "slug": "charge-robotics",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Storylane",
+    "slug": "storylane",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "idemeum",
+    "slug": "idemeum",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Ferveret",
+    "slug": "ferveret-inc",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Waterplan",
+    "slug": "waterplan",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Genomelink",
+    "slug": "genomelink",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Telmai",
+    "slug": "telmai",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Dots 💸",
+    "slug": "dots-2",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Mach9",
+    "slug": "mach9",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Zensors",
+    "slug": "zensors-inc",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "OneSchema",
+    "slug": "oneschema",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Truss",
+    "slug": "truss",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Tiriel AI",
+    "slug": "tiriel-ai",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "testRigor",
+    "slug": "testrigor",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Govly",
+    "slug": "govly",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Locale",
+    "slug": "locale",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Awesomic",
+    "slug": "awesomic",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Tavus",
+    "slug": "tavus",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "Forage",
+    "slug": "forage-2",
+    "teamSize": 66,
+    "source": "yc"
+  },
+  {
+    "name": "Lago",
+    "slug": "lago",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "Parallel Bio",
+    "slug": "parallel-bio",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Affogato AI",
+    "slug": "affogato-ai",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Levro",
+    "slug": "levro",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Replo",
+    "slug": "replo",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Rootly",
+    "slug": "rootly",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "Jestor",
+    "slug": "jestor",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Legion Health",
+    "slug": "legion-health",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Slope",
+    "slug": "slope",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Openlayer",
+    "slug": "openlayer",
+    "teamSize": 24,
+    "source": "yc"
+  },
+  {
+    "name": "Terra API",
+    "slug": "terra-api",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Shepherd",
+    "slug": "shepherd",
+    "teamSize": 60,
+    "source": "yc"
+  },
+  {
+    "name": "Gigs",
+    "slug": "gigs",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Svix",
+    "slug": "svix",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "FlutterFlow",
+    "slug": "flutterflow",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Chatwoot",
+    "slug": "chatwoot",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Stayflexi",
+    "slug": "stayflexi",
+    "teamSize": 58,
+    "source": "yc"
+  },
+  {
+    "name": "Lamar Health",
+    "slug": "lamar-health",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Manara",
+    "slug": "manara",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Slash",
+    "slug": "slash",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Tint",
+    "slug": "tint",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Datrics",
+    "slug": "datrics",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Great Question",
+    "slug": "great-question",
+    "teamSize": 41,
+    "source": "yc"
+  },
+  {
+    "name": "Fathom",
+    "slug": "fathom",
+    "teamSize": 95,
+    "source": "yc"
+  },
+  {
+    "name": "Topkey",
+    "slug": "topkey",
+    "teamSize": 17,
+    "source": "yc"
+  },
+  {
+    "name": "Vapi",
+    "slug": "vapi",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Gridware",
+    "slug": "gridware",
+    "teamSize": 125,
+    "source": "yc"
+  },
+  {
+    "name": "Expent Inc",
+    "slug": "expent-inc",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Cyble",
+    "slug": "cyble",
+    "teamSize": 197,
+    "source": "yc"
+  },
+  {
+    "name": "Fractional",
+    "slug": "fractional",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Moichor",
+    "slug": "moichor",
+    "teamSize": 29,
+    "source": "yc"
+  },
+  {
+    "name": "Pibit.ai",
+    "slug": "pibit-ai",
+    "teamSize": 116,
+    "source": "yc"
+  },
+  {
+    "name": "ModernLoop",
+    "slug": "modernloop",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "arnata",
+    "slug": "arnata",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "SigNoz",
+    "slug": "signoz",
+    "teamSize": 38,
+    "source": "yc"
+  },
+  {
+    "name": "Hapi",
+    "slug": "hapi",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "DreamWorld",
+    "slug": "dreamworld",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Verifiable",
+    "slug": "verifiable",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Fieldguide",
+    "slug": "fieldguide",
+    "teamSize": 200,
+    "source": "yc"
+  },
+  {
+    "name": "Finch",
+    "slug": "finch",
+    "teamSize": 73,
+    "source": "yc"
+  },
+  {
+    "name": "Zuddl",
+    "slug": "zuddl",
+    "teamSize": 120,
+    "source": "yc"
+  },
+  {
+    "name": "Mozart Data",
+    "slug": "mozart-data",
+    "teamSize": 24,
+    "source": "yc"
+  },
+  {
+    "name": "Lendtable",
+    "slug": "lendtable",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Afriex",
+    "slug": "afriex",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Ready",
+    "slug": "ready",
+    "teamSize": 60,
+    "source": "yc"
+  },
+  {
+    "name": "SockSoho",
+    "slug": "socksoho",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Supabase",
+    "slug": "supabase",
+    "teamSize": 120,
+    "source": "yc"
+  },
+  {
+    "name": "Formal",
+    "slug": "formal",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "BIK",
+    "slug": "bik",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Balance",
+    "slug": "balance",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Mesh",
+    "slug": "mesh",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Daybreak Health",
+    "slug": "daybreak-health",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Osmind",
+    "slug": "osmind",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Atomic",
+    "slug": "atomic",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Swif.ai",
+    "slug": "swif-ai",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Hypotenuse AI",
+    "slug": "hypotenuse-ai",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Pave",
+    "slug": "pave-2",
+    "teamSize": 170,
+    "source": "yc"
+  },
+  {
+    "name": "Seam",
+    "slug": "seam",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "AtoB",
+    "slug": "atob",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "Zitara Technologies, Inc.",
+    "slug": "zitara-technologies-inc",
+    "teamSize": 33,
+    "source": "yc"
+  },
+  {
+    "name": "SuperTokens",
+    "slug": "supertokens",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Roboflow",
+    "slug": "roboflow",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Luminai",
+    "slug": "luminai",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Zip",
+    "slug": "zip",
+    "teamSize": 500,
+    "source": "yc"
+  },
+  {
+    "name": "Algen Biotechnologies",
+    "slug": "algen-biotechnologies",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Ansa Biotechnologies",
+    "slug": "ansa-biotechnologies",
+    "teamSize": 72,
+    "source": "yc"
+  },
+  {
+    "name": "Airbyte",
+    "slug": "airbyte",
+    "teamSize": 90,
+    "source": "yc"
+  },
+  {
+    "name": "Tambua Health",
+    "slug": "tambua-health",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Living Carbon",
+    "slug": "living-carbon",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Atmo",
+    "slug": "atmo",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Recall.ai",
+    "slug": "recall-ai",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Handl",
+    "slug": "handl",
+    "teamSize": 29,
+    "source": "yc"
+  },
+  {
+    "name": "STARK BANK",
+    "slug": "stark-bank",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "BeGo",
+    "slug": "be-go",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "Angle Health",
+    "slug": "angle-health",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Zeo Route Planner",
+    "slug": "zeo-route-planner",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "DeepSource",
+    "slug": "deepsource",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Recurrency",
+    "slug": "recurrency",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "AIOS",
+    "slug": "aios",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "PostHog",
+    "slug": "posthog",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Candid Health",
+    "slug": "candid-health",
+    "teamSize": 200,
+    "source": "yc"
+  },
+  {
+    "name": "Kinter",
+    "slug": "kinter",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Vori",
+    "slug": "vori",
+    "teamSize": 29,
+    "source": "yc"
+  },
+  {
+    "name": "BuildBuddy",
+    "slug": "buildbuddy",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Cortex",
+    "slug": "cortex",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Ello",
+    "slug": "ello",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "General Proximity",
+    "slug": "general-proximity",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Medicare Vox (fka Fair Square)",
+    "slug": "medicare-vox-fka-fair-square",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "TrueNorth",
+    "slug": "truenorth",
+    "teamSize": 60,
+    "source": "yc"
+  },
+  {
+    "name": "Grain",
+    "slug": "grain",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Eze",
+    "slug": "eze",
+    "teamSize": 32,
+    "source": "yc"
+  },
+  {
+    "name": "Farcast",
+    "slug": "farcast",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "SINAI",
+    "slug": "sinai",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Datasaur",
+    "slug": "datasaur",
+    "teamSize": 60,
+    "source": "yc"
+  },
+  {
+    "name": "Ditto",
+    "slug": "ditto",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Letterdrop",
+    "slug": "letterdrop",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Segmed",
+    "slug": "segmed",
+    "teamSize": 32,
+    "source": "yc"
+  },
+  {
+    "name": "MindsDB",
+    "slug": "mindsdb",
+    "teamSize": 41,
+    "source": "yc"
+  },
+  {
+    "name": "Pulley",
+    "slug": "pulley",
+    "teamSize": 68,
+    "source": "yc"
+  },
+  {
+    "name": "Abalone Bio",
+    "slug": "abalone-bio",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Accord",
+    "slug": "accord",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "GitStart",
+    "slug": "gitstart",
+    "teamSize": 19,
+    "source": "yc"
+  },
+  {
+    "name": "Motion",
+    "slug": "motion",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "Vorticity",
+    "slug": "vorticity",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Traces",
+    "slug": "traces",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Freshpaint",
+    "slug": "freshpaint",
+    "teamSize": 120,
+    "source": "yc"
+  },
+  {
+    "name": "Hightouch",
+    "slug": "hightouch",
+    "teamSize": 200,
+    "source": "yc"
+  },
+  {
+    "name": "Demand Curve",
+    "slug": "demand-curve",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Ramen VR",
+    "slug": "ramen-vr",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "EARTH AI",
+    "slug": "earth-ai",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Wasmer",
+    "slug": "wasmer",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Rosebud AI",
+    "slug": "rosebud-ai",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Canix",
+    "slug": "canix",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "TRM Labs",
+    "slug": "trm-labs",
+    "teamSize": 400,
+    "source": "yc"
+  },
+  {
+    "name": "Pair Team",
+    "slug": "pair-team",
+    "teamSize": 500,
+    "source": "yc"
+  },
+  {
+    "name": "Zeal",
+    "slug": "zeal",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "Short Story",
+    "slug": "short-story",
+    "teamSize": 120,
+    "source": "yc"
+  },
+  {
+    "name": "Courier",
+    "slug": "courier",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Apero Health",
+    "slug": "apero-health",
+    "teamSize": 24,
+    "source": "yc"
+  },
+  {
+    "name": "Shef",
+    "slug": "shef",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Atlas",
+    "slug": "atlas-3",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Numero",
+    "slug": "numero",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Glide",
+    "slug": "glide",
+    "teamSize": 46,
+    "source": "yc"
+  },
+  {
+    "name": "Beacons",
+    "slug": "beacons",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "AmpUp",
+    "slug": "ampup",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "Dover",
+    "slug": "dover",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Alpaca",
+    "slug": "alpaca",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Dagger",
+    "slug": "dagger",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Wren",
+    "slug": "wren",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Deel",
+    "slug": "deel",
+    "teamSize": 5000,
+    "source": "yc"
+  },
+  {
+    "name": "Handle",
+    "slug": "handle",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Bunkerhill Health",
+    "slug": "bunkerhill-health",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Probably Genetic",
+    "slug": "probably-genetic",
+    "teamSize": 17,
+    "source": "yc"
+  },
+  {
+    "name": "Ashby",
+    "slug": "ashby",
+    "teamSize": 110,
+    "source": "yc"
+  },
+  {
+    "name": "Okteto",
+    "slug": "okteto",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Community Phone Company",
+    "slug": "community-phone-company",
+    "teamSize": 101,
+    "source": "yc"
+  },
+  {
+    "name": "GoLinks",
+    "slug": "golinks",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Middesk",
+    "slug": "middesk",
+    "teamSize": 130,
+    "source": "yc"
+  },
+  {
+    "name": "BrainKey",
+    "slug": "brainkey",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Keeper",
+    "slug": "keeper-2",
+    "teamSize": 16,
+    "source": "yc"
+  },
+  {
+    "name": "Flockjay",
+    "slug": "flockjay",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Overview",
+    "slug": "overview",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Culdesac",
+    "slug": "culdesac",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "LemonBox",
+    "slug": "lemonbox",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Oxygen",
+    "slug": "oxygen",
+    "teamSize": 68,
+    "source": "yc"
+  },
+  {
+    "name": "Eden",
+    "slug": "eden-2",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Nestor",
+    "slug": "nestor",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Names & Faces",
+    "slug": "names-and-faces",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Prodigal",
+    "slug": "prodigal",
+    "teamSize": 99,
+    "source": "yc"
+  },
+  {
+    "name": "Pine Park Health",
+    "slug": "pine-park-health",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "DreamCraft Entertainment, Inc.",
+    "slug": "dreamcraft-entertainment-inc",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "Corvus Robotics",
+    "slug": "corvus-robotics",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "64x Bio",
+    "slug": "64x-bio",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "Embeddables",
+    "slug": "embeddables",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "Meru Health",
+    "slug": "meru-health",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Quo (fka OpenPhone)",
+    "slug": "openphone",
+    "teamSize": 125,
+    "source": "yc"
+  },
+  {
+    "name": "JITX",
+    "slug": "jitx",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "Inscribe",
+    "slug": "inscribe",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Activeloop",
+    "slug": "activeloop",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "RevenueCat",
+    "slug": "revenuecat",
+    "teamSize": 160,
+    "source": "yc"
+  },
+  {
+    "name": "Modern Treasury",
+    "slug": "modern-treasury",
+    "teamSize": 160,
+    "source": "yc"
+  },
+  {
+    "name": "Within",
+    "slug": "within",
+    "teamSize": 128,
+    "source": "yc"
+  },
+  {
+    "name": "OWNY",
+    "slug": "owny",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Snackpass",
+    "slug": "snackpass",
+    "teamSize": 38,
+    "source": "yc"
+  },
+  {
+    "name": "Replit",
+    "slug": "replit",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "FidoCure®",
+    "slug": "fidocure",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "CaptivateIQ",
+    "slug": "captivateiq",
+    "teamSize": 280,
+    "source": "yc"
+  },
+  {
+    "name": "Anjuna",
+    "slug": "anjuna",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Tarjimly (acquired)",
+    "slug": "tarjimly-acquired",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Observe.AI",
+    "slug": "observe-ai",
+    "teamSize": 240,
+    "source": "yc"
+  },
+  {
+    "name": "Culture Biosciences",
+    "slug": "culture-biosciences",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "ZBiotics",
+    "slug": "zbiotics",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "ArchForm",
+    "slug": "archform",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "Orangewood Labs",
+    "slug": "orangewood-labs",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "SafetyWing",
+    "slug": "safetywing",
+    "teamSize": 130,
+    "source": "yc"
+  },
+  {
+    "name": "Substack",
+    "slug": "substack",
+    "teamSize": 90,
+    "source": "yc"
+  },
+  {
+    "name": "Weekend (fmr. Volley)",
+    "slug": "weekend-fmr-volley",
+    "teamSize": 80,
+    "source": "yc"
+  },
+  {
+    "name": "Cognition IP",
+    "slug": "cognition-ip",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Treasury Prime",
+    "slug": "treasury-prime",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Acely",
+    "slug": "acely",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Evolve (makers of Podcast App & Rest)",
+    "slug": "evolve-makers-of-podcast-app-and-rest",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "Vanta",
+    "slug": "vanta",
+    "teamSize": 700,
+    "source": "yc"
+  },
+  {
+    "name": "Promise",
+    "slug": "promise",
+    "teamSize": 80,
+    "source": "yc"
+  },
+  {
+    "name": "NEXGENT",
+    "slug": "nexgent",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "CoinTracker",
+    "slug": "cointracker",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Fondo",
+    "slug": "fondo",
+    "teamSize": 80,
+    "source": "yc"
+  },
+  {
+    "name": "Shogun",
+    "slug": "shogun",
+    "teamSize": 90,
+    "source": "yc"
+  },
+  {
+    "name": "Blueberry Pediatrics",
+    "slug": "blueberry-pediatrics",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Spellbrush",
+    "slug": "spellbrush",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Quantstamp",
+    "slug": "quantstamp",
+    "teamSize": 80,
+    "source": "yc"
+  },
+  {
+    "name": "Proven Group",
+    "slug": "proven-group",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Gem",
+    "slug": "gem",
+    "teamSize": 200,
+    "source": "yc"
+  },
+  {
+    "name": "Just Appraised",
+    "slug": "just-appraised",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Routable",
+    "slug": "routable",
+    "teamSize": 160,
+    "source": "yc"
+  },
+  {
+    "name": "Zendar",
+    "slug": "zendar",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "Sourceress",
+    "slug": "sourceress",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Pyka",
+    "slug": "pyka",
+    "teamSize": 75,
+    "source": "yc"
+  },
+  {
+    "name": "Cairns Health",
+    "slug": "cairns-health",
+    "teamSize": 17,
+    "source": "yc"
+  },
+  {
+    "name": "Upfort",
+    "slug": "upfort",
+    "teamSize": 38,
+    "source": "yc"
+  },
+  {
+    "name": "Prelim",
+    "slug": "prelim",
+    "teamSize": 49,
+    "source": "yc"
+  },
+  {
+    "name": "Roofr",
+    "slug": "roofr",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Standard AI",
+    "slug": "standard-ai",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "VergeSense",
+    "slug": "vergesense",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Nobell Foods",
+    "slug": "nobell-foods",
+    "teamSize": 58,
+    "source": "yc"
+  },
+  {
+    "name": "Long Term Stock Exchange",
+    "slug": "long-term-stock-exchange",
+    "teamSize": 68,
+    "source": "yc"
+  },
+  {
+    "name": "Jerry",
+    "slug": "jerry-inc",
+    "teamSize": 225,
+    "source": "yc"
+  },
+  {
+    "name": "Retool",
+    "slug": "retool",
+    "teamSize": 300,
+    "source": "yc"
+  },
+  {
+    "name": "Lively, Inc.",
+    "slug": "lively-inc",
+    "teamSize": 195,
+    "source": "yc"
+  },
+  {
+    "name": "Ridecell",
+    "slug": "ridecell",
+    "teamSize": 88,
+    "source": "yc"
+  },
+  {
+    "name": "Faire",
+    "slug": "faire",
+    "teamSize": 900,
+    "source": "yc"
+  },
+  {
+    "name": "NanoNets",
+    "slug": "nanonets",
+    "teamSize": 102,
+    "source": "yc"
+  },
+  {
+    "name": "Plane",
+    "slug": "plane",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Collectly",
+    "slug": "collectly",
+    "teamSize": 106,
+    "source": "yc"
+  },
+  {
+    "name": "Veryfi, Inc.",
+    "slug": "veryfi-inc",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Snappr",
+    "slug": "snappr",
+    "teamSize": 250,
+    "source": "yc"
+  },
+  {
+    "name": "Token Transit",
+    "slug": "token-transit",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "Ambient.ai",
+    "slug": "ambient-ai",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Clipboard",
+    "slug": "clipboard",
+    "teamSize": 1000,
+    "source": "yc"
+  },
+  {
+    "name": "The Essential",
+    "slug": "the-essential",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Extern",
+    "slug": "extern",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Rippling",
+    "slug": "rippling",
+    "teamSize": 2500,
+    "source": "yc"
+  },
+  {
+    "name": "Speak",
+    "slug": "speak",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "ClassDojo",
+    "slug": "classdojo",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Expo",
+    "slug": "expo",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Elemeno Health",
+    "slug": "elemeno-health",
+    "teamSize": 25,
+    "source": "yc"
+  },
+  {
+    "name": "People.ai",
+    "slug": "people-ai",
+    "teamSize": 300,
+    "source": "yc"
+  },
+  {
+    "name": "Scale AI",
+    "slug": "scale-ai",
+    "teamSize": 500,
+    "source": "yc"
+  },
+  {
+    "name": "Curtsy",
+    "slug": "curtsy",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Athelas",
+    "slug": "athelas",
+    "teamSize": 1000,
+    "source": "yc"
+  },
+  {
+    "name": "GoGoGrandparent",
+    "slug": "gogograndparent",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Legalist",
+    "slug": "legalist",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "New Incentives",
+    "slug": "new-incentives",
+    "teamSize": 51,
+    "source": "yc"
+  },
+  {
+    "name": "Multiply Labs",
+    "slug": "multiply-labs",
+    "teamSize": 36,
+    "source": "yc"
+  },
+  {
+    "name": "Instrumentl",
+    "slug": "instrumentl",
+    "teamSize": 60,
+    "source": "yc"
+  },
+  {
+    "name": "Upgraded",
+    "slug": "upgraded",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Joy",
+    "slug": "joy",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Qvin",
+    "slug": "qvin",
+    "teamSize": 30,
+    "source": "yc"
+  },
+  {
+    "name": "Lygos",
+    "slug": "lygos",
+    "teamSize": 55,
+    "source": "yc"
+  },
+  {
+    "name": "Zenysis",
+    "slug": "zenysis",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Astranis",
+    "slug": "astranis",
+    "teamSize": 500,
+    "source": "yc"
+  },
+  {
+    "name": "Sendbird",
+    "slug": "sendbird",
+    "teamSize": 300,
+    "source": "yc"
+  },
+  {
+    "name": "Wakie",
+    "slug": "wakie",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Thunkable",
+    "slug": "thunkable",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Apollo.io",
+    "slug": "apollo-io",
+    "teamSize": 800,
+    "source": "yc"
+  },
+  {
+    "name": "Castle",
+    "slug": "castle-2",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Revl",
+    "slug": "revl",
+    "teamSize": 22,
+    "source": "yc"
+  },
+  {
+    "name": "Copia",
+    "slug": "copia",
+    "teamSize": 20,
+    "source": "yc"
+  },
+  {
+    "name": "Focal Systems",
+    "slug": "focal-systems",
+    "teamSize": 170,
+    "source": "yc"
+  },
+  {
+    "name": "Daily",
+    "slug": "daily",
+    "teamSize": 126,
+    "source": "yc"
+  },
+  {
+    "name": "Petcube",
+    "slug": "petcube",
+    "teamSize": 51,
+    "source": "yc"
+  },
+  {
+    "name": "Outschool",
+    "slug": "outschool",
+    "teamSize": 107,
+    "source": "yc"
+  },
+  {
+    "name": "Chatfuel",
+    "slug": "chatfuel",
+    "teamSize": 53,
+    "source": "yc"
+  },
+  {
+    "name": "Deepgram",
+    "slug": "deepgram",
+    "teamSize": 115,
+    "source": "yc"
+  },
+  {
+    "name": "Lattice",
+    "slug": "lattice",
+    "teamSize": 540,
+    "source": "yc"
+  },
+  {
+    "name": "Mux",
+    "slug": "mux",
+    "teamSize": 95,
+    "source": "yc"
+  },
+  {
+    "name": "Human Interest",
+    "slug": "human-interest",
+    "teamSize": 765,
+    "source": "yc"
+  },
+  {
+    "name": "Instawork",
+    "slug": "instawork",
+    "teamSize": 500,
+    "source": "yc"
+  },
+  {
+    "name": "Bitmovin",
+    "slug": "bitmovin",
+    "teamSize": 145,
+    "source": "yc"
+  },
+  {
+    "name": "Zeplin",
+    "slug": "zeplin",
+    "teamSize": 140,
+    "source": "yc"
+  },
+  {
+    "name": "Bodyport",
+    "slug": "bodyport",
+    "teamSize": 19,
+    "source": "yc"
+  },
+  {
+    "name": "Verge Genomics",
+    "slug": "verge-genomics",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Tesorio",
+    "slug": "tesorio",
+    "teamSize": 53,
+    "source": "yc"
+  },
+  {
+    "name": "Reach",
+    "slug": "reach",
+    "teamSize": 45,
+    "source": "yc"
+  },
+  {
+    "name": "Confident LIMS",
+    "slug": "confident-lims",
+    "teamSize": 17,
+    "source": "yc"
+  },
+  {
+    "name": "SnapMagic",
+    "slug": "snapmagic",
+    "teamSize": 23,
+    "source": "yc"
+  },
+  {
+    "name": "Gemnote",
+    "slug": "gemnote",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Ironclad",
+    "slug": "ironclad",
+    "teamSize": 700,
+    "source": "yc"
+  },
+  {
+    "name": "Teleport",
+    "slug": "teleport",
+    "teamSize": 255,
+    "source": "yc"
+  },
+  {
+    "name": "Shasqi",
+    "slug": "shasqi",
+    "teamSize": 28,
+    "source": "yc"
+  },
+  {
+    "name": "Mashgin",
+    "slug": "mashgin",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "NimbleRx",
+    "slug": "nimblerx",
+    "teamSize": 130,
+    "source": "yc"
+  },
+  {
+    "name": "Replika",
+    "slug": "replika",
+    "teamSize": 28,
+    "source": "yc"
+  },
+  {
+    "name": "Tara AI",
+    "slug": "tara-ai",
+    "teamSize": 13,
+    "source": "yc"
+  },
+  {
+    "name": "Zenflow",
+    "slug": "zenflow",
+    "teamSize": 18,
+    "source": "yc"
+  },
+  {
+    "name": "Meadow",
+    "slug": "meadow",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "Industrial Microbes",
+    "slug": "industrial-microbes",
+    "teamSize": 12,
+    "source": "yc"
+  },
+  {
+    "name": "eBrandvalue",
+    "slug": "ebrandvalue",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Tempo",
+    "slug": "tempo",
+    "teamSize": 158,
+    "source": "yc"
+  },
+  {
+    "name": "SIRUM",
+    "slug": "sirum",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Platzi",
+    "slug": "platzi",
+    "teamSize": 123,
+    "source": "yc"
+  },
+  {
+    "name": "Labdoor",
+    "slug": "labdoor",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "GrubMarket",
+    "slug": "grubmarket",
+    "teamSize": 4548,
+    "source": "yc"
+  },
+  {
+    "name": "Numerion Labs",
+    "slug": "numerion-labs",
+    "teamSize": 67,
+    "source": "yc"
+  },
+  {
+    "name": "Qventus",
+    "slug": "qventus",
+    "teamSize": 230,
+    "source": "yc"
+  },
+  {
+    "name": "Front",
+    "slug": "front",
+    "teamSize": 385,
+    "source": "yc"
+  },
+  {
+    "name": "SpotAngels",
+    "slug": "spotangels",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "PicnicAI",
+    "slug": "picnicai",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Protocol Labs",
+    "slug": "protocol-labs",
+    "teamSize": 130,
+    "source": "yc"
+  },
+  {
+    "name": "Checkr",
+    "slug": "checkr",
+    "teamSize": 800,
+    "source": "yc"
+  },
+  {
+    "name": "Immunity Project",
+    "slug": "immunity-project",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Algolia",
+    "slug": "algolia",
+    "teamSize": 810,
+    "source": "yc"
+  },
+  {
+    "name": "Zinc",
+    "slug": "zinc",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "One Degree",
+    "slug": "one-degree",
+    "teamSize": 14,
+    "source": "yc"
+  },
+  {
+    "name": "MBX",
+    "slug": "mbx",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Flexport",
+    "slug": "flexport",
+    "teamSize": 3000,
+    "source": "yc"
+  },
+  {
+    "name": "Cambly",
+    "slug": "cambly",
+    "teamSize": 200,
+    "source": "yc"
+  },
+  {
+    "name": "Bellabeat",
+    "slug": "bellabeat",
+    "teamSize": 134,
+    "source": "yc"
+  },
+  {
+    "name": "Webflow",
+    "slug": "webflow",
+    "teamSize": 600,
+    "source": "yc"
+  },
+  {
+    "name": "Watsi",
+    "slug": "watsi",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Wefunder",
+    "slug": "wefunder",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "SimplyInsured",
+    "slug": "simplyinsured",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "Lollipuff",
+    "slug": "lollipuff",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Etleap",
+    "slug": "etleap",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Fivetran",
+    "slug": "fivetran",
+    "teamSize": 1200,
+    "source": "yc"
+  },
+  {
+    "name": "Padlet",
+    "slug": "padlet",
+    "teamSize": 65,
+    "source": "yc"
+  },
+  {
+    "name": "StyleUp",
+    "slug": "styleup",
+    "teamSize": 10,
+    "source": "yc"
+  },
+  {
+    "name": "Double Robotics",
+    "slug": "double-robotics",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Benchling",
+    "slug": "benchling",
+    "teamSize": 750,
+    "source": "yc"
+  },
+  {
+    "name": "BackerKit",
+    "slug": "backerkit",
+    "teamSize": 42,
+    "source": "yc"
+  },
+  {
+    "name": "Zapier",
+    "slug": "zapier",
+    "teamSize": 700,
+    "source": "yc"
+  },
+  {
+    "name": "Upwave",
+    "slug": "upwave",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Mattermost",
+    "slug": "mattermost",
+    "teamSize": 120,
+    "source": "yc"
+  },
+  {
+    "name": "Human Dx",
+    "slug": "human-dx",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Mth Sense",
+    "slug": "mth-sense",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Rainforest",
+    "slug": "rainforest",
+    "teamSize": 40,
+    "source": "yc"
+  },
+  {
+    "name": "Scribd",
+    "slug": "scribd",
+    "teamSize": 300,
+    "source": "yc"
+  },
+  {
+    "name": "Poll Everywhere",
+    "slug": "poll-everywhere",
+    "teamSize": 70,
+    "source": "yc"
+  },
+  {
+    "name": "Olark",
+    "slug": "olark",
+    "teamSize": 15,
+    "source": "yc"
+  },
+  {
+    "name": "Mixpanel",
+    "slug": "mixpanel",
+    "teamSize": 410,
+    "source": "yc"
+  },
+  {
+    "name": "Stripe",
+    "slug": "stripe",
+    "teamSize": 7000,
+    "source": "yc"
+  },
+  {
+    "name": "inDinero",
+    "slug": "indinero",
+    "teamSize": 250,
+    "source": "yc"
+  },
+  {
+    "name": "Docker",
+    "slug": "docker",
+    "teamSize": 201,
+    "source": "yc"
+  },
+  {
+    "name": "Mino Games",
+    "slug": "mino-games",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "Talkable",
+    "slug": "talkable",
+    "teamSize": 76,
+    "source": "yc"
+  },
+  {
+    "name": "SingleStore",
+    "slug": "singlestore",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "Imgix",
+    "slug": "imgix",
+    "teamSize": 34,
+    "source": "yc"
+  },
+  {
+    "name": "Videopixie",
+    "slug": "videopixie",
+    "teamSize": 11,
+    "source": "yc"
+  },
+  {
+    "name": "LeadGenius",
+    "slug": "leadgenius",
+    "teamSize": 50,
+    "source": "yc"
+  },
+  {
+    "name": "Clerky",
+    "slug": "clerky",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "AgileMD",
+    "slug": "agilemd",
+    "teamSize": 19,
+    "source": "yc"
+  },
+  {
+    "name": "Quartzy",
+    "slug": "quartzy",
+    "teamSize": 100,
+    "source": "yc"
+  },
+  {
+    "name": "Streak",
+    "slug": "streak",
+    "teamSize": 35,
+    "source": "yc"
+  },
+  {
+    "name": "OneSignal",
+    "slug": "onesignal",
+    "teamSize": 150,
+    "source": "yc"
+  },
+  {
+    "name": "HackerRank",
+    "slug": "hackerrank",
+    "teamSize": 300,
+    "source": "yc"
+  },
+  {
+    "name": "Apollo",
+    "slug": "apollo",
+    "teamSize": 200,
+    "source": "yc"
+  },
+  {
+    "name": "Gusto",
+    "slug": "gusto",
+    "teamSize": 2400,
+    "source": "yc"
+  },
+  {
+    "name": "Rescale",
+    "slug": "rescale",
+    "teamSize": 250,
+    "source": "yc"
+  }
+]
