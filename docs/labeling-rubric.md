@@ -20,6 +20,47 @@ gets mistaken for model error.
 6. **If a case is not covered here, add a rule to this doc** before labeling it. Do not
    decide it ad hoc — that is exactly the drift this rubric exists to prevent.
 
+## Nulls: correct, missed, and invented
+
+`null` is the right **label** whenever the posting does not state a value — that rule does not
+bend, and the labeler never infers to avoid one. But a null in the *output* is not
+automatically acceptable, and the eval must tell these cases apart per field:
+
+| Ground truth | Extracted | Meaning | Target |
+|---|---|---|---|
+| value | value | correct | maximize |
+| value | `null` | **missed** — the posting said it, extraction did not find it | drive to zero |
+| `null` | value | **invented** — extraction made it up | drive to zero |
+| `null` | `null` | correct null — the posting is silent | not a defect |
+
+Only the middle two are model errors, and both are derivable at eval time without any extra
+labeling work.
+
+Correct nulls are a **coverage ceiling** set by the source. If 40% of postings never state
+seniority, no prompt can push seniority coverage past 60% without fabricating. Raising that
+ceiling is a source-side change — ATS metadata, a second field, a different board — never a
+prompt change. Reporting the ceiling alongside accuracy is what keeps the two from being
+confused.
+
+So *"no critical field left null"* is a target against **missed** nulls and against the
+coverage ceiling. It is never a licence for the model to guess.
+
+**Critical fields** are the ones a real filter reads, where a null costs the user a usable
+result: `seniority`, `locationPolicy`, `sponsorship`, `compMin`/`compMax`. This set is defined
+by EVAL-5 (JOS-56) and drives its decision-usable rate — keep the two in sync.
+
+### Labeler flags
+
+When you hesitate on a field — the rubric does not cleanly decide it, or the posting is
+genuinely ambiguous — record a flag on that record naming the field and the reason. A bare
+"Software Engineer" with no level word is the canonical case: label it `null` per the rule,
+**and flag it**. Most records get no flags.
+
+Flags are not labels. They do two jobs:
+
+- mark rubric gaps to fix before the next labeling pass
+- identify postings where a model disagreement may be legitimate rather than wrong
+
 ## The six resolved cases
 
 | Case | Answer |
@@ -55,8 +96,9 @@ gets mistaken for model error.
   | Principal, Distinguished, Fellow | `principal` |
 
 - **Tie-break:** A range records its lower bound ("Senior / Staff" → `senior`). A bare
-  "Software Engineer" with no modifier is `null`, not `mid`. Management titles (Manager,
-  Director, VP) are `null` — the IC ladder does not apply to them.
+  "Software Engineer" with no modifier is `null`, not `mid` — and gets a labeler flag, since
+  seniority is a critical field and this is the largest single source of null seniority.
+  Management titles (Manager, Director, VP) are `null` — the IC ladder does not apply to them.
 
 ### `locationPolicy` (enum: onsite | hybrid | remote, nullable)
 
