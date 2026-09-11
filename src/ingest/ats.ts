@@ -26,6 +26,7 @@ const POLLERS: Record<Ats, Poller> = {
       ats: "greenhouse",
       boardToken: token,
       externalId: String(j.id),
+      requisitionId: j.requisition_id != null ? String(j.requisition_id) : null,
       url: j.absolute_url,
       title: j.title,
       company: j.company_name ?? null,
@@ -46,6 +47,7 @@ const POLLERS: Record<Ats, Poller> = {
       ats: "lever",
       boardToken: token,
       externalId: String(j.id),
+      requisitionId: null, // Lever exposes only `id`, which changes on a repost
       url: j.hostedUrl,
       title: j.text,
       company: null,
@@ -67,6 +69,7 @@ const POLLERS: Record<Ats, Poller> = {
       ats: "ashby",
       boardToken: token,
       externalId: String(j.id),
+      requisitionId: null, // Ashby exposes only `id`, which changes on a repost
       url: j.jobUrl,
       title: j.title,
       company: null,

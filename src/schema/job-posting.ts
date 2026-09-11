@@ -74,6 +74,7 @@ export const rawPostingSchema = z.object({
   ats: z.enum(ATS_SOURCES),
   boardToken: z.string().min(1),
   externalId: z.string().min(1),
+  requisitionId: z.string().nullable(), // stable across a repost; only Greenhouse exposes one
   url: z.url(),
   title: z.string().min(1),
   company: z.string().nullable(), // only Greenhouse names the board's owner
