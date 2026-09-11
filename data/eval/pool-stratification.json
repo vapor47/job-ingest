@@ -1,0 +1,28 @@
+{
+  "total": 150,
+  "byAts": {
+    "ashby": 39,
+    "greenhouse": 103,
+    "lever": 8
+  },
+  "bySizeBucket": {
+    "large": 107,
+    "mid": 40,
+    "small": 3
+  },
+  "byJurisdiction": {
+    "CA": 47,
+    "CO": 1,
+    "NY": 11,
+    "TX": 1,
+    "WA": 3,
+    "other": 67,
+    "remote": 20
+  },
+  "byOversampleReason": {
+    "multiLocation": 22,
+    "multiLevel": 8,
+    "hourly": 20,
+    "upToX": 8
+  }
+}
