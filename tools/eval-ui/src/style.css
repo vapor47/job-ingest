@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; }
+
+.app { display: flex; flex-direction: column; height: 100vh; }
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+.toolbar .jump { width: 140px; }
+.toolbar .progress { margin-left: auto; color: #555; }
+
+.splitter-container { flex: 1; display: flex; overflow: hidden; }
+.splitter-pane { overflow: auto; height: 100%; }
+.splitter-handle { width: 6px; cursor: col-resize; background: #ddd; flex-shrink: 0; }
+.splitter-handle:hover { background: #aaa; }
+
+.posting-pane { display: flex; flex-direction: column; height: 100%; }
+.posting-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+.posting-title { font-weight: 600; }
+.posting-pane iframe { flex: 1; border: none; }
+
+.label-form { display: flex; flex-direction: column; gap: 14px; padding: 16px; }
+.label-form label { display: flex; flex-direction: column; gap: 4px; font-weight: 600; }
+.label-form input, .label-form select { font-weight: normal; font-size: 14px; padding: 4px 6px; }
+.field-row { display: flex; gap: 16px; }
+.field-row label { flex: 1; }
+
+.tag-input, .location-input { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; position: relative; }
+.tag-input input, .location-input input { border: 1px solid #ccc; border-radius: 4px; flex: 1; min-width: 120px; }
+.tag {
+  background: #e8e8e8;
+  border-radius: 12px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.tag:hover { background: #d33; color: white; }
+
+.location-matches {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.location-matches li { padding: 4px 10px; cursor: pointer; font-weight: normal; }
+.location-matches li:hover { background: #eef; }
+.location-type { color: #888; }
+.location-add-new { color: #06c; font-style: italic; }
+
+.loading { padding: 40px; text-align: center; color: #888; }
