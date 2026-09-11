@@ -61,3 +61,29 @@ export const jobPostingSchema = z.object({
 });
 
 export type JobPosting = z.infer<typeof jobPostingSchema>;
+
+export const ATS_SOURCES = ["greenhouse", "lever", "ashby"] as const;
+export type Ats = (typeof ATS_SOURCES)[number];
+
+// What a poller returns: the posting as the board published it, normalized only enough
+// that the three ATSes are interchangeable downstream. Nothing here is extracted or
+// inferred — `description` is the text an extractor reads, `raw` is the untouched payload
+// so a later pass can mine structured fields (Lever salaryRange, Ashby compensation)
+// without re-polling.
+export const rawPostingSchema = z.object({
+  ats: z.enum(ATS_SOURCES),
+  boardToken: z.string().min(1),
+  externalId: z.string().min(1),
+  url: z.url(),
+  title: z.string().min(1),
+  company: z.string().nullable(), // only Greenhouse names the board's owner
+  location: z.string().nullable(),
+  department: z.string().nullable(),
+  employmentTypeRaw: z.string().nullable(), // board's own wording, not the schema enum
+  publishedAt: z.string().nullable(), // ISO 8601
+  description: z.string(),
+  fetchedAt: z.string(),
+  raw: z.unknown(),
+});
+
+export type RawPosting = z.infer<typeof rawPostingSchema>;
