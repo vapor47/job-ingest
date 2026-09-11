@@ -10,17 +10,19 @@ import { jobPostingSchema } from "../src/schema/job-posting.ts";
 const FILE = process.argv[2] ?? "data/eval/pool.jsonl";
 
 async function main() {
-  const lines = (await readFile(FILE, "utf8")).trim().split("\n");
+  // Records are pretty-printed JSON separated by a blank line, not strict one-line JSONL —
+  // see build-eval-pool.ts's writePool. Split on blank lines, not "\n".
+  const blocks = (await readFile(FILE, "utf8")).trim().split(/\n\s*\n/);
   let valid = 0;
   let labeled = 0;
   let flagged = 0;
   const errors: string[] = [];
 
-  for (const [i, line] of lines.entries()) {
-    const record = JSON.parse(line);
+  for (const [i, block] of blocks.entries()) {
+    const record = JSON.parse(block);
     const result = jobPostingSchema.safeParse(record);
     if (!result.success) {
-      errors.push(`line ${i + 1} (${record.id ?? "?"}): ${result.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}`);
+      errors.push(`record ${i + 1} (${record.id ?? "?"}): ${result.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}`);
       continue;
     }
     valid++;
@@ -29,7 +31,7 @@ async function main() {
     if (Array.isArray(record.flags) && record.flags.length > 0) flagged++;
   }
 
-  console.log(`${lines.length} records: ${valid} schema-valid, ${labeled} with a non-null field, ${flagged} flagged`);
+  console.log(`${blocks.length} records: ${valid} schema-valid, ${labeled} with a non-null field, ${flagged} flagged`);
   if (errors.length) {
     console.log(`\n${errors.length} schema error(s):`);
     for (const e of errors) console.log(`  ${e}`);

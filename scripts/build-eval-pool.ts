@@ -171,33 +171,40 @@ async function pollBoards(tokens: Token[]): Promise<Candidate[]> {
 async function writePool(pool: Candidate[]) {
   await mkdir(OUT_DIR, { recursive: true });
 
-  const lines = pool.map((c) => {
+  // Pretty-printed, blank-line-delimited (not strict one-line JSONL): a human fills these in
+  // by hand, and one key per line beats hunting for "seniority" inside a single giant line.
+  // `description` — by far the longest field — goes last so the labels to fill sit up top.
+  const records = pool.map((c) => {
     const p = c.posting;
-    return JSON.stringify({
-      id: c.id,
-      company: c.company,
-      ats: p.ats,
-      boardToken: p.boardToken,
-      externalId: p.externalId,
-      url: p.url,
-      strata: { sizeBucket: c.sizeBucket, jurisdiction: c.jurisdiction, oversample: c.oversample },
-      description: p.description,
-      // Everything from here down is the label. `title` is copied verbatim per the rubric —
-      // every other field is left null for the human to fill in. Do not pre-fill these.
-      title: p.title,
-      seniority: null,
-      locationPolicy: null,
-      locationGeo: null,
-      compMin: null,
-      compMax: null,
-      compCurrency: null,
-      sponsorship: null,
-      stack: null,
-      employmentType: null,
-      flags: [],
-    });
+    return JSON.stringify(
+      {
+        id: c.id,
+        company: c.company,
+        ats: p.ats,
+        boardToken: p.boardToken,
+        externalId: p.externalId,
+        url: p.url,
+        strata: { sizeBucket: c.sizeBucket, jurisdiction: c.jurisdiction, oversample: c.oversample },
+        // `title` is copied verbatim per the rubric. Every field below it is the label —
+        // left null for the human to fill in. Do not pre-fill these.
+        title: p.title,
+        seniority: null,
+        locationPolicy: null,
+        locationGeo: null,
+        compMin: null,
+        compMax: null,
+        compCurrency: null,
+        sponsorship: null,
+        stack: null,
+        employmentType: null,
+        flags: [],
+        description: p.description,
+      },
+      null,
+      2,
+    );
   });
-  await writeFile(`${OUT_DIR}/pool.jsonl`, lines.join("\n") + "\n");
+  await writeFile(`${OUT_DIR}/pool.jsonl`, records.join("\n\n") + "\n");
 
   const countBy = (key: (c: Candidate) => string) =>
     Object.fromEntries([...new Set(pool.map(key))].sort().map((k) => [k, pool.filter((c) => key(c) === k).length]));
