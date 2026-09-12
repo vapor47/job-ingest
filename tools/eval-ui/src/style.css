@@ -70,4 +70,7 @@ body { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; }
 .location-type { color: #888; }
 .location-add-new { color: #06c; font-style: italic; }
 
+.enum-checkboxes { display: flex; flex-wrap: wrap; gap: 10px; }
+.enum-checkbox { display: flex; align-items: center; gap: 4px; font-weight: normal; }
+
 .loading { padding: 40px; text-align: center; color: #888; }

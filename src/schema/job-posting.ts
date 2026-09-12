@@ -16,7 +16,9 @@ export const jobPostings = pgTable("job_postings", {
   title: text("title").notNull(),
   titleCanonical: text("title_canonical"),
   jobFunction: text("job_function", { enum: JOB_FUNCTION }),
-  seniority: text("seniority", { enum: SENIORITY }),
+  // Array, not a single enum: a posting can name more than one level ("Senior/Staff"), and
+  // collapsing that to one value would wrongly exclude it from a level-specific search.
+  seniority: jsonb("seniority").$type<string[] | null>(),
   locationPolicy: text("location_policy", { enum: LOCATION_POLICY }),
   locationGeo: jsonb("location_geo").$type<string[] | null>(),
   compMin: integer("comp_min"),
@@ -39,7 +41,7 @@ export const jobPostingSchema = z.object({
   title: z.string().min(1),
   titleCanonical: z.string().nullable(),
   jobFunction: z.enum(JOB_FUNCTION).nullable(),
-  seniority: z.enum(SENIORITY).nullable(),
+  seniority: z.array(z.enum(SENIORITY)).nullable(),
   locationPolicy: z.enum(LOCATION_POLICY).nullable(),
   locationGeo: z.array(z.string()).nullable(),
   compMin: z.number().nullable(),

@@ -1,5 +1,6 @@
 import { SENIORITY, LOCATION_POLICY, EMPLOYMENT_TYPE, JOB_FUNCTION } from "../../../../src/schema/job-posting.ts";
 import { NullableSelect } from "./NullableSelect.tsx";
+import { EnumCheckboxes } from "./EnumCheckboxes.tsx";
 import { LocationInput } from "./LocationInput.tsx";
 import { TitleInput } from "./TitleInput.tsx";
 import { StackInput } from "./StackInput.tsx";
@@ -40,7 +41,7 @@ export function LabelForm({ record, onChange }: { record: PoolRecord; onChange: 
 
       <label>
         Seniority
-        <NullableSelect value={record.seniority} options={SENIORITY} onChange={(v) => onChange({ seniority: v as PoolRecord["seniority"] })} />
+        <EnumCheckboxes value={record.seniority} options={SENIORITY} onChange={(v) => onChange({ seniority: v as PoolRecord["seniority"] })} />
       </label>
 
       <label>

@@ -6,7 +6,7 @@ const valid = {
   title: "Senior Backend Engineer",
   titleCanonical: "Backend Engineer",
   jobFunction: "engineering",
-  seniority: "senior",
+  seniority: ["senior"],
   locationPolicy: "remote",
   locationGeo: ["US"],
   compMin: 180000,
@@ -30,7 +30,7 @@ test("accepts nulls for every extracted field except title", () => {
 });
 
 test("rejects an unknown enum value", () => {
-  assert.throws(() => jobPostingSchema.parse({ ...valid, seniority: "wizard" }));
+  assert.throws(() => jobPostingSchema.parse({ ...valid, seniority: ["wizard"] }));
   assert.throws(() => jobPostingSchema.parse({ ...valid, locationPolicy: "moon" }));
 });
 

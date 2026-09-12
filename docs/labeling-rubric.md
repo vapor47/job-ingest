@@ -66,7 +66,7 @@ Flags are not labels. They do two jobs:
 | Case | Answer |
 |---|---|
 | Is "Software Engineer II" mid or junior? | `mid`. Numeric ladders map I→`junior`, II→`mid`, III+→`senior`. |
-| "Senior / Staff Engineer" | `senior`. A range records its **lower** bound — that is the minimum bar the posting accepts. |
+| "Senior / Staff Engineer" | `["senior", "staff"]`. Every named level is recorded — collapsing to one would wrongly exclude the posting from a level-specific search. |
 | "$180,000 - $220,000 + equity" | `compMax` = `220000`. Base cash only; equity, bonus and signing are excluded. |
 | Posting lists 4 offices | All four, in `locationGeo`. It is an array field for this reason. |
 | Nothing said about sponsorship | `null`. Silence is never `false`. |
@@ -105,24 +105,29 @@ Flags are not labels. They do two jobs:
   `engineering`** — leave every other field `null` on non-engineering records for this pass,
   even where the posting states values that would otherwise be labelable.
 
-### `seniority` (enum, nullable)
+### `seniority` (enum[], nullable)
 
-- **Rule:** Take the level from the **title**. If the title carries no level word, fall to an
-  explicit level statement in the body. If neither states a level, `null`.
+- **Rule:** Take the level(s) from the **title**. If the title carries no level word, fall to an
+  explicit level statement in the body. If neither states a level, `null`. It is an array
+  because a posting can name more than one level — a single value would wrongly exclude the
+  posting from a level-specific search (e.g. a Staff-only search should still see "Senior/Staff").
 
   | Signal | Value |
   |---|---|
-  | Intern, Internship, Co-op | `intern` |
-  | I, Associate, Entry, Junior, New Grad | `junior` |
-  | II, Mid, Mid-level | `mid` |
-  | III, Senior, Sr., Lead | `senior` |
-  | Staff, Senior Staff | `staff` |
-  | Principal, Distinguished, Fellow | `principal` |
+  | Intern, Internship, Co-op | `["intern"]` |
+  | I, Associate, Entry, Junior, New Grad | `["junior"]` |
+  | II, Mid, Mid-level | `["mid"]` |
+  | III, Senior, Sr., Lead | `["senior"]` |
+  | Staff, Senior Staff | `["staff"]` |
+  | Principal, Distinguished, Fellow | `["principal"]` |
 
-- **Tie-break:** A range records its lower bound ("Senior / Staff" → `senior`). A bare
-  "Software Engineer" with no modifier is `null`, not `mid` — and gets a labeler flag, since
-  seniority is a critical field and this is the largest single source of null seniority.
-  Management titles (Manager, Director, VP) are `null` — the IC ladder does not apply to them.
+- **Tie-break:** A named range or pair lists every level it spans, in ladder order
+  ("Senior/Staff" → `["senior", "staff"]`, "Software Engineer I-V" → `["junior", "mid",
+  "senior", "staff", "principal"]`). An unbounded posting ("All Levels", "Software Engineer,
+  any level") lists every value in `SENIORITY`. A bare "Software Engineer" with no modifier is
+  `null`, not `["mid"]` — and gets a labeler flag, since seniority is a critical field and this
+  is the largest single source of null seniority. Management titles (Manager, Director, VP) are
+  `null` — the IC ladder does not apply to them.
 
 ### `locationPolicy` (enum: onsite | hybrid | remote, nullable)
 
