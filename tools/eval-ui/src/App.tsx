@@ -11,7 +11,9 @@ const LABEL_FIELDS: (keyof PoolRecord)[] = [
   "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
   "compCurrency", "sponsorship", "stack", "employmentType",
 ];
-const isLabeled = (r: PoolRecord) => LABEL_FIELDS.some((k) => r[k] !== null);
+const isLabeled = (r: PoolRecord) => LABEL_FIELDS.some((k) => r[k] !== null) || (r.flags?.length ?? 0) > 0;
+
+const SKIP_FLAG = "non-eng";
 
 export function App() {
   const [pool, setPool] = useState<PoolRecord[] | null>(null);
@@ -42,6 +44,20 @@ export function App() {
     if (i >= 0 && i < pool!.length) setIndex(i);
   }
 
+  // "Not engineering, leave every field null, come back to it later": autosave already
+  // persists a plain null record, but that's indistinguishable from "not looked at yet".
+  // Flagging it makes the skip explicit and keeps it out of the unlabeled count.
+  function skipNonEng() {
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    const flags = record.flags?.includes(SKIP_FLAG) ? record.flags : [...(record.flags ?? []), SKIP_FLAG];
+    const flagged = { ...record, flags };
+    const next = [...pool!];
+    next[index] = flagged;
+    setPool(next);
+    saveRecord(index, flagged);
+    goTo(index + 1);
+  }
+
   function handleJump() {
     const n = Number(jump);
     if (Number.isInteger(n) && n >= 1 && n <= pool!.length) {
@@ -65,6 +81,7 @@ export function App() {
         <button onClick={() => goTo(index + 1)} disabled={index === pool.length - 1}>
           Next →
         </button>
+        <button onClick={skipNonEng}>Skip (non-eng) →</button>
         <input
           className="jump"
           placeholder="jump to # or id…"
