@@ -5,7 +5,9 @@
 //   GET  /api/pool                 -> full pool (array of records, in file order)
 //   PUT  /api/pool/:index          -> replace one record, rewrite pool.jsonl (autosave)
 //   GET  /api/locations?q=<text>   -> up to 20 name/alias matches (never ships all ~38k nodes)
-//   POST /api/locations            -> append a new node { name }, return it
+//   POST /api/locations            -> append a new node { name }, where name may be
+//                                      "Child, Parent" to nest under an existing (or
+//                                      just-added) node; returns { node, orphaned, attemptedParent }
 //   GET  /api/titles?q=<text>      -> up to 20 name/alias matches from the canonical title library
 //   POST /api/titles               -> append a new canonical title { name }, return it
 //   GET  /api/stack?q=<text>       -> up to 20 name/alias matches from the canonical stack library
@@ -71,6 +73,25 @@ type LocationNode = {
 
 async function readLocations(): Promise<LocationNode[]> {
   return JSON.parse(await readFile(LOCATIONS_PATH, "utf8"));
+}
+
+// Shared by the search dropdown and the "add new" parent lookup below: substring match on
+// name/alias, exact match first, then biggest population — "San Francisco, CA" (pop ~874k)
+// would otherwise get buried below "San Francisco de Macorís" (pop ~126k) in arbitrary file
+// order. Exact match must win the tie-break too: admin1 records carry no population data, so
+// typing "California" as an add-new parent would otherwise resolve to whichever of
+// California/Baja California/Baja California Sur (all substring matches, all population null)
+// happened to appear first in the file, rather than the one actually typed.
+function matchLocations(nodes: LocationNode[], q: string): LocationNode[] {
+  const needle = q.trim().toLowerCase();
+  if (!needle) return [];
+  const isExact = (n: LocationNode) => n.name.toLowerCase() === needle || n.aliases.some((a) => a.toLowerCase() === needle);
+  return nodes
+    .filter((n) => n.name.toLowerCase().includes(needle) || n.aliases.some((a) => a.toLowerCase().includes(needle)))
+    .sort((a, b) => {
+      const exactDiff = Number(isExact(b)) - Number(isExact(a));
+      return exactDiff !== 0 ? exactDiff : (b.population ?? 0) - (a.population ?? 0);
+    });
 }
 
 // "San Francisco" alone doesn't say which one — walk up to the admin1/country names so the
@@ -152,9 +173,7 @@ export function evalApiPlugin(): Plugin {
             // Macorís" (pop ~126k) and other same-name matches in arbitrary file order —
             // sort by population (bigger, more likely places first) before truncating.
             const matches = q
-              ? nodes
-                  .filter((n) => n.name.toLowerCase().includes(q) || n.aliases.some((a) => a.toLowerCase().includes(q)))
-                  .sort((a, b) => (b.population ?? 0) - (a.population ?? 0))
+              ? matchLocations(nodes, q)
                   .slice(0, 20)
                   .map((n) => ({ ...n, context: locationContext(n, byId) }))
               : [];
@@ -165,30 +184,40 @@ export function evalApiPlugin(): Plugin {
           if (req.method === "POST") {
             const body = JSON.parse(await readBody(req)) as { name: string };
             const nodes = await readLocations();
-            const id = `custom:${body.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
+            // "Menlo Park, San Francisco Bay Area" nests under an existing (or just-added)
+            // node instead of always filing a flat orphan. Split on the *last* comma only —
+            // no existing location name contains one, so this can't misparse real data.
+            const commaAt = body.name.lastIndexOf(",");
+            const namePart = (commaAt === -1 ? body.name : body.name.slice(0, commaAt)).trim();
+            const parentText = commaAt === -1 ? "" : body.name.slice(commaAt + 1).trim();
+            const parent = parentText ? matchLocations(nodes, parentText)[0] : undefined;
+            const orphaned = parentText !== "" && !parent;
+
+            const id = `custom:${namePart.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
             const existing = nodes.find((n) => n.id === id);
             if (existing) {
               res.setHeader("content-type", "application/json");
-              res.end(JSON.stringify(existing));
+              res.end(JSON.stringify({ node: existing, orphaned: false, attemptedParent: null }));
               return;
             }
-            // ponytail: type/hierarchy for a hand-added place can't be inferred from a bare
-            // name, so it's filed as a parentless "custom" node rather than guessed at.
-            // Upgrade path: reconcile these into the real hierarchy in a later GeoNames pass.
+            // ponytail: hierarchy for a node with no resolvable parent can't be inferred from
+            // a bare name, so it's filed parentless rather than guessed at. Upgrade path:
+            // reconcile orphans into the real hierarchy in a later GeoNames pass.
             const node: LocationNode = {
               id,
               type: "custom",
-              name: body.name.trim(),
-              parentId: null,
-              countryCode: null,
-              admin1Code: null,
+              name: namePart,
+              parentId: parent?.id ?? null,
+              countryCode: parent?.countryCode ?? null,
+              admin1Code: parent?.admin1Code ?? null,
               population: null,
               aliases: [],
             };
             nodes.push(node);
             await writeFile(LOCATIONS_PATH, JSON.stringify(nodes.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
             res.setHeader("content-type", "application/json");
-            res.end(JSON.stringify(node));
+            res.end(JSON.stringify({ node, orphaned, attemptedParent: orphaned ? parentText : null }));
             return;
           }
           next();

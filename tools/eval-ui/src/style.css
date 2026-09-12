@@ -69,6 +69,7 @@ body { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; }
 .location-matches li:hover { background: #eef; }
 .location-type { color: #888; }
 .location-add-new { color: #06c; font-style: italic; }
+.location-warning { color: #a60; font-size: 12px; font-weight: normal; margin-top: 2px; width: 100%; }
 
 .enum-checkboxes { display: flex; flex-wrap: wrap; gap: 10px; }
 .enum-checkbox { display: flex; align-items: center; gap: 4px; font-weight: normal; }

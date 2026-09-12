@@ -30,6 +30,11 @@ export type LocationNode = {
 // so same-named places (there are many "San Francisco"s) are distinguishable in the dropdown.
 export type LocationMatch = LocationNode & { context: string };
 
+// POST /api/locations response: `orphaned` is true when a "Child, Parent" name was given but
+// `Parent` didn't match anything, so the node was filed without a parent — surfaced in the UI
+// as a warning rather than silently dropped.
+export type AddLocationResult = { node: LocationNode; orphaned: boolean; attemptedParent: string | null };
+
 export type TitleNode = { id: string; name: string; aliases: string[] };
 
 export type StackNode = { id: string; name: string; aliases: string[] };
