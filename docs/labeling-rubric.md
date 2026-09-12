@@ -135,7 +135,11 @@ Flags are not labels. They do two jobs:
   states any required in-office cadence. `onsite` if it requires full-time presence.
 - **Tie-break:** A city name alone is a location, not a policy — `null`. Vague flexibility
   language ("remote-friendly", "flexible") with no stated cadence is `null`. "Remote (US)"
-  is `remote` with the region recorded in `locationGeo`, not `hybrid`.
+  is `remote` with the region recorded in `locationGeo`, not `hybrid`. A posting that clearly
+  requires in-office presence but never states a cadence (some days vs. every day) is `null`
+  and gets a labeler flag — same as a bare "Software Engineer" title: stated, but not
+  specifically enough to pick `hybrid` over `onsite`. Never default to `onsite` just because
+  no partial cadence was named.
 
 ### `locationGeo` (string[], nullable)
 
