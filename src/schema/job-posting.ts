@@ -34,6 +34,7 @@ export function canonicalizeStack(raw: string): string | null {
 export const jobPostings = pgTable("job_postings", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(),
+  titleCanonical: text("title_canonical"),
   seniority: text("seniority", { enum: SENIORITY }),
   locationPolicy: text("location_policy", { enum: LOCATION_POLICY }),
   locationGeo: jsonb("location_geo").$type<string[] | null>(),
@@ -47,8 +48,14 @@ export const jobPostings = pgTable("job_postings", {
 
 // Every extracted field is nullable: null means "the posting does not say", not a failure.
 // `title` is copied verbatim from the source, not extracted, so it stays required.
+//
+// `titleCanonical` (JOS-64) is a human-assigned role bucket, not a deterministic mapping like
+// `canonicalizeStack` below — the vocabulary is a growable library (data/titles/canonical-titles.json)
+// that labelers add to on the fly, the same "add if not found" pattern as locationGeo, so it's a
+// bare nullable string here rather than a fixed z.enum.
 export const jobPostingSchema = z.object({
   title: z.string().min(1),
+  titleCanonical: z.string().nullable(),
   seniority: z.enum(SENIORITY).nullable(),
   locationPolicy: z.enum(LOCATION_POLICY).nullable(),
   locationGeo: z.array(z.string()).nullable(),

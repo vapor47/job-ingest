@@ -1,4 +1,4 @@
-import type { PoolRecord, LocationNode, LocationMatch } from "./types.ts";
+import type { PoolRecord, LocationNode, LocationMatch, TitleNode } from "./types.ts";
 
 export async function getPool(): Promise<PoolRecord[]> {
   const res = await fetch("/api/pool");
@@ -21,6 +21,21 @@ export async function searchLocations(q: string): Promise<LocationMatch[]> {
 
 export async function addLocation(name: string): Promise<LocationNode> {
   const res = await fetch("/api/locations", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ name }),
+  });
+  return res.json();
+}
+
+export async function searchTitles(q: string): Promise<TitleNode[]> {
+  if (!q.trim()) return [];
+  const res = await fetch(`/api/titles?q=${encodeURIComponent(q)}`);
+  return res.json();
+}
+
+export async function addTitle(name: string): Promise<TitleNode> {
+  const res = await fetch("/api/titles", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({ name }),

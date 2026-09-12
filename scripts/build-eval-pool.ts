@@ -188,6 +188,7 @@ async function writePool(pool: Candidate[]) {
         // `title` is copied verbatim per the rubric. Every field below it is the label —
         // left null for the human to fill in. Do not pre-fill these.
         title: p.title,
+        titleCanonical: null,
         seniority: null,
         locationPolicy: null,
         locationGeo: null,

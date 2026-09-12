@@ -6,6 +6,8 @@
 //   PUT  /api/pool/:index          -> replace one record, rewrite pool.jsonl (autosave)
 //   GET  /api/locations?q=<text>   -> up to 20 name/alias matches (never ships all ~38k nodes)
 //   POST /api/locations            -> append a new node { name }, return it
+//   GET  /api/titles?q=<text>      -> up to 20 name/alias matches from the canonical title library
+//   POST /api/titles               -> append a new canonical title { name }, return it
 
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -14,12 +16,13 @@ import type { Plugin, ViteDevServer } from "vite";
 const REPO_ROOT = path.resolve(import.meta.dirname, "../..");
 const POOL_PATH = path.join(REPO_ROOT, "data/eval/pool.jsonl");
 const LOCATIONS_PATH = path.join(REPO_ROOT, "data/geo/locations.json");
+const TITLES_PATH = path.join(REPO_ROOT, "data/titles/canonical-titles.json");
 
 // Same key order as scripts/build-eval-pool.ts's writePool, so re-saved records look
 // identical to freshly-generated ones under a diff.
 const FIELD_ORDER = [
   "id", "company", "ats", "boardToken", "externalId", "url", "strata",
-  "title", "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
+  "title", "titleCanonical", "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
   "compCurrency", "sponsorship", "stack", "employmentType", "flags", "description",
 ];
 
@@ -64,6 +67,12 @@ function locationContext(node: LocationNode, byId: Map<string, LocationNode>): s
     current = current.parentId ? byId.get(current.parentId) : undefined;
   }
   return parts.join(", ");
+}
+
+type TitleNode = { id: string; name: string; aliases: string[] };
+
+async function readTitles(): Promise<TitleNode[]> {
+  return JSON.parse(await readFile(TITLES_PATH, "utf8"));
 }
 
 function readBody(req: Parameters<NonNullable<ReturnType<ViteDevServer["middlewares"]["use"]>>>[0]): Promise<string> {
@@ -156,6 +165,45 @@ export function evalApiPlugin(): Plugin {
             };
             nodes.push(node);
             await writeFile(LOCATIONS_PATH, JSON.stringify(nodes.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+            res.setHeader("content-type", "application/json");
+            res.end(JSON.stringify(node));
+            return;
+          }
+          next();
+        } catch (e) {
+          res.statusCode = 500;
+          res.end((e as Error).message);
+        }
+      });
+
+      server.middlewares.use("/api/titles", async (req, res, next) => {
+        try {
+          if (req.method === "GET") {
+            const url = new URL(req.url ?? "", "http://localhost");
+            const q = (url.searchParams.get("q") ?? "").trim().toLowerCase();
+            const titles = await readTitles();
+            const matches = q
+              ? titles
+                  .filter((t) => t.name.toLowerCase().includes(q) || t.aliases.some((a) => a.toLowerCase().includes(q)))
+                  .slice(0, 20)
+              : [];
+            res.setHeader("content-type", "application/json");
+            res.end(JSON.stringify(matches));
+            return;
+          }
+          if (req.method === "POST") {
+            const body = JSON.parse(await readBody(req)) as { name: string };
+            const titles = await readTitles();
+            const id = body.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-");
+            const existing = titles.find((t) => t.id === id);
+            if (existing) {
+              res.setHeader("content-type", "application/json");
+              res.end(JSON.stringify(existing));
+              return;
+            }
+            const node: TitleNode = { id, name: body.name.trim(), aliases: [] };
+            titles.push(node);
+            await writeFile(TITLES_PATH, JSON.stringify(titles.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
             res.setHeader("content-type", "application/json");
             res.end(JSON.stringify(node));
             return;

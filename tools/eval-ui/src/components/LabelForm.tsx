@@ -2,6 +2,7 @@ import { SENIORITY, LOCATION_POLICY, EMPLOYMENT_TYPE, STACK_VOCAB } from "../../
 import { NullableSelect } from "./NullableSelect.tsx";
 import { MultiSelect } from "./MultiSelect.tsx";
 import { LocationInput } from "./LocationInput.tsx";
+import { TitleInput } from "./TitleInput.tsx";
 import { TagInput } from "./TagInput.tsx";
 import type { PoolRecord } from "../types.ts";
 
@@ -25,6 +26,11 @@ export function LabelForm({ record, onChange }: { record: PoolRecord; onChange: 
       <label>
         Title
         <input value={record.title} onChange={(e) => onChange({ title: e.target.value })} />
+      </label>
+
+      <label>
+        Canonical title
+        <TitleInput value={record.titleCanonical} onChange={(v) => onChange({ titleCanonical: v })} />
       </label>
 
       <label>

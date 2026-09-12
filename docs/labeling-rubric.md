@@ -81,6 +81,17 @@ Flags are not labels. They do two jobs:
 - **Tie-break:** If the ATS exposes more than one title field, use the one rendered on the
   public board.
 
+### `titleCanonical` (string, nullable, growable library)
+
+- **Rule:** Assign the role to its canonical bucket (e.g. "Machine Learning Engineer") from the
+  library at `data/titles/canonical-titles.json`, searchable in the labeling tool's title field.
+  If an existing entry fits, use it — do not create a near-duplicate ("ML Engineer" vs "Machine
+  Learning Engineer"). Only add a new entry when the role genuinely isn't covered.
+- **Tie-break:** The bucket is level-agnostic — never fold seniority into it; that is
+  `seniority`'s job. A title naming multiple disciplines ("Software Engineer, Data & Infra")
+  picks the primary/first-listed one. If the title is too vague to bucket (e.g. a bare
+  "Member of Technical Staff" with no domain), `null` and flag it.
+
 ### `seniority` (enum, nullable)
 
 - **Rule:** Take the level from the **title**. If the title carries no level word, fall to an
