@@ -50,12 +50,12 @@ function reorder(record: Record<string, unknown>) {
 
 async function readPool(): Promise<Record<string, unknown>[]> {
   const text = await readFile(POOL_PATH, "utf8");
-  return text.trim().split(/\n\s*\n/).map((block) => JSON.parse(block));
+  return text.trim().split("\n").map((line) => JSON.parse(line));
 }
 
 async function writePool(records: Record<string, unknown>[]) {
-  const blocks = records.map((r) => JSON.stringify(reorder(r), null, 2));
-  await writeFile(POOL_PATH, blocks.join("\n\n") + "\n");
+  const lines = records.map((r) => JSON.stringify(reorder(r)));
+  await writeFile(POOL_PATH, lines.join("\n") + "\n");
 }
 
 type LocationNode = {

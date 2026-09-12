@@ -10,9 +10,7 @@ import { jobPostingSchema } from "../src/schema/job-posting.ts";
 const FILE = process.argv[2] ?? "data/eval/pool.jsonl";
 
 async function main() {
-  // Records are pretty-printed JSON separated by a blank line, not strict one-line JSONL —
-  // see build-eval-pool.ts's writePool. Split on blank lines, not "\n".
-  const blocks = (await readFile(FILE, "utf8")).trim().split(/\n\s*\n/);
+  const blocks = (await readFile(FILE, "utf8")).trim().split("\n");
   let valid = 0;
   let labeled = 0;
   let flagged = 0;

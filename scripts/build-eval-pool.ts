@@ -194,45 +194,40 @@ async function pollBoards(tokens: Token[]): Promise<Candidate[]> {
 async function writePool(pool: Candidate[]) {
   await mkdir(OUT_DIR, { recursive: true });
 
-  // Pretty-printed, blank-line-delimited (not strict one-line JSONL): a human fills these in
-  // by hand, and one key per line beats hunting for "seniority" inside a single giant line.
-  // `description` — by far the longest field — goes last so the labels to fill sit up top.
+  // One compact JSON object per line — standard JSONL. Labeling happens through the eval UI
+  // (tools/eval-ui), not by hand-editing this file, so there's no reason to pretty-print it.
   const records = pool.map((c) => {
     const p = c.posting;
-    return JSON.stringify(
-      {
-        id: c.id,
-        company: c.company,
-        ats: p.ats,
-        boardToken: p.boardToken,
-        externalId: p.externalId,
-        url: p.url,
-        strata: { sizeBucket: c.sizeBucket, jurisdiction: c.jurisdiction, oversample: c.oversample },
-        // `title` is copied verbatim per the rubric. Every field below it is the label —
-        // left null for the human to fill in. Do not pre-fill these.
-        title: p.title,
-        titleCanonical: null,
-        // Pre-filled by a department/title heuristic (see classifyJobFunction), not a human
-        // label — EVAL-1's first pass only labels the rest of the fields for "engineering"
-        // records; everything else here stays null for non-engineering ones for now.
-        jobFunction: c.jobFunction,
-        seniority: null,
-        locationPolicy: null,
-        locationGeo: null,
-        compMin: null,
-        compMax: null,
-        compCurrency: null,
-        sponsorship: null,
-        stack: null,
-        employmentType: null,
-        flags: [],
-        description: p.description,
-      },
-      null,
-      2,
-    );
+    return JSON.stringify({
+      id: c.id,
+      company: c.company,
+      ats: p.ats,
+      boardToken: p.boardToken,
+      externalId: p.externalId,
+      url: p.url,
+      strata: { sizeBucket: c.sizeBucket, jurisdiction: c.jurisdiction, oversample: c.oversample },
+      // `title` is copied verbatim per the rubric. Every field below it is the label —
+      // left null for the human to fill in. Do not pre-fill these.
+      title: p.title,
+      titleCanonical: null,
+      // Pre-filled by a department/title heuristic (see classifyJobFunction), not a human
+      // label — EVAL-1's first pass only labels the rest of the fields for "engineering"
+      // records; everything else here stays null for non-engineering ones for now.
+      jobFunction: c.jobFunction,
+      seniority: null,
+      locationPolicy: null,
+      locationGeo: null,
+      compMin: null,
+      compMax: null,
+      compCurrency: null,
+      sponsorship: null,
+      stack: null,
+      employmentType: null,
+      flags: [],
+      description: p.description,
+    });
   });
-  await writeFile(`${OUT_DIR}/pool.jsonl`, records.join("\n\n") + "\n");
+  await writeFile(`${OUT_DIR}/pool.jsonl`, records.join("\n") + "\n");
 
   const countBy = (key: (c: Candidate) => string) =>
     Object.fromEntries([...new Set(pool.map(key))].sort().map((k) => [k, pool.filter((c) => key(c) === k).length]));
