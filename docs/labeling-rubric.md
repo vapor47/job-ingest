@@ -158,14 +158,16 @@ Flags are not labels. They do two jobs:
   requirement, not a sponsorship position. "...without requiring sponsorship now or in the
   future" is `false`.
 
-### `stack` (string[], nullable)
+### `stack` (string[], nullable, growable library)
 
-- **Rule:** Only technologies **named in the posting**, mapped to the canonical vocabulary in
-  `src/schema/job-posting.ts`. Never infer an implied technology.
+- **Rule:** Only technologies **named in the posting**, mapped to an entry in the growable
+  library at `data/stack/canonical-stack.json`, searchable in the labeling tool's stack field.
+  If an existing entry fits (check aliases too — "k8s" is "Kubernetes"), use it; only add a new
+  entry when the technology genuinely isn't covered yet. Never infer an implied technology.
 - **Tie-break:** "Nice to have" and "bonus" technologies count — they are named. Technologies
   appearing only in the company blurb do not; read the requirements and responsibilities
-  sections. Out-of-vocabulary technologies are dropped. `null` means the posting names no
-  technologies at all; `[]` means it names some, none of them in the vocabulary.
+  sections. `null` means the posting names no technologies at all; `[]` no longer applies now
+  that the library is open-ended — a named technology always gets added rather than dropped.
 
 ### `employmentType` (enum, nullable)
 

@@ -1,8 +1,8 @@
-import { SENIORITY, LOCATION_POLICY, EMPLOYMENT_TYPE, STACK_VOCAB, JOB_FUNCTION } from "../../../../src/schema/job-posting.ts";
+import { SENIORITY, LOCATION_POLICY, EMPLOYMENT_TYPE, JOB_FUNCTION } from "../../../../src/schema/job-posting.ts";
 import { NullableSelect } from "./NullableSelect.tsx";
-import { MultiSelect } from "./MultiSelect.tsx";
 import { LocationInput } from "./LocationInput.tsx";
 import { TitleInput } from "./TitleInput.tsx";
+import { StackInput } from "./StackInput.tsx";
 import { TagInput } from "./TagInput.tsx";
 import type { PoolRecord } from "../types.ts";
 
@@ -105,7 +105,7 @@ export function LabelForm({ record, onChange }: { record: PoolRecord; onChange: 
 
       <label>
         Stack
-        <MultiSelect value={record.stack} options={STACK_VOCAB} onChange={(v) => onChange({ stack: v as PoolRecord["stack"] })} />
+        <StackInput value={record.stack} onChange={(v) => onChange({ stack: v })} />
       </label>
 
       <label>

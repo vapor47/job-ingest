@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { jobPostingSchema, canonicalizeStack } from "./job-posting.ts";
+import { jobPostingSchema } from "./job-posting.ts";
 
 const valid = {
   title: "Senior Backend Engineer",
@@ -32,16 +32,12 @@ test("accepts nulls for every extracted field except title", () => {
 test("rejects an unknown enum value", () => {
   assert.throws(() => jobPostingSchema.parse({ ...valid, seniority: "wizard" }));
   assert.throws(() => jobPostingSchema.parse({ ...valid, locationPolicy: "moon" }));
-  assert.throws(() => jobPostingSchema.parse({ ...valid, stack: ["Cobol"] }));
 });
 
 test("rejects a missing title", () => {
   assert.throws(() => jobPostingSchema.parse({ ...valid, title: "" }));
 });
 
-test("canonicalizeStack folds aliases onto one token", () => {
-  assert.equal(canonicalizeStack("JS"), "JavaScript");
-  assert.equal(canonicalizeStack("es6"), "JavaScript");
-  assert.equal(canonicalizeStack("JavaScript"), "JavaScript");
-  assert.equal(canonicalizeStack("cobol"), null);
+test("accepts any stack entry, growable library is not schema-enforced", () => {
+  assert.doesNotThrow(() => jobPostingSchema.parse({ ...valid, stack: ["Cobol"] }));
 });

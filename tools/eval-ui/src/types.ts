@@ -31,3 +31,5 @@ export type LocationNode = {
 export type LocationMatch = LocationNode & { context: string };
 
 export type TitleNode = { id: string; name: string; aliases: string[] };
+
+export type StackNode = { id: string; name: string; aliases: string[] };

@@ -8,6 +8,8 @@
 //   POST /api/locations            -> append a new node { name }, return it
 //   GET  /api/titles?q=<text>      -> up to 20 name/alias matches from the canonical title library
 //   POST /api/titles               -> append a new canonical title { name }, return it
+//   GET  /api/stack?q=<text>       -> up to 20 name/alias matches from the canonical stack library
+//   POST /api/stack                -> append a new stack entry { name }, return it
 
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -17,6 +19,20 @@ const REPO_ROOT = path.resolve(import.meta.dirname, "../..");
 const POOL_PATH = path.join(REPO_ROOT, "data/eval/pool.jsonl");
 const LOCATIONS_PATH = path.join(REPO_ROOT, "data/geo/locations.json");
 const TITLES_PATH = path.join(REPO_ROOT, "data/titles/canonical-titles.json");
+const STACK_PATH = path.join(REPO_ROOT, "data/stack/canonical-stack.json");
+
+// Shared by /api/titles and /api/stack's "add new" handlers. Symbols are spelled out rather
+// than stripped so distinct names don't collide onto the same id ("C++" vs "C#" both reducing
+// to "c-" was a real bug caught seeding data/stack/canonical-stack.json).
+function slugify(name: string): string {
+  return name
+    .trim()
+    .toLowerCase()
+    .replace(/\+/g, "plus")
+    .replace(/#/g, "sharp")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
 
 // Same key order as scripts/build-eval-pool.ts's writePool, so re-saved records look
 // identical to freshly-generated ones under a diff.
@@ -73,6 +89,12 @@ type TitleNode = { id: string; name: string; aliases: string[] };
 
 async function readTitles(): Promise<TitleNode[]> {
   return JSON.parse(await readFile(TITLES_PATH, "utf8"));
+}
+
+type StackNode = { id: string; name: string; aliases: string[] };
+
+async function readStack(): Promise<StackNode[]> {
+  return JSON.parse(await readFile(STACK_PATH, "utf8"));
 }
 
 function readBody(req: Parameters<NonNullable<ReturnType<ViteDevServer["middlewares"]["use"]>>>[0]): Promise<string> {
@@ -194,7 +216,7 @@ export function evalApiPlugin(): Plugin {
           if (req.method === "POST") {
             const body = JSON.parse(await readBody(req)) as { name: string };
             const titles = await readTitles();
-            const id = body.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-");
+            const id = slugify(body.name);
             const existing = titles.find((t) => t.id === id);
             if (existing) {
               res.setHeader("content-type", "application/json");
@@ -204,6 +226,45 @@ export function evalApiPlugin(): Plugin {
             const node: TitleNode = { id, name: body.name.trim(), aliases: [] };
             titles.push(node);
             await writeFile(TITLES_PATH, JSON.stringify(titles.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+            res.setHeader("content-type", "application/json");
+            res.end(JSON.stringify(node));
+            return;
+          }
+          next();
+        } catch (e) {
+          res.statusCode = 500;
+          res.end((e as Error).message);
+        }
+      });
+
+      server.middlewares.use("/api/stack", async (req, res, next) => {
+        try {
+          if (req.method === "GET") {
+            const url = new URL(req.url ?? "", "http://localhost");
+            const q = (url.searchParams.get("q") ?? "").trim().toLowerCase();
+            const stack = await readStack();
+            const matches = q
+              ? stack
+                  .filter((s) => s.name.toLowerCase().includes(q) || s.aliases.some((a) => a.toLowerCase().includes(q)))
+                  .slice(0, 20)
+              : [];
+            res.setHeader("content-type", "application/json");
+            res.end(JSON.stringify(matches));
+            return;
+          }
+          if (req.method === "POST") {
+            const body = JSON.parse(await readBody(req)) as { name: string };
+            const stack = await readStack();
+            const id = slugify(body.name);
+            const existing = stack.find((s) => s.id === id);
+            if (existing) {
+              res.setHeader("content-type", "application/json");
+              res.end(JSON.stringify(existing));
+              return;
+            }
+            const node: StackNode = { id, name: body.name.trim(), aliases: [] };
+            stack.push(node);
+            await writeFile(STACK_PATH, JSON.stringify(stack.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
             res.setHeader("content-type", "application/json");
             res.end(JSON.stringify(node));
             return;

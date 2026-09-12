@@ -38,8 +38,8 @@ body { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; }
 .field-row { display: flex; gap: 16px; }
 .field-row label { flex: 1; }
 
-.tag-input, .location-input, .title-input { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; position: relative; }
-.tag-input input, .location-input input, .title-input input { border: 1px solid #ccc; border-radius: 4px; flex: 1; min-width: 120px; }
+.tag-input, .location-input, .title-input, .stack-input { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; position: relative; }
+.tag-input input, .location-input input, .title-input input, .stack-input input { border: 1px solid #ccc; border-radius: 4px; flex: 1; min-width: 120px; }
 .tag {
   background: #e8e8e8;
   border-radius: 12px;

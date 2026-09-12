@@ -11,32 +11,6 @@ export const EMPLOYMENT_TYPE = ["full_time", "part_time", "contract", "internshi
 // scope", not "confirmed non-engineering".
 export const JOB_FUNCTION = ["engineering"] as const;
 
-// Canonical stack vocabulary. Aliases fold onto one token; the schema only accepts canonical tokens.
-export const STACK_ALIASES: Record<string, string> = {
-  javascript: "JavaScript", js: "JavaScript", es6: "JavaScript",
-  typescript: "TypeScript", ts: "TypeScript",
-  python: "Python", py: "Python",
-  golang: "Go", go: "Go",
-  postgres: "PostgreSQL", postgresql: "PostgreSQL", psql: "PostgreSQL",
-  react: "React", reactjs: "React",
-  "node.js": "Node.js", nodejs: "Node.js", node: "Node.js",
-  aws: "AWS",
-  kubernetes: "Kubernetes", k8s: "Kubernetes",
-  docker: "Docker",
-  java: "Java",
-  rust: "Rust",
-  ruby: "Ruby",
-  "c++": "C++", cpp: "C++",
-  "c#": "C#", csharp: "C#",
-};
-
-export const STACK_VOCAB = [...new Set(Object.values(STACK_ALIASES))] as [string, ...string[]];
-
-/** Maps a raw stack token to its canonical form, or null if not in the vocabulary. */
-export function canonicalizeStack(raw: string): string | null {
-  return STACK_ALIASES[raw.trim().toLowerCase()] ?? null;
-}
-
 export const jobPostings = pgTable("job_postings", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(),
@@ -56,10 +30,11 @@ export const jobPostings = pgTable("job_postings", {
 // Every extracted field is nullable: null means "the posting does not say", not a failure.
 // `title` is copied verbatim from the source, not extracted, so it stays required.
 //
-// `titleCanonical` (JOS-64) is a human-assigned role bucket, not a deterministic mapping like
-// `canonicalizeStack` below — the vocabulary is a growable library (data/titles/canonical-titles.json)
-// that labelers add to on the fly, the same "add if not found" pattern as locationGeo, so it's a
-// bare nullable string here rather than a fixed z.enum.
+// `titleCanonical`, `locationGeo`, and `stack` are all human-assigned, growable-library fields —
+// each has a JSON library (data/titles/canonical-titles.json, data/geo/locations.json,
+// data/stack/canonical-stack.json) that labelers add to on the fly via the eval UI's "add if
+// not found" escape hatch, so each is a bare nullable string (or array of them) rather than a
+// fixed z.enum.
 export const jobPostingSchema = z.object({
   title: z.string().min(1),
   titleCanonical: z.string().nullable(),
@@ -71,7 +46,7 @@ export const jobPostingSchema = z.object({
   compMax: z.number().nullable(),
   compCurrency: z.string().nullable(),
   sponsorship: z.boolean().nullable(),
-  stack: z.array(z.enum(STACK_VOCAB)).nullable(),
+  stack: z.array(z.string()).nullable(),
   employmentType: z.enum(EMPLOYMENT_TYPE).nullable(),
 });
 
