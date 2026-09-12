@@ -92,6 +92,19 @@ Flags are not labels. They do two jobs:
   picks the primary/first-listed one. If the title is too vague to bucket (e.g. a bare
   "Member of Technical Staff" with no domain), `null` and flag it.
 
+### `jobFunction` (enum, nullable, growable)
+
+- **Rule:** `engineering` if the role is a software/infrastructure/data engineering role. Every
+  other function is `null` for now — EVAL-1's first labeling pass is scoped to engineering
+  roles only (see JOS-52 follow-up). `null` means "not in scope yet", not "confirmed
+  non-engineering"; more values get added here as later passes bring other functions in.
+  Pool records are pre-classified by a department/title heuristic (`build-eval-pool.ts`) —
+  check it while labeling and correct it if wrong, the same as any other pre-filled field.
+- **Tie-break:** If the heuristic and your own read of the title/description disagree, trust
+  your read. **Only label the rest of the fields below for records where this is
+  `engineering`** — leave every other field `null` on non-engineering records for this pass,
+  even where the posting states values that would otherwise be labelable.
+
 ### `seniority` (enum, nullable)
 
 - **Rule:** Take the level from the **title**. If the title carries no level word, fall to an

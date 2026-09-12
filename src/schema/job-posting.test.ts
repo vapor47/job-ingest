@@ -5,6 +5,7 @@ import { jobPostingSchema, canonicalizeStack } from "./job-posting.ts";
 const valid = {
   title: "Senior Backend Engineer",
   titleCanonical: "Backend Engineer",
+  jobFunction: "engineering",
   seniority: "senior",
   locationPolicy: "remote",
   locationGeo: ["US"],

@@ -5,6 +5,12 @@ export const SENIORITY = ["intern", "junior", "mid", "senior", "staff", "princip
 export const LOCATION_POLICY = ["onsite", "hybrid", "remote"] as const;
 export const EMPLOYMENT_TYPE = ["full_time", "part_time", "contract", "internship"] as const;
 
+// Job-function bucket. Only "engineering" exists today — EVAL-1's first labeling pass is
+// scoped to engineering roles (see JOS-52 follow-up). Other functions (sales, marketing, ...)
+// get added here as later passes bring them into scope; null means "not yet classified into
+// scope", not "confirmed non-engineering".
+export const JOB_FUNCTION = ["engineering"] as const;
+
 // Canonical stack vocabulary. Aliases fold onto one token; the schema only accepts canonical tokens.
 export const STACK_ALIASES: Record<string, string> = {
   javascript: "JavaScript", js: "JavaScript", es6: "JavaScript",
@@ -35,6 +41,7 @@ export const jobPostings = pgTable("job_postings", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(),
   titleCanonical: text("title_canonical"),
+  jobFunction: text("job_function", { enum: JOB_FUNCTION }),
   seniority: text("seniority", { enum: SENIORITY }),
   locationPolicy: text("location_policy", { enum: LOCATION_POLICY }),
   locationGeo: jsonb("location_geo").$type<string[] | null>(),
@@ -56,6 +63,7 @@ export const jobPostings = pgTable("job_postings", {
 export const jobPostingSchema = z.object({
   title: z.string().min(1),
   titleCanonical: z.string().nullable(),
+  jobFunction: z.enum(JOB_FUNCTION).nullable(),
   seniority: z.enum(SENIORITY).nullable(),
   locationPolicy: z.enum(LOCATION_POLICY).nullable(),
   locationGeo: z.array(z.string()).nullable(),

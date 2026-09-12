@@ -22,7 +22,7 @@ const TITLES_PATH = path.join(REPO_ROOT, "data/titles/canonical-titles.json");
 // identical to freshly-generated ones under a diff.
 const FIELD_ORDER = [
   "id", "company", "ats", "boardToken", "externalId", "url", "strata",
-  "title", "titleCanonical", "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
+  "title", "titleCanonical", "jobFunction", "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
   "compCurrency", "sponsorship", "stack", "employmentType", "flags", "description",
 ];
 

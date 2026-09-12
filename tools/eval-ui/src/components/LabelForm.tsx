@@ -1,4 +1,4 @@
-import { SENIORITY, LOCATION_POLICY, EMPLOYMENT_TYPE, STACK_VOCAB } from "../../../../src/schema/job-posting.ts";
+import { SENIORITY, LOCATION_POLICY, EMPLOYMENT_TYPE, STACK_VOCAB, JOB_FUNCTION } from "../../../../src/schema/job-posting.ts";
 import { NullableSelect } from "./NullableSelect.tsx";
 import { MultiSelect } from "./MultiSelect.tsx";
 import { LocationInput } from "./LocationInput.tsx";
@@ -31,6 +31,11 @@ export function LabelForm({ record, onChange }: { record: PoolRecord; onChange: 
       <label>
         Canonical title
         <TitleInput value={record.titleCanonical} onChange={(v) => onChange({ titleCanonical: v })} />
+      </label>
+
+      <label>
+        Job function
+        <NullableSelect value={record.jobFunction} options={JOB_FUNCTION} onChange={(v) => onChange({ jobFunction: v as PoolRecord["jobFunction"] })} />
       </label>
 
       <label>
