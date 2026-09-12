@@ -7,7 +7,7 @@
 //   GET  /api/locations?q=<text>   -> up to 20 name/alias matches (never ships all ~38k nodes)
 //   POST /api/locations            -> append a new node { name }, where name may be
 //                                      "Child, Parent" to nest under an existing (or
-//                                      just-added) node; returns { node, orphaned, attemptedParent }
+//                                      just-added) node; returns { node, orphaned, attemptedParent, parentName }
 //   GET  /api/titles?q=<text>      -> up to 20 name/alias matches from the canonical title library
 //   POST /api/titles               -> append a new canonical title { name }, return it
 //   GET  /api/stack?q=<text>       -> up to 20 name/alias matches from the canonical stack library
@@ -197,8 +197,9 @@ export function evalApiPlugin(): Plugin {
             const id = `custom:${namePart.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
             const existing = nodes.find((n) => n.id === id);
             if (existing) {
+              const existingParent = existing.parentId ? nodes.find((n) => n.id === existing.parentId) : undefined;
               res.setHeader("content-type", "application/json");
-              res.end(JSON.stringify({ node: existing, orphaned: false, attemptedParent: null }));
+              res.end(JSON.stringify({ node: existing, orphaned: false, attemptedParent: null, parentName: existingParent?.name ?? null }));
               return;
             }
             // ponytail: hierarchy for a node with no resolvable parent can't be inferred from
@@ -217,7 +218,7 @@ export function evalApiPlugin(): Plugin {
             nodes.push(node);
             await writeFile(LOCATIONS_PATH, JSON.stringify(nodes.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
             res.setHeader("content-type", "application/json");
-            res.end(JSON.stringify({ node, orphaned, attemptedParent: orphaned ? parentText : null }));
+            res.end(JSON.stringify({ node, orphaned, attemptedParent: orphaned ? parentText : null, parentName: parent?.name ?? null }));
             return;
           }
           next();

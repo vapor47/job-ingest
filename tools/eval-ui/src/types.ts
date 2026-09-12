@@ -32,8 +32,14 @@ export type LocationMatch = LocationNode & { context: string };
 
 // POST /api/locations response: `orphaned` is true when a "Child, Parent" name was given but
 // `Parent` didn't match anything, so the node was filed without a parent — surfaced in the UI
-// as a warning rather than silently dropped.
-export type AddLocationResult = { node: LocationNode; orphaned: boolean; attemptedParent: string | null };
+// as a warning rather than silently dropped. `parentName` is the resolved parent's name when
+// nesting succeeded (including on an already-existing node), so the UI can confirm it.
+export type AddLocationResult = {
+  node: LocationNode;
+  orphaned: boolean;
+  attemptedParent: string | null;
+  parentName: string | null;
+};
 
 export type TitleNode = { id: string; name: string; aliases: string[] };
 

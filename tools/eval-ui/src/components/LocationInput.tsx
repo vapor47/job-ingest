@@ -11,7 +11,7 @@ import type { LocationMatch } from "../types.ts";
 export function LocationInput({ value, onChange }: { value: string[] | null; onChange: (value: string[] | null) => void }) {
   const [query, setQuery] = useState("");
   const [matches, setMatches] = useState<LocationMatch[]>([]);
-  const [warning, setWarning] = useState<string | null>(null);
+  const [status, setStatus] = useState<{ kind: "warning" | "success"; text: string } | null>(null);
   const selected = value ?? [];
 
   useEffect(() => {
@@ -30,13 +30,14 @@ export function LocationInput({ value, onChange }: { value: string[] | null; onC
     if (!selected.includes(name)) onChange([...selected, name]);
     setQuery("");
     setMatches([]);
-    setWarning(null);
+    setStatus(null);
   }
 
   async function addAsNew() {
-    const { node, orphaned, attemptedParent } = await addLocation(query.trim());
+    const { node, orphaned, attemptedParent, parentName } = await addLocation(query.trim());
     add(node.name);
-    if (orphaned) setWarning(`Couldn't find "${attemptedParent}" — added "${node.name}" ungrouped.`);
+    if (orphaned) setStatus({ kind: "warning", text: `Couldn't find "${attemptedParent}" — added "${node.name}" ungrouped.` });
+    else if (parentName) setStatus({ kind: "success", text: `Nested "${node.name}" under "${parentName}".` });
   }
 
   const exactMatch = matches.some((m) => m.name.toLowerCase() === query.trim().toLowerCase());
@@ -61,7 +62,7 @@ export function LocationInput({ value, onChange }: { value: string[] | null; onC
         placeholder="search location, or add as “New place, Parent place”…"
         onChange={(e) => {
           setQuery(e.target.value);
-          setWarning(null);
+          setStatus(null);
         }}
       />
       {query.trim() && (
@@ -79,7 +80,7 @@ export function LocationInput({ value, onChange }: { value: string[] | null; onC
           )}
         </ul>
       )}
-      {warning && <div className="location-warning">{warning}</div>}
+      {status && <div className={status.kind === "warning" ? "location-warning" : "location-success"}>{status.text}</div>}
     </div>
   );
 }
