@@ -1,4 +1,4 @@
-import type { PoolRecord, LocationNode } from "./types.ts";
+import type { PoolRecord, LocationNode, LocationMatch } from "./types.ts";
 
 export async function getPool(): Promise<PoolRecord[]> {
   const res = await fetch("/api/pool");
@@ -13,7 +13,7 @@ export async function saveRecord(index: number, record: PoolRecord): Promise<voi
   });
 }
 
-export async function searchLocations(q: string): Promise<LocationNode[]> {
+export async function searchLocations(q: string): Promise<LocationMatch[]> {
   if (!q.trim()) return [];
   const res = await fetch(`/api/locations?q=${encodeURIComponent(q)}`);
   return res.json();

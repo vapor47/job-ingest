@@ -25,3 +25,7 @@ export type LocationNode = {
   population: number | null;
   aliases: string[];
 };
+
+// What GET /api/locations returns: a LocationNode plus its resolved "State, Country" label,
+// so same-named places (there are many "San Francisco"s) are distinguishable in the dropdown.
+export type LocationMatch = LocationNode & { context: string };

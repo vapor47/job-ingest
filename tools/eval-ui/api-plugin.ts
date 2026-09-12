@@ -54,6 +54,18 @@ async function readLocations(): Promise<LocationNode[]> {
   return JSON.parse(await readFile(LOCATIONS_PATH, "utf8"));
 }
 
+// "San Francisco" alone doesn't say which one — walk up to the admin1/country names so the
+// dropdown reads "San Francisco, California, United States" instead of five identical rows.
+function locationContext(node: LocationNode, byId: Map<string, LocationNode>): string {
+  const parts: string[] = [];
+  let current = node.parentId ? byId.get(node.parentId) : undefined;
+  while (current) {
+    if (current.type !== "continent") parts.push(current.name);
+    current = current.parentId ? byId.get(current.parentId) : undefined;
+  }
+  return parts.join(", ");
+}
+
 function readBody(req: Parameters<NonNullable<ReturnType<ViteDevServer["middlewares"]["use"]>>>[0]): Promise<string> {
   return new Promise((resolve, reject) => {
     let data = "";
@@ -104,11 +116,19 @@ export function evalApiPlugin(): Plugin {
             const url = new URL(req.url ?? "", "http://localhost");
             const q = (url.searchParams.get("q") ?? "").trim().toLowerCase();
             const nodes = await readLocations();
+            const byId = new Map(nodes.map((n) => [n.id, n]));
+            // "San Francisco, CA" (pop ~874k) was getting buried below "San Francisco de
+            // Macorís" (pop ~126k) and other same-name matches in arbitrary file order —
+            // sort by population (bigger, more likely places first) before truncating.
             const matches = q
-              ? nodes.filter((n) => n.name.toLowerCase().includes(q) || n.aliases.some((a) => a.toLowerCase().includes(q)))
+              ? nodes
+                  .filter((n) => n.name.toLowerCase().includes(q) || n.aliases.some((a) => a.toLowerCase().includes(q)))
+                  .sort((a, b) => (b.population ?? 0) - (a.population ?? 0))
+                  .slice(0, 20)
+                  .map((n) => ({ ...n, context: locationContext(n, byId) }))
               : [];
             res.setHeader("content-type", "application/json");
-            res.end(JSON.stringify(matches.slice(0, 20)));
+            res.end(JSON.stringify(matches));
             return;
           }
           if (req.method === "POST") {
