@@ -29,3 +29,7 @@ export type LocationNode = {
 // What GET /api/locations returns: a LocationNode plus its resolved "State, Country" label,
 // so same-named places (there are many "San Francisco"s) are distinguishable in the dropdown.
 export type LocationMatch = LocationNode & { context: string };
+
+export type TitleNode = { id: string; name: string; aliases: string[] };
+
+export type StackNode = { id: string; name: string; aliases: string[] };

@@ -33,10 +33,21 @@ const CONTINENTS: Record<string, string> = {
   OC: "Oceania", SA: "South America", AN: "Antarctica",
 };
 
-// Country scope for pre-created "Remote — <Country>" nodes. This project's board tokens
-// are, as of writing, overwhelmingly US companies. Anything else gets its remote node added
-// later through the labeling tool's "add new location" escape hatch, per JOS-63.
-const REMOTE_COUNTRIES = ["US"];
+// Country scope for the whole taxonomy, not just remote nodes: derived from a live poll of all
+// 301 seeded boards' actual `location` strings (scripts/analyze-board-countries.ts), keeping
+// countries with >=100 matched postings. Everything else gets added on demand through the
+// labeling tool's "add new location" escape hatch, per JOS-63 — this keeps the ~250-country,
+// 38k-node taxonomy from bloating the autocomplete with places our postings never mention.
+const COUNTRY_ALLOWLIST = ["US", "GB", "CA", "IN", "IE", "SG", "JP", "DE", "AU", "FR", "MX", "ES", "PL"];
+
+// Same real-usage basis as COUNTRY_ALLOWLIST: every allowlisted country gets a "Remote —
+// <Country>" node since each has a real volume of postings in that market.
+const REMOTE_COUNTRIES = COUNTRY_ALLOWLIST;
+
+// Cities below this population are dropped entirely — rare enough in practice that the "add
+// new location" flow covers them, and this is what keeps common searches (e.g. "San
+// Francisco") from surfacing a dozen small same-named towns ahead of the intended city.
+const MIN_CITY_POPULATION = 200_000;
 
 type Node = {
   id: string;
@@ -94,6 +105,7 @@ async function main() {
     const c = line.split("\t");
     const [iso, , , , name, , , , continent, , , , , , , , geonameId] = c;
     if (!iso || !geonameId) continue;
+    if (!COUNTRY_ALLOWLIST.includes(iso)) continue;
     countryGeonameId.set(iso, geonameId);
     nodes.set(`country:${iso}`, {
       id: `country:${iso}`, type: "country", name, parentId: `continent:${continent}`,
@@ -108,6 +120,7 @@ async function main() {
     const [code, name, , geonameId] = line.split("\t");
     if (!code || !geonameId) continue;
     const [cc] = code.split(".");
+    if (!COUNTRY_ALLOWLIST.includes(cc)) continue;
     const id = `geonames:${geonameId}`;
     admin1ByCode.set(code, id);
     nodes.set(id, {
@@ -128,6 +141,7 @@ async function main() {
     const admin1Code = f[10];
     const population = Number(f[14]) || null;
     if (!geonameId || !name || !countryCode) continue;
+    if (!COUNTRY_ALLOWLIST.includes(countryCode) || (population ?? 0) < MIN_CITY_POPULATION) continue;
     const admin1Key = admin1Code ? `${countryCode}.${admin1Code}` : "";
     const parentId = admin1ByCode.get(admin1Key) ?? `country:${countryCode}`;
     const id = `geonames:${geonameId}`;

@@ -81,6 +81,30 @@ Flags are not labels. They do two jobs:
 - **Tie-break:** If the ATS exposes more than one title field, use the one rendered on the
   public board.
 
+### `titleCanonical` (string, nullable, growable library)
+
+- **Rule:** Assign the role to its canonical bucket (e.g. "Machine Learning Engineer") from the
+  library at `data/titles/canonical-titles.json`, searchable in the labeling tool's title field.
+  If an existing entry fits, use it — do not create a near-duplicate ("ML Engineer" vs "Machine
+  Learning Engineer"). Only add a new entry when the role genuinely isn't covered.
+- **Tie-break:** The bucket is level-agnostic — never fold seniority into it; that is
+  `seniority`'s job. A title naming multiple disciplines ("Software Engineer, Data & Infra")
+  picks the primary/first-listed one. If the title is too vague to bucket (e.g. a bare
+  "Member of Technical Staff" with no domain), `null` and flag it.
+
+### `jobFunction` (enum, nullable, growable)
+
+- **Rule:** `engineering` if the role is a software/infrastructure/data engineering role. Every
+  other function is `null` for now — EVAL-1's first labeling pass is scoped to engineering
+  roles only (see JOS-52 follow-up). `null` means "not in scope yet", not "confirmed
+  non-engineering"; more values get added here as later passes bring other functions in.
+  Pool records are pre-classified by a department/title heuristic (`build-eval-pool.ts`) —
+  check it while labeling and correct it if wrong, the same as any other pre-filled field.
+- **Tie-break:** If the heuristic and your own read of the title/description disagree, trust
+  your read. **Only label the rest of the fields below for records where this is
+  `engineering`** — leave every other field `null` on non-engineering records for this pass,
+  even where the posting states values that would otherwise be labelable.
+
 ### `seniority` (enum, nullable)
 
 - **Rule:** Take the level from the **title**. If the title carries no level word, fall to an
@@ -134,14 +158,16 @@ Flags are not labels. They do two jobs:
   requirement, not a sponsorship position. "...without requiring sponsorship now or in the
   future" is `false`.
 
-### `stack` (string[], nullable)
+### `stack` (string[], nullable, growable library)
 
-- **Rule:** Only technologies **named in the posting**, mapped to the canonical vocabulary in
-  `src/schema/job-posting.ts`. Never infer an implied technology.
+- **Rule:** Only technologies **named in the posting**, mapped to an entry in the growable
+  library at `data/stack/canonical-stack.json`, searchable in the labeling tool's stack field.
+  If an existing entry fits (check aliases too — "k8s" is "Kubernetes"), use it; only add a new
+  entry when the technology genuinely isn't covered yet. Never infer an implied technology.
 - **Tie-break:** "Nice to have" and "bonus" technologies count — they are named. Technologies
   appearing only in the company blurb do not; read the requirements and responsibilities
-  sections. Out-of-vocabulary technologies are dropped. `null` means the posting names no
-  technologies at all; `[]` means it names some, none of them in the vocabulary.
+  sections. `null` means the posting names no technologies at all; `[]` no longer applies now
+  that the library is open-ended — a named technology always gets added rather than dropped.
 
 ### `employmentType` (enum, nullable)
 

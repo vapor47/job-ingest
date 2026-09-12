@@ -22,7 +22,15 @@ const SEED = 42;
 const OVERSAMPLE_TARGETS: Record<string, number> = { multiLocation: 8, multiLevel: 8, hourly: 6, upToX: 6 };
 
 type Token = { company: string; token: string; ats: Ats; openJobs: number; teamSize: number | null; source: string };
-type Candidate = { id: string; posting: RawPosting; company: string; sizeBucket: string; jurisdiction: string; oversample: string[] };
+type Candidate = {
+  id: string;
+  posting: RawPosting;
+  company: string;
+  sizeBucket: string;
+  jurisdiction: string;
+  oversample: string[];
+  jobFunction: "engineering" | null;
+};
 
 function mulberry32(seed: number) {
   return function () {
@@ -48,6 +56,20 @@ function shuffle<T>(items: T[], rng: () => number): T[] {
 function classifySize(t: Token): "small" | "mid" | "large" {
   if (t.teamSize != null) return t.teamSize < 20 ? "small" : t.teamSize < 200 ? "mid" : "large";
   return t.openJobs < 10 ? "small" : t.openJobs < 50 ? "mid" : "large";
+}
+
+/** Department + title keyword heuristic, not a labeling decision — department taxonomies vary
+ *  across ATSs and are sometimes null, so title is checked too rather than trusted alone.
+ *  Only "engineering" exists so far; null means "not yet classified into scope", matching
+ *  JOB_FUNCTION in src/schema/job-posting.ts. */
+const ENGINEERING_DEPARTMENT_RE = /engineering|software|infrastructure|platform|data\s*science|machine\s*learning|devops|security|\bqa\b|quality assurance/i;
+const ENGINEERING_TITLE_RE =
+  /engineer|developer|programmer|architect|\bsre\b|devops|machine learning|\bml\b|data scientist|infrastructure|platform|\bqa\b|quality assurance|full[- ]?stack|back[- ]?end|front[- ]?end/i;
+
+function classifyJobFunction(department: string | null, title: string): "engineering" | null {
+  if (department && ENGINEERING_DEPARTMENT_RE.test(department)) return "engineering";
+  if (ENGINEERING_TITLE_RE.test(title)) return "engineering";
+  return null;
 }
 
 /** Keyword match against the raw `location` string. Good enough to stratify; not a labeling
@@ -157,6 +179,7 @@ async function pollBoards(tokens: Token[]): Promise<Candidate[]> {
           sizeBucket: classifySize(t),
           jurisdiction: classifyJurisdiction(p.location),
           oversample: oversampleReasons(p),
+          jobFunction: classifyJobFunction(p.department, p.title),
         });
       }
       polled++;
@@ -188,6 +211,11 @@ async function writePool(pool: Candidate[]) {
         // `title` is copied verbatim per the rubric. Every field below it is the label —
         // left null for the human to fill in. Do not pre-fill these.
         title: p.title,
+        titleCanonical: null,
+        // Pre-filled by a department/title heuristic (see classifyJobFunction), not a human
+        // label — EVAL-1's first pass only labels the rest of the fields for "engineering"
+        // records; everything else here stays null for non-engineering ones for now.
+        jobFunction: c.jobFunction,
         seniority: null,
         locationPolicy: null,
         locationGeo: null,
@@ -214,6 +242,7 @@ async function writePool(pool: Candidate[]) {
     byAts: countBy((c) => c.posting.ats),
     bySizeBucket: countBy((c) => c.sizeBucket),
     byJurisdiction: countBy((c) => c.jurisdiction),
+    byJobFunction: countBy((c) => c.jobFunction ?? "unclassified"),
     byOversampleReason: Object.fromEntries(
       Object.keys(OVERSAMPLE_TARGETS).map((r) => [r, pool.filter((c) => c.oversample.includes(r)).length]),
     ),

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "aws",
+    "name": "AWS",
+    "aliases": []
+  },
+  {
+    "id": "cplusplus",
+    "name": "C++",
+    "aliases": [
+      "cpp"
+    ]
+  },
+  {
+    "id": "csharp",
+    "name": "C#",
+    "aliases": [
+      "csharp"
+    ]
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "aliases": []
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "aliases": [
+      "golang"
+    ]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "aliases": []
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "aliases": [
+      "es6",
+      "js"
+    ]
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "aliases": [
+      "k8s"
+    ]
+  },
+  {
+    "id": "node-js",
+    "name": "Node.js",
+    "aliases": [
+      "node",
+      "nodejs"
+    ]
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "aliases": [
+      "postgres",
+      "psql"
+    ]
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "aliases": [
+      "py"
+    ]
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "aliases": [
+      "reactjs"
+    ]
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "aliases": []
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "aliases": []
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "aliases": [
+      "ts"
+    ]
+  }
+]
