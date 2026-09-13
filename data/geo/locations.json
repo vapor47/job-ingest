@@ -357,36 +357,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:10263153",
-    "type": "city",
-    "name": "Kirāri Sulemānnagar",
-    "parentId": "geonames:1273293",
-    "countryCode": "IN",
-    "admin1Code": "IN.07",
-    "population": 283211,
-    "aliases": []
-  },
-  {
-    "id": "geonames:10265057",
-    "type": "city",
-    "name": "Karāwalnagar",
-    "parentId": "geonames:1273293",
-    "countryCode": "IN",
-    "admin1Code": "IN.07",
-    "population": 224281,
-    "aliases": []
-  },
-  {
-    "id": "geonames:10524295",
-    "type": "city",
-    "name": "Rāniganj",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 217910,
-    "aliases": []
-  },
-  {
     "id": "geonames:10581114",
     "type": "city",
     "name": "Jājmau",
@@ -407,18 +377,6 @@
     "admin1Code": "AU.04",
     "population": 398840,
     "aliases": []
-  },
-  {
-    "id": "geonames:10968247",
-    "type": "city",
-    "name": "Arakawa",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 216900,
-    "aliases": [
-      "Arakawa City"
-    ]
   },
   {
     "id": "geonames:10987897",
@@ -533,16 +491,6 @@
     ]
   },
   {
-    "id": "geonames:11611478",
-    "type": "city",
-    "name": "Yamato",
-    "parentId": "geonames:1860291",
-    "countryCode": "JP",
-    "admin1Code": "JP.19",
-    "population": 242065,
-    "aliases": []
-  },
-  {
     "id": "geonames:11611609",
     "type": "city",
     "name": "Sagamihara",
@@ -553,16 +501,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:11611632",
-    "type": "city",
-    "name": "Fuchū",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 262790,
-    "aliases": []
-  },
-  {
     "id": "geonames:11679708",
     "type": "city",
     "name": "Gundupālaiyam",
@@ -570,16 +508,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.22",
     "population": 300104,
-    "aliases": []
-  },
-  {
-    "id": "geonames:11777624",
-    "type": "city",
-    "name": "Archway",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 215667,
     "aliases": []
   },
   {
@@ -605,54 +533,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:11790369",
-    "type": "city",
-    "name": "Taito",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 211444,
-    "aliases": [
-      "Taitō City"
-    ]
-  },
-  {
-    "id": "geonames:11790374",
-    "type": "city",
-    "name": "Meguro",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 288088,
-    "aliases": [
-      "Meguro City"
-    ]
-  },
-  {
-    "id": "geonames:11790632",
-    "type": "city",
-    "name": "Bunkyo",
-    "parentId": "geonames:1860291",
-    "countryCode": "JP",
-    "admin1Code": "JP.19",
-    "population": 240069,
-    "aliases": [
-      "Bunkyō City"
-    ]
-  },
-  {
-    "id": "geonames:11808021",
-    "type": "city",
-    "name": "Shibuya",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 230609,
-    "aliases": [
-      "Shibuya City"
-    ]
-  },
-  {
     "id": "geonames:11836117",
     "type": "city",
     "name": "Suginami",
@@ -672,16 +552,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.04",
     "population": 496676,
-    "aliases": []
-  },
-  {
-    "id": "geonames:12032137",
-    "type": "city",
-    "name": "Kushinagar",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 274403,
     "aliases": []
   },
   {
@@ -720,16 +590,6 @@
     ]
   },
   {
-    "id": "geonames:12165955",
-    "type": "city",
-    "name": "Mulugu",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 297671,
-    "aliases": []
-  },
-  {
     "id": "geonames:12165956",
     "type": "city",
     "name": "Kallakurichi",
@@ -760,18 +620,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1252797",
-    "type": "city",
-    "name": "Yamuna Nagar",
-    "parentId": "geonames:1270260",
-    "countryCode": "IN",
-    "admin1Code": "IN.10",
-    "population": 217071,
-    "aliases": [
-      "Yamunanagar"
-    ]
-  },
-  {
     "id": "geonames:1252881",
     "type": "admin1",
     "name": "West Bengal",
@@ -792,16 +640,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.40",
     "population": 704570,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1253084",
-    "type": "city",
-    "name": "Vizianagaram",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 228720,
     "aliases": []
   },
   {
@@ -884,16 +722,6 @@
     ]
   },
   {
-    "id": "geonames:1253880",
-    "type": "city",
-    "name": "Uluberiya",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 235345,
-    "aliases": []
-  },
-  {
     "id": "geonames:1253894",
     "type": "city",
     "name": "Ulhasnagar",
@@ -922,19 +750,6 @@
     "admin1Code": "IN.24",
     "population": 451100,
     "aliases": []
-  },
-  {
-    "id": "geonames:1253993",
-    "type": "city",
-    "name": "Ooty",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 233426,
-    "aliases": [
-      "Udhagamandalam",
-      "Ootacamund"
-    ]
   },
   {
     "id": "geonames:1254089",
@@ -987,16 +802,6 @@
     ]
   },
   {
-    "id": "geonames:1254320",
-    "type": "city",
-    "name": "Tiruvottiyūr",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 249446,
-    "aliases": []
-  },
-  {
     "id": "geonames:1254348",
     "type": "city",
     "name": "Tiruppur",
@@ -1006,18 +811,6 @@
     "population": 963173,
     "aliases": [
       "Tirupur"
-    ]
-  },
-  {
-    "id": "geonames:1254360",
-    "type": "city",
-    "name": "Tirupati",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 295323,
-    "aliases": [
-      "Tirumala - Tirupati"
     ]
   },
   {
@@ -1044,16 +837,6 @@
       "Trichy",
       "Tiruchchirappalli"
     ]
-  },
-  {
-    "id": "geonames:1254649",
-    "type": "city",
-    "name": "Thanjavur",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 291067,
-    "aliases": []
   },
   {
     "id": "geonames:1254661",
@@ -1125,16 +908,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1255744",
-    "type": "city",
-    "name": "Sonīpat",
-    "parentId": "geonames:1270260",
-    "countryCode": "IN",
-    "admin1Code": "IN.10",
-    "population": 289333,
-    "aliases": []
-  },
-  {
     "id": "geonames:1255783",
     "type": "city",
     "name": "Rajpur Sonarpur",
@@ -1147,16 +920,6 @@
       "Sonarpur",
       "Sonarpur Rajpur"
     ]
-  },
-  {
-    "id": "geonames:1255947",
-    "type": "city",
-    "name": "Sivakasi",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 234704,
-    "aliases": []
   },
   {
     "id": "geonames:1256312",
@@ -1172,16 +935,6 @@
     ]
   },
   {
-    "id": "geonames:1256320",
-    "type": "city",
-    "name": "Sīkar",
-    "parentId": "geonames:1258899",
-    "countryCode": "IN",
-    "admin1Code": "IN.24",
-    "population": 244497,
-    "aliases": []
-  },
-  {
     "id": "geonames:1256409",
     "type": "city",
     "name": "Shyamnagar",
@@ -1190,18 +943,6 @@
     "admin1Code": "IN.28",
     "population": 441956,
     "aliases": []
-  },
-  {
-    "id": "geonames:1256422",
-    "type": "city",
-    "name": "Shrīrāmpur",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 226317,
-    "aliases": [
-      "Serampore"
-    ]
   },
   {
     "id": "geonames:1256436",
@@ -1250,26 +991,6 @@
     ]
   },
   {
-    "id": "geonames:1256922",
-    "type": "city",
-    "name": "Secunderabad",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 204182,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1257022",
-    "type": "city",
-    "name": "Satna",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 282977,
-    "aliases": []
-  },
-  {
     "id": "geonames:1257416",
     "type": "city",
     "name": "Sāngli",
@@ -1303,16 +1024,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1257845",
-    "type": "city",
-    "name": "Saugor",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 274556,
-    "aliases": []
-  },
-  {
     "id": "geonames:1258076",
     "type": "city",
     "name": "Rohtak",
@@ -1320,36 +1031,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.10",
     "population": 374292,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1258182",
-    "type": "city",
-    "name": "Rewa",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 235654,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1258315",
-    "type": "city",
-    "name": "Rourkela",
-    "parentId": "geonames:1261029",
-    "countryCode": "IN",
-    "admin1Code": "IN.21",
-    "population": 273317,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1258342",
-    "type": "city",
-    "name": "Ratlām",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 264914,
     "aliases": []
   },
   {
@@ -1363,18 +1044,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1258451",
-    "type": "city",
-    "name": "Rānipet",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 264330,
-    "aliases": [
-      "Ranipet"
-    ]
-  },
-  {
     "id": "geonames:1258526",
     "type": "city",
     "name": "Ranchi",
@@ -1382,16 +1051,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.38",
     "population": 1120374,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1258599",
-    "type": "city",
-    "name": "Rāmpur",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 296418,
     "aliases": []
   },
   {
@@ -1452,16 +1111,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1259012",
-    "type": "city",
-    "name": "Rāichūr",
-    "parentId": "geonames:1267701",
-    "countryCode": "IN",
-    "admin1Code": "IN.19",
-    "population": 234073,
-    "aliases": []
-  },
-  {
     "id": "geonames:1259091",
     "type": "city",
     "name": "Kollam",
@@ -1472,26 +1121,6 @@
     "aliases": [
       "Quilon"
     ]
-  },
-  {
-    "id": "geonames:1259166",
-    "type": "city",
-    "name": "Purnia",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 282248,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1259184",
-    "type": "city",
-    "name": "Puri",
-    "parentId": "geonames:1261029",
-    "countryCode": "IN",
-    "admin1Code": "IN.21",
-    "population": 200564,
-    "aliases": []
   },
   {
     "id": "geonames:1259223",
@@ -1594,16 +1223,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1260476",
-    "type": "city",
-    "name": "Panipat",
-    "parentId": "geonames:1270260",
-    "countryCode": "IN",
-    "admin1Code": "IN.10",
-    "population": 295970,
-    "aliases": []
-  },
-  {
     "id": "geonames:1260482",
     "type": "city",
     "name": "Pānihāti",
@@ -1611,26 +1230,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.28",
     "population": 378705,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1260692",
-    "type": "city",
-    "name": "Pallāvaram",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 233984,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1260716",
-    "type": "city",
-    "name": "Pāli",
-    "parentId": "geonames:1258899",
-    "countryCode": "IN",
-    "admin1Code": "IN.24",
-    "population": 230075,
     "aliases": []
   },
   {
@@ -1644,16 +1243,6 @@
     "aliases": [
       "OR"
     ]
-  },
-  {
-    "id": "geonames:1261045",
-    "type": "city",
-    "name": "Ongole",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 208344,
-    "aliases": []
   },
   {
     "id": "geonames:1261162",
@@ -1716,26 +1305,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1261913",
-    "type": "city",
-    "name": "Nāngloi Jāt",
-    "parentId": "geonames:1273293",
-    "countryCode": "IN",
-    "admin1Code": "IN.07",
-    "population": 205596,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1261927",
-    "type": "city",
-    "name": "Nandyāl",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 211424,
-    "aliases": []
-  },
-  {
     "id": "geonames:1261977",
     "type": "city",
     "name": "Nanded",
@@ -1756,16 +1325,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1262131",
-    "type": "city",
-    "name": "Naihāti",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 253221,
-    "aliases": []
-  },
-  {
     "id": "geonames:1262180",
     "type": "city",
     "name": "Nagpur",
@@ -1774,18 +1333,6 @@
     "admin1Code": "IN.16",
     "population": 2405665,
     "aliases": []
-  },
-  {
-    "id": "geonames:1262204",
-    "type": "city",
-    "name": "Nāgercoil",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 224849,
-    "aliases": [
-      "Nagercoil"
-    ]
   },
   {
     "id": "geonames:1262271",
@@ -1798,16 +1345,6 @@
     "aliases": [
       "NL"
     ]
-  },
-  {
-    "id": "geonames:1262292",
-    "type": "city",
-    "name": "Nadiād",
-    "parentId": "geonames:1270770",
-    "countryCode": "IN",
-    "admin1Code": "IN.09",
-    "population": 225071,
-    "aliases": []
   },
   {
     "id": "geonames:1262321",
@@ -1842,46 +1379,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1262395",
-    "type": "city",
-    "name": "Murwāra",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 221883,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1262482",
-    "type": "city",
-    "name": "Munger",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 213303,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1262771",
-    "type": "city",
-    "name": "Morena",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 200482,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1262775",
-    "type": "city",
-    "name": "Morvi",
-    "parentId": "geonames:1270770",
-    "countryCode": "IN",
-    "admin1Code": "IN.09",
-    "population": 210451,
-    "aliases": []
-  },
-  {
     "id": "geonames:1262801",
     "type": "city",
     "name": "Morādābād",
@@ -1905,16 +1402,6 @@
     ]
   },
   {
-    "id": "geonames:1262995",
-    "type": "city",
-    "name": "Mirzāpur",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 220029,
-    "aliases": []
-  },
-  {
     "id": "geonames:1263207",
     "type": "admin1",
     "name": "Meghalaya",
@@ -1935,16 +1422,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.36",
     "population": 1223184,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1263311",
-    "type": "city",
-    "name": "Mau",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 246050,
     "aliases": []
   },
   {
@@ -2166,26 +1643,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1266976",
-    "type": "city",
-    "name": "Kharagpur",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 219665,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1267031",
-    "type": "city",
-    "name": "Khandwa",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 200738,
-    "aliases": []
-  },
-  {
     "id": "geonames:1267254",
     "type": "admin1",
     "name": "Kerala",
@@ -2196,26 +1653,6 @@
     "aliases": [
       "KL"
     ]
-  },
-  {
-    "id": "geonames:1267480",
-    "type": "city",
-    "name": "Katihar",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 240838,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1267648",
-    "type": "city",
-    "name": "Karur",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 234191,
-    "aliases": []
   },
   {
     "id": "geonames:1267696",
@@ -2250,16 +1687,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1267755",
-    "type": "city",
-    "name": "Karīmnagar",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 289821,
-    "aliases": []
-  },
-  {
     "id": "geonames:1267995",
     "type": "city",
     "name": "Kanpur",
@@ -2269,18 +1696,6 @@
     "population": 2823249,
     "aliases": [
       "Cawnporne"
-    ]
-  },
-  {
-    "id": "geonames:1268159",
-    "type": "city",
-    "name": "Kanchipuram",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 221715,
-    "aliases": [
-      "Conjevaram"
     ]
   },
   {
@@ -2400,16 +1815,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1269395",
-    "type": "city",
-    "name": "Jālna",
-    "parentId": "geonames:1264418",
-    "countryCode": "IN",
-    "admin1Code": "IN.16",
-    "population": 285577,
-    "aliases": []
-  },
-  {
     "id": "geonames:1269407",
     "type": "city",
     "name": "Jalgaon",
@@ -2452,26 +1857,6 @@
     ]
   },
   {
-    "id": "geonames:1269771",
-    "type": "city",
-    "name": "Imphal",
-    "parentId": "geonames:1263706",
-    "countryCode": "IN",
-    "admin1Code": "IN.17",
-    "population": 277196,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1269834",
-    "type": "city",
-    "name": "Ichalkaranji",
-    "parentId": "geonames:1264418",
-    "countryCode": "IN",
-    "admin1Code": "IN.16",
-    "population": 287353,
-    "aliases": []
-  },
-  {
     "id": "geonames:1269843",
     "type": "city",
     "name": "Hyderabad",
@@ -2491,28 +1876,6 @@
     "population": 943788,
     "aliases": [
       "Hubli"
-    ]
-  },
-  {
-    "id": "geonames:1269934",
-    "type": "city",
-    "name": "Hosūr",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 229528,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1269935",
-    "type": "city",
-    "name": "Hosapete",
-    "parentId": "geonames:1267701",
-    "countryCode": "IN",
-    "admin1Code": "IN.19",
-    "population": 206167,
-    "aliases": [
-      "Hospet"
     ]
   },
   {
@@ -2550,16 +1913,6 @@
     ]
   },
   {
-    "id": "geonames:1270393",
-    "type": "city",
-    "name": "Hāpur",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 242920,
-    "aliases": []
-  },
-  {
     "id": "geonames:1270396",
     "type": "city",
     "name": "Howrah",
@@ -2567,16 +1920,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.28",
     "population": 1027672,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1270576",
-    "type": "city",
-    "name": "Gyānpur",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 200000,
     "aliases": []
   },
   {
@@ -2693,36 +2036,6 @@
     ]
   },
   {
-    "id": "geonames:1271685",
-    "type": "city",
-    "name": "Sri Ganganagar",
-    "parentId": "geonames:1258899",
-    "countryCode": "IN",
-    "admin1Code": "IN.24",
-    "population": 237780,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1271715",
-    "type": "city",
-    "name": "Gandhinagar",
-    "parentId": "geonames:1270770",
-    "countryCode": "IN",
-    "admin1Code": "IN.09",
-    "population": 292797,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1271717",
-    "type": "city",
-    "name": "Gāndhīdhām",
-    "parentId": "geonames:1270770",
-    "countryCode": "IN",
-    "admin1Code": "IN.09",
-    "population": 247992,
-    "aliases": []
-  },
-  {
     "id": "geonames:1271885",
     "type": "city",
     "name": "Fīrozābād",
@@ -2735,16 +2048,6 @@
     ]
   },
   {
-    "id": "geonames:1271942",
-    "type": "city",
-    "name": "Farrukhābād",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 241152,
-    "aliases": []
-  },
-  {
     "id": "geonames:1271951",
     "type": "city",
     "name": "Faridabad",
@@ -2752,16 +2055,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.10",
     "population": 1414050,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1271987",
-    "type": "city",
-    "name": "Etāwah",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 257448,
     "aliases": []
   },
   {
@@ -2775,16 +2068,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1272051",
-    "type": "city",
-    "name": "Eluru",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 218020,
-    "aliases": []
-  },
-  {
     "id": "geonames:1272175",
     "type": "city",
     "name": "Durgapur",
@@ -2795,16 +2078,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1272181",
-    "type": "city",
-    "name": "Durg",
-    "parentId": "geonames:1444364",
-    "countryCode": "IN",
-    "admin1Code": "IN.37",
-    "population": 268806,
-    "aliases": []
-  },
-  {
     "id": "geonames:1272423",
     "type": "city",
     "name": "Dombivali",
@@ -2812,16 +2085,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.16",
     "population": 1247327,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1272543",
-    "type": "city",
-    "name": "Dindigul",
-    "parentId": "geonames:1255053",
-    "countryCode": "IN",
-    "admin1Code": "IN.25",
-    "population": 292512,
     "aliases": []
   },
   {
@@ -2852,26 +2115,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.38",
     "population": 1196214,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1273066",
-    "type": "city",
-    "name": "Dewas",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 289550,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1273241",
-    "type": "city",
-    "name": "Deoghar",
-    "parentId": "geonames:1444365",
-    "countryCode": "IN",
-    "admin1Code": "IN.38",
-    "population": 203123,
     "aliases": []
   },
   {
@@ -2919,16 +2162,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1273491",
-    "type": "city",
-    "name": "Darbhanga",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 296039,
-    "aliases": []
-  },
-  {
     "id": "geonames:1273780",
     "type": "city",
     "name": "Cuttack",
@@ -2969,16 +2202,6 @@
     "aliases": [
       "Ernakulam"
     ]
-  },
-  {
-    "id": "geonames:1274353",
-    "type": "city",
-    "name": "Chāpra",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 202352,
-    "aliases": []
   },
   {
     "id": "geonames:1274693",
@@ -3025,16 +2248,6 @@
     "aliases": [
       "Calcutta"
     ]
-  },
-  {
-    "id": "geonames:1275068",
-    "type": "city",
-    "name": "Burhānpur",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 210886,
-    "aliases": []
   },
   {
     "id": "geonames:1275198",
@@ -3138,26 +2351,6 @@
     ]
   },
   {
-    "id": "geonames:1275716",
-    "type": "city",
-    "name": "Bihār Sharīf",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 297268,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1275738",
-    "type": "city",
-    "name": "Bidar",
-    "parentId": "geonames:1267701",
-    "countryCode": "IN",
-    "admin1Code": "IN.19",
-    "population": 216020,
-    "aliases": []
-  },
-  {
     "id": "geonames:1275817",
     "type": "city",
     "name": "Bhubaneswar",
@@ -3238,26 +2431,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1276070",
-    "type": "city",
-    "name": "Bathinda",
-    "parentId": "geonames:1259223",
-    "countryCode": "IN",
-    "admin1Code": "IN.23",
-    "population": 285788,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1276128",
-    "type": "city",
-    "name": "Bharatpur",
-    "parentId": "geonames:1258899",
-    "countryCode": "IN",
-    "admin1Code": "IN.24",
-    "population": 252838,
-    "aliases": []
-  },
-  {
     "id": "geonames:1276300",
     "type": "city",
     "name": "Bhāgalpur",
@@ -3294,16 +2467,6 @@
     ]
   },
   {
-    "id": "geonames:1276609",
-    "type": "city",
-    "name": "Begusarai",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 252008,
-    "aliases": []
-  },
-  {
     "id": "geonames:1277013",
     "type": "city",
     "name": "Bareilly",
@@ -3327,28 +2490,6 @@
     ]
   },
   {
-    "id": "geonames:1277065",
-    "type": "city",
-    "name": "Bārāsat",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 298127,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1277082",
-    "type": "city",
-    "name": "Baranagar",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 260072,
-    "aliases": [
-      "Barahanagore"
-    ]
-  },
-  {
     "id": "geonames:1277333",
     "type": "city",
     "name": "Bengaluru",
@@ -3359,16 +2500,6 @@
     "aliases": [
       "Bangalore"
     ]
-  },
-  {
-    "id": "geonames:1277539",
-    "type": "city",
-    "name": "Bāli",
-    "parentId": "geonames:1252881",
-    "countryCode": "IN",
-    "admin1Code": "IN.28",
-    "population": 296973,
-    "aliases": []
   },
   {
     "id": "geonames:1278130",
@@ -3428,16 +2559,6 @@
     ]
   },
   {
-    "id": "geonames:1278483",
-    "type": "city",
-    "name": "Arrah",
-    "parentId": "geonames:1275715",
-    "countryCode": "IN",
-    "admin1Code": "IN.34",
-    "population": 261430,
-    "aliases": []
-  },
-  {
     "id": "geonames:1278629",
     "type": "admin1",
     "name": "Andhra Pradesh",
@@ -3462,26 +2583,6 @@
       "AN",
       "Andaman and Nicobar Island"
     ]
-  },
-  {
-    "id": "geonames:1278672",
-    "type": "city",
-    "name": "Anantapur",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 267161,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1278685",
-    "type": "city",
-    "name": "Anand",
-    "parentId": "geonames:1270770",
-    "countryCode": "IN",
-    "admin1Code": "IN.09",
-    "population": 209410,
-    "aliases": []
   },
   {
     "id": "geonames:1278710",
@@ -3514,16 +2615,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1278903",
-    "type": "city",
-    "name": "Ambarnath",
-    "parentId": "geonames:1264418",
-    "countryCode": "IN",
-    "admin1Code": "IN.16",
-    "population": 253475,
-    "aliases": []
-  },
-  {
     "id": "geonames:1278946",
     "type": "city",
     "name": "Alwar",
@@ -3531,16 +2622,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.24",
     "population": 322568,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1278985",
-    "type": "city",
-    "name": "Alappuzha",
-    "parentId": "geonames:1267254",
-    "countryCode": "IN",
-    "admin1Code": "IN.13",
-    "population": 240991,
     "aliases": []
   },
   {
@@ -3588,16 +2669,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1279186",
-    "type": "city",
-    "name": "Aizawl",
-    "parentId": "geonames:1262963",
-    "countryCode": "IN",
-    "admin1Code": "IN.31",
-    "population": 293416,
-    "aliases": []
-  },
-  {
     "id": "geonames:1279228",
     "type": "city",
     "name": "Ahilyanagar",
@@ -3636,38 +2707,6 @@
     "admin1Code": "IN.26",
     "population": 400004,
     "aliases": []
-  },
-  {
-    "id": "geonames:13308246",
-    "type": "city",
-    "name": "Raurkela Industrial Township",
-    "parentId": "geonames:1261029",
-    "countryCode": "IN",
-    "admin1Code": "IN.21",
-    "population": 216410,
-    "aliases": []
-  },
-  {
-    "id": "geonames:13353441",
-    "type": "city",
-    "name": "Mango",
-    "parentId": "geonames:1444365",
-    "countryCode": "IN",
-    "admin1Code": "IN.38",
-    "population": 223805,
-    "aliases": []
-  },
-  {
-    "id": "geonames:13353696",
-    "type": "city",
-    "name": "Minato City",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 260486,
-    "aliases": [
-      "Minato"
-    ]
   },
   {
     "id": "geonames:1348843",
@@ -3716,16 +2755,6 @@
     ]
   },
   {
-    "id": "geonames:1847963",
-    "type": "city",
-    "name": "Atsugi",
-    "parentId": "geonames:1860291",
-    "countryCode": "JP",
-    "admin1Code": "JP.19",
-    "population": 223960,
-    "aliases": []
-  },
-  {
     "id": "geonames:1847966",
     "type": "city",
     "name": "Akashi",
@@ -3763,16 +2792,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.23",
     "population": 305424,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1848522",
-    "type": "city",
-    "name": "Yao",
-    "parentId": "geonames:1853904",
-    "countryCode": "JP",
-    "admin1Code": "JP.32",
-    "population": 273213,
     "aliases": []
   },
   {
@@ -3819,16 +2838,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.38",
     "population": 518757,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1849796",
-    "type": "city",
-    "name": "Tsu",
-    "parentId": "geonames:1857352",
-    "countryCode": "JP",
-    "admin1Code": "JP.23",
-    "population": 274537,
     "aliases": []
   },
   {
@@ -3935,16 +2944,6 @@
     ]
   },
   {
-    "id": "geonames:1850158",
-    "type": "city",
-    "name": "Tokushima",
-    "parentId": "geonames:1850157",
-    "countryCode": "JP",
-    "admin1Code": "JP.39",
-    "population": 267345,
-    "aliases": []
-  },
-  {
     "id": "geonames:1850181",
     "type": "city",
     "name": "Tokorozawa",
@@ -3967,16 +2966,6 @@
     ]
   },
   {
-    "id": "geonames:1850692",
-    "type": "city",
-    "name": "Nishi-Tokyo-shi",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 207388,
-    "aliases": []
-  },
-  {
     "id": "geonames:1850910",
     "type": "city",
     "name": "Takatsuki",
@@ -3997,16 +2986,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1851012",
-    "type": "city",
-    "name": "Takarazuka",
-    "parentId": "geonames:1862047",
-    "countryCode": "JP",
-    "admin1Code": "JP.13",
-    "population": 226432,
-    "aliases": []
-  },
-  {
     "id": "geonames:1851100",
     "type": "city",
     "name": "Takamatsu",
@@ -4017,18 +2996,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1851454",
-    "type": "city",
-    "name": "Sumida",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 287766,
-    "aliases": [
-      "Sumida City"
-    ]
-  },
-  {
     "id": "geonames:1851483",
     "type": "city",
     "name": "Suita",
@@ -4036,16 +3003,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.32",
     "population": 385567,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1851604",
-    "type": "city",
-    "name": "Sōka",
-    "parentId": "geonames:1853226",
-    "countryCode": "JP",
-    "admin1Code": "JP.34",
-    "population": 249645,
     "aliases": []
   },
   {
@@ -4083,16 +3040,6 @@
     ]
   },
   {
-    "id": "geonames:1852225",
-    "type": "city",
-    "name": "Shimonoseki",
-    "parentId": "geonames:1848681",
-    "countryCode": "JP",
-    "admin1Code": "JP.45",
-    "population": 265684,
-    "aliases": []
-  },
-  {
     "id": "geonames:1852383",
     "type": "city",
     "name": "Minato",
@@ -4125,16 +3072,6 @@
     "aliases": [
       "Shiga Prefecture"
     ]
-  },
-  {
-    "id": "geonames:1852899",
-    "type": "city",
-    "name": "Sasebo",
-    "parentId": "geonames:1856156",
-    "countryCode": "JP",
-    "admin1Code": "JP.27",
-    "population": 243223,
-    "aliases": []
   },
   {
     "id": "geonames:1853195",
@@ -4171,16 +3108,6 @@
     ]
   },
   {
-    "id": "geonames:1853303",
-    "type": "city",
-    "name": "Saga",
-    "parentId": "geonames:1853299",
-    "countryCode": "JP",
-    "admin1Code": "JP.33",
-    "population": 233301,
-    "aliases": []
-  },
-  {
     "id": "geonames:1853574",
     "type": "city",
     "name": "Ōtsu",
@@ -4188,16 +3115,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.35",
     "population": 345070,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1853677",
-    "type": "city",
-    "name": "Ōta",
-    "parentId": "geonames:1863501",
-    "countryCode": "JP",
-    "admin1Code": "JP.10",
-    "population": 224358,
     "aliases": []
   },
   {
@@ -4391,26 +3308,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1856184",
-    "type": "city",
-    "name": "Nagareyama",
-    "parentId": "geonames:2113014",
-    "countryCode": "JP",
-    "admin1Code": "JP.04",
-    "population": 200136,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1856199",
-    "type": "city",
-    "name": "Nagaoka",
-    "parentId": "geonames:1855429",
-    "countryCode": "JP",
-    "admin1Code": "JP.29",
-    "population": 266936,
-    "aliases": []
-  },
-  {
     "id": "geonames:1856210",
     "type": "admin1",
     "name": "Nagano",
@@ -4455,16 +3352,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1857144",
-    "type": "city",
-    "name": "Minamirinkan",
-    "parentId": "geonames:1860291",
-    "countryCode": "JP",
-    "admin1Code": "JP.19",
-    "population": 224015,
-    "aliases": []
-  },
-  {
     "id": "geonames:1857352",
     "type": "admin1",
     "name": "Mie",
@@ -4475,26 +3362,6 @@
     "aliases": [
       "Mie Prefecture"
     ]
-  },
-  {
-    "id": "geonames:1857519",
-    "type": "city",
-    "name": "Matsumoto",
-    "parentId": "geonames:1856210",
-    "countryCode": "JP",
-    "admin1Code": "JP.26",
-    "population": 241145,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1857550",
-    "type": "city",
-    "name": "Matsue",
-    "parentId": "geonames:1852442",
-    "countryCode": "JP",
-    "admin1Code": "JP.36",
-    "population": 203616,
-    "aliases": []
   },
   {
     "id": "geonames:1857553",
@@ -4556,16 +3423,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.07",
     "population": 303579,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1858296",
-    "type": "city",
-    "name": "Kure",
-    "parentId": "geonames:1862413",
-    "countryCode": "JP",
-    "admin1Code": "JP.11",
-    "population": 214592,
     "aliases": []
   },
   {
@@ -4653,16 +3510,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:1859383",
-    "type": "city",
-    "name": "Kishiwada",
-    "parentId": "geonames:1853904",
-    "countryCode": "JP",
-    "admin1Code": "JP.32",
-    "population": 205561,
-    "aliases": []
-  },
-  {
     "id": "geonames:1859642",
     "type": "city",
     "name": "Kawasaki",
@@ -4692,16 +3539,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.34",
     "population": 354571,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1859884",
-    "type": "city",
-    "name": "Kasukabe",
-    "parentId": "geonames:1853226",
-    "countryCode": "JP",
-    "admin1Code": "JP.34",
-    "population": 229792,
     "aliases": []
   },
   {
@@ -4744,18 +3581,6 @@
     "population": null,
     "aliases": [
       "Kanagawa Prefecture"
-    ]
-  },
-  {
-    "id": "geonames:1860704",
-    "type": "city",
-    "name": "Kakogawachō-honmachi",
-    "parentId": "geonames:1862047",
-    "countryCode": "JP",
-    "admin1Code": "JP.13",
-    "population": 271634,
-    "aliases": [
-      "Kakogawa"
     ]
   },
   {
@@ -4817,16 +3642,6 @@
     ]
   },
   {
-    "id": "geonames:1861436",
-    "type": "city",
-    "name": "Isesaki",
-    "parentId": "geonames:1863501",
-    "countryCode": "JP",
-    "admin1Code": "JP.10",
-    "population": 211850,
-    "aliases": []
-  },
-  {
     "id": "geonames:1861949",
     "type": "city",
     "name": "Ichinomiya",
@@ -4834,16 +3649,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.01",
     "population": 380073,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1862033",
-    "type": "city",
-    "name": "Ibaraki",
-    "parentId": "geonames:1853904",
-    "countryCode": "JP",
-    "admin1Code": "JP.32",
-    "population": 287730,
     "aliases": []
   },
   {
@@ -4880,16 +3685,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.11",
     "population": 1200754,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1862462",
-    "type": "city",
-    "name": "Hiratsuka",
-    "parentId": "geonames:1860291",
-    "countryCode": "JP",
-    "admin1Code": "JP.19",
-    "population": 258422,
     "aliases": []
   },
   {
@@ -5038,16 +3833,6 @@
     ]
   },
   {
-    "id": "geonames:1863985",
-    "type": "city",
-    "name": "Fukui-shi",
-    "parentId": "geonames:1863983",
-    "countryCode": "JP",
-    "admin1Code": "JP.06",
-    "population": 262328,
-    "aliases": []
-  },
-  {
     "id": "geonames:1864092",
     "type": "city",
     "name": "Fujisawa",
@@ -5055,16 +3840,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.19",
     "population": 439728,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1864134",
-    "type": "city",
-    "name": "Fuji",
-    "parentId": "geonames:1851715",
-    "countryCode": "JP",
-    "admin1Code": "JP.37",
-    "population": 245392,
     "aliases": []
   },
   {
@@ -5078,26 +3853,6 @@
     "aliases": [
       "Ehime Prefecture"
     ]
-  },
-  {
-    "id": "geonames:1864518",
-    "type": "city",
-    "name": "Chōfu",
-    "parentId": "geonames:1850144",
-    "countryCode": "JP",
-    "admin1Code": "JP.40",
-    "population": 242614,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1864624",
-    "type": "city",
-    "name": "Chigasaki",
-    "parentId": "geonames:1860291",
-    "countryCode": "JP",
-    "admin1Code": "JP.19",
-    "population": 242798,
-    "aliases": []
   },
   {
     "id": "geonames:1865387",
@@ -5132,38 +3887,6 @@
     ]
   },
   {
-    "id": "geonames:1865714",
-    "type": "city",
-    "name": "Ageo",
-    "parentId": "geonames:1853226",
-    "countryCode": "JP",
-    "admin1Code": "JP.34",
-    "population": 226940,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1880159",
-    "type": "city",
-    "name": "Ulu Bedok",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.00",
-    "population": 276990,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1880216",
-    "type": "city",
-    "name": "Tampines Estate",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.00",
-    "population": 265340,
-    "aliases": [
-      "Tampines"
-    ]
-  },
-  {
     "id": "geonames:1880252",
     "type": "city",
     "name": "Singapore",
@@ -5175,88 +3898,6 @@
       "Temasek",
       "SG"
     ]
-  },
-  {
-    "id": "geonames:1880348",
-    "type": "city",
-    "name": "Punggol",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.02",
-    "population": 204150,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1881948",
-    "type": "city",
-    "name": "Hougang New Town",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.00",
-    "population": 227560,
-    "aliases": [
-      "Hougang"
-    ]
-  },
-  {
-    "id": "geonames:1881953",
-    "type": "city",
-    "name": "Jurong Town",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.05",
-    "population": 262730,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1881955",
-    "type": "city",
-    "name": "Jurong West",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.00",
-    "population": 253840,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1882115",
-    "type": "city",
-    "name": "Tampines New Town",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.00",
-    "population": 259900,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1882155",
-    "type": "city",
-    "name": "Yishun New Town",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.03",
-    "population": 228730,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1882316",
-    "type": "city",
-    "name": "Woodlands",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.03",
-    "population": 254440,
-    "aliases": []
-  },
-  {
-    "id": "geonames:1884382",
-    "type": "city",
-    "name": "Bedok New Town",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.04",
-    "population": 276990,
-    "aliases": []
   },
   {
     "id": "geonames:1926004",
@@ -5350,26 +3991,6 @@
     ]
   },
   {
-    "id": "geonames:2110556",
-    "type": "city",
-    "name": "Yamagata",
-    "parentId": "geonames:2110554",
-    "countryCode": "JP",
-    "admin1Code": "JP.44",
-    "population": 248772,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2110681",
-    "type": "city",
-    "name": "Tsukuba",
-    "parentId": "geonames:2112669",
-    "countryCode": "JP",
-    "admin1Code": "JP.14",
-    "population": 241656,
-    "aliases": []
-  },
-  {
     "id": "geonames:2111149",
     "type": "city",
     "name": "Sendai",
@@ -5377,16 +3998,6 @@
     "countryCode": "JP",
     "admin1Code": "JP.24",
     "population": 1096704,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2111834",
-    "type": "city",
-    "name": "Morioka",
-    "parentId": "geonames:2112518",
-    "countryCode": "JP",
-    "admin1Code": "JP.16",
-    "population": 290700,
     "aliases": []
   },
   {
@@ -5400,16 +4011,6 @@
     "aliases": [
       "Miyagi Prefecture"
     ]
-  },
-  {
-    "id": "geonames:2111901",
-    "type": "city",
-    "name": "Mito",
-    "parentId": "geonames:2112669",
-    "countryCode": "JP",
-    "admin1Code": "JP.14",
-    "population": 270685,
-    "aliases": []
   },
   {
     "id": "geonames:2112141",
@@ -5444,16 +4045,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2112664",
-    "type": "city",
-    "name": "Ichihara",
-    "parentId": "geonames:2113014",
-    "countryCode": "JP",
-    "admin1Code": "JP.04",
-    "population": 283531,
-    "aliases": []
-  },
-  {
     "id": "geonames:2112669",
     "type": "admin1",
     "name": "Ibaraki",
@@ -5477,16 +4068,6 @@
       "Fukushima-ken",
       "Fukushima Prefecture"
     ]
-  },
-  {
-    "id": "geonames:2112923",
-    "type": "city",
-    "name": "Fukushima",
-    "parentId": "geonames:2112922",
-    "countryCode": "JP",
-    "admin1Code": "JP.08",
-    "population": 294237,
-    "aliases": []
   },
   {
     "id": "geonames:2113014",
@@ -5553,26 +4134,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2130188",
-    "type": "city",
-    "name": "Hakodate",
-    "parentId": "geonames:2130037",
-    "countryCode": "JP",
-    "admin1Code": "JP.12",
-    "population": 275730,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2130203",
-    "type": "city",
-    "name": "Hachinohe",
-    "parentId": "geonames:2130656",
-    "countryCode": "JP",
-    "admin1Code": "JP.03",
-    "population": 239046,
-    "aliases": []
-  },
-  {
     "id": "geonames:2130629",
     "type": "city",
     "name": "Asahikawa",
@@ -5595,16 +4156,6 @@
     ]
   },
   {
-    "id": "geonames:2130658",
-    "type": "city",
-    "name": "Aomori",
-    "parentId": "geonames:2130656",
-    "countryCode": "JP",
-    "admin1Code": "JP.03",
-    "population": 298394,
-    "aliases": []
-  },
-  {
     "id": "geonames:2145234",
     "type": "admin1",
     "name": "Victoria",
@@ -5616,16 +4167,6 @@
       "VIC",
       "State of Victoria"
     ]
-  },
-  {
-    "id": "geonames:2146142",
-    "type": "city",
-    "name": "Townsville",
-    "parentId": "geonames:2152274",
-    "countryCode": "AU",
-    "admin1Code": "AU.04",
-    "population": 201313,
-    "aliases": []
   },
   {
     "id": "geonames:2147291",
@@ -5702,16 +4243,6 @@
     ]
   },
   {
-    "id": "geonames:2163355",
-    "type": "city",
-    "name": "Hobart",
-    "parentId": "geonames:2147291",
-    "countryCode": "AU",
-    "admin1Code": "AU.06",
-    "population": 254930,
-    "aliases": []
-  },
-  {
     "id": "geonames:2165087",
     "type": "city",
     "name": "Gold Coast",
@@ -5722,26 +4253,6 @@
     "aliases": [
       "Gold"
     ]
-  },
-  {
-    "id": "geonames:2165798",
-    "type": "city",
-    "name": "Geelong",
-    "parentId": "geonames:2145234",
-    "countryCode": "AU",
-    "admin1Code": "AU.07",
-    "population": 282809,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2171507",
-    "type": "city",
-    "name": "Wollongong",
-    "parentId": "geonames:2155400",
-    "countryCode": "AU",
-    "admin1Code": "AU.02",
-    "population": 280153,
-    "aliases": []
   },
   {
     "id": "geonames:2172517",
@@ -5800,18 +4311,6 @@
     ]
   },
   {
-    "id": "geonames:2511174",
-    "type": "city",
-    "name": "Santa Cruz de Tenerife",
-    "parentId": "geonames:2593110",
-    "countryCode": "ES",
-    "admin1Code": "ES.53",
-    "population": 211359,
-    "aliases": [
-      "Tenerife"
-    ]
-  },
-  {
     "id": "geonames:2512989",
     "type": "city",
     "name": "Palma",
@@ -5866,36 +4365,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2516326",
-    "type": "city",
-    "name": "Jerez de la Frontera",
-    "parentId": "geonames:2593109",
-    "countryCode": "ES",
-    "admin1Code": "ES.51",
-    "population": 212879,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2517117",
-    "type": "city",
-    "name": "Granada",
-    "parentId": "geonames:2593109",
-    "countryCode": "ES",
-    "admin1Code": "ES.51",
-    "population": 233532,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2518559",
-    "type": "city",
-    "name": "Elche",
-    "parentId": "geonames:2593113",
-    "countryCode": "ES",
-    "admin1Code": "ES.60",
-    "population": 234765,
-    "aliases": []
-  },
-  {
     "id": "geonames:2519240",
     "type": "city",
     "name": "Córdoba",
@@ -5915,16 +4384,6 @@
     "countryCode": "ES",
     "admin1Code": "ES.CE",
     "population": null,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2520058",
-    "type": "city",
-    "name": "Cartagena",
-    "parentId": "geonames:2513413",
-    "countryCode": "ES",
-    "admin1Code": "ES.31",
-    "population": 213943,
     "aliases": []
   },
   {
@@ -6003,26 +4462,6 @@
     ]
   },
   {
-    "id": "geonames:2633691",
-    "type": "city",
-    "name": "Wolverhampton",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 263700,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2634341",
-    "type": "city",
-    "name": "City of Westminster",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 247614,
-    "aliases": []
-  },
-  {
     "id": "geonames:2634895",
     "type": "admin1",
     "name": "Wales",
@@ -6033,16 +4472,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2636389",
-    "type": "city",
-    "name": "Swindon",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 201669,
-    "aliases": []
-  },
-  {
     "id": "geonames:2636432",
     "type": "city",
     "name": "Swansea",
@@ -6050,36 +4479,6 @@
     "countryCode": "GB",
     "admin1Code": "GB.WLS",
     "population": 300352,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2636841",
-    "type": "city",
-    "name": "Stoke-on-Trent",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 258366,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2637433",
-    "type": "city",
-    "name": "Southend-on-Sea",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 295310,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2637487",
-    "type": "city",
-    "name": "Southampton",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 269781,
     "aliases": []
   },
   {
@@ -6123,36 +4522,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2639996",
-    "type": "city",
-    "name": "Portsmouth",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 208100,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2640194",
-    "type": "city",
-    "name": "Plymouth",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 260203,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2641022",
-    "type": "city",
-    "name": "Oldham",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 237110,
-    "aliases": []
-  },
-  {
     "id": "geonames:2641170",
     "type": "city",
     "name": "Nottingham",
@@ -6175,16 +4544,6 @@
     ]
   },
   {
-    "id": "geonames:2641430",
-    "type": "city",
-    "name": "Northampton",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 245899,
-    "aliases": []
-  },
-  {
     "id": "geonames:2641673",
     "type": "city",
     "name": "Newcastle upon Tyne",
@@ -6198,18 +4557,6 @@
     ]
   },
   {
-    "id": "geonames:2642465",
-    "type": "city",
-    "name": "Milton Keynes",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 256385,
-    "aliases": [
-      "MK"
-    ]
-  },
-  {
     "id": "geonames:2643123",
     "type": "city",
     "name": "Manchester",
@@ -6217,16 +4564,6 @@
     "countryCode": "GB",
     "admin1Code": "GB.ENG",
     "population": 568996,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2643339",
-    "type": "city",
-    "name": "Luton",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 225262,
     "aliases": []
   },
   {
@@ -6312,16 +4649,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2651347",
-    "type": "city",
-    "name": "Derby",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 270468,
-    "aliases": []
-  },
-  {
     "id": "geonames:2652221",
     "type": "city",
     "name": "Coventry",
@@ -6349,16 +4676,6 @@
     "countryCode": "GB",
     "admin1Code": "GB.ENG",
     "population": 479024,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2654710",
-    "type": "city",
-    "name": "Brighton",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 283870,
     "aliases": []
   },
   {
@@ -6406,18 +4723,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2655775",
-    "type": "city",
-    "name": "Bexley",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 228000,
-    "aliases": [
-      "London Borough of Bexley"
-    ]
-  },
-  {
     "id": "geonames:2655984",
     "type": "city",
     "name": "Belfast",
@@ -6430,18 +4735,6 @@
     ]
   },
   {
-    "id": "geonames:2656333",
-    "type": "city",
-    "name": "Barking",
-    "parentId": "geonames:6269131",
-    "countryCode": "GB",
-    "admin1Code": "GB.ENG",
-    "population": 218534,
-    "aliases": [
-      "Barking Town"
-    ]
-  },
-  {
     "id": "geonames:2805753",
     "type": "city",
     "name": "Wuppertal",
@@ -6449,16 +4742,6 @@
     "countryCode": "DE",
     "admin1Code": "DE.07",
     "population": 360797,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2809346",
-    "type": "city",
-    "name": "Wiesbaden",
-    "parentId": "geonames:2905330",
-    "countryCode": "DE",
-    "admin1Code": "DE.05",
-    "population": 288850,
     "aliases": []
   },
   {
@@ -6548,16 +4831,6 @@
     ]
   },
   {
-    "id": "geonames:2860410",
-    "type": "city",
-    "name": "Oberhausen",
-    "parentId": "geonames:2861876",
-    "countryCode": "DE",
-    "admin1Code": "DE.07",
-    "population": 219176,
-    "aliases": []
-  },
-  {
     "id": "geonames:2861650",
     "type": "city",
     "name": "Nuremberg",
@@ -6595,16 +4868,6 @@
     ]
   },
   {
-    "id": "geonames:2864072",
-    "type": "city",
-    "name": "Neue Neustadt",
-    "parentId": "geonames:2842565",
-    "countryCode": "DE",
-    "admin1Code": "DE.14",
-    "population": 226851,
-    "aliases": []
-  },
-  {
     "id": "geonames:2867543",
     "type": "city",
     "name": "Münster",
@@ -6622,16 +4885,6 @@
     "countryCode": "DE",
     "admin1Code": "DE.02",
     "population": 1505005,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2869894",
-    "type": "city",
-    "name": "Mönchengladbach",
-    "parentId": "geonames:2861876",
-    "countryCode": "DE",
-    "admin1Code": "DE.07",
-    "population": 261742,
     "aliases": []
   },
   {
@@ -6659,36 +4912,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2874225",
-    "type": "city",
-    "name": "Mainz",
-    "parentId": "geonames:2847618",
-    "countryCode": "DE",
-    "admin1Code": "DE.08",
-    "population": 222889,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2874545",
-    "type": "city",
-    "name": "Magdeburg",
-    "parentId": "geonames:2842565",
-    "countryCode": "DE",
-    "admin1Code": "DE.14",
-    "population": 244329,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2875601",
-    "type": "city",
-    "name": "Lübeck",
-    "parentId": "geonames:2838632",
-    "countryCode": "DE",
-    "admin1Code": "DE.10",
-    "population": 212207,
-    "aliases": []
-  },
-  {
     "id": "geonames:2879139",
     "type": "city",
     "name": "Leipzig",
@@ -6696,16 +4919,6 @@
     "countryCode": "DE",
     "admin1Code": "DE.13",
     "population": 504971,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2884509",
-    "type": "city",
-    "name": "Krefeld",
-    "parentId": "geonames:2861876",
-    "countryCode": "DE",
-    "admin1Code": "DE.07",
-    "population": 237984,
     "aliases": []
   },
   {
@@ -6719,26 +4932,6 @@
     "aliases": [
       "Cologne"
     ]
-  },
-  {
-    "id": "geonames:2891122",
-    "type": "city",
-    "name": "Kiel",
-    "parentId": "geonames:2838632",
-    "countryCode": "DE",
-    "admin1Code": "DE.10",
-    "population": 252668,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2892794",
-    "type": "city",
-    "name": "Karlsruhe",
-    "parentId": "geonames:2953481",
-    "countryCode": "DE",
-    "admin1Code": "DE.01",
-    "population": 283799,
-    "aliases": []
   },
   {
     "id": "geonames:2905330",
@@ -6775,16 +4968,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2911287",
-    "type": "city",
-    "name": "Marienthal",
-    "parentId": "geonames:2911297",
-    "countryCode": "DE",
-    "admin1Code": "DE.04",
-    "population": 287101,
-    "aliases": []
-  },
-  {
     "id": "geonames:2911288",
     "type": "city",
     "name": "Hamburg-Mitte",
@@ -6792,26 +4975,6 @@
     "countryCode": "DE",
     "admin1Code": "DE.04",
     "population": 301231,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2911293",
-    "type": "city",
-    "name": "Eimsbüttel",
-    "parentId": "geonames:2911297",
-    "countryCode": "DE",
-    "admin1Code": "DE.04",
-    "population": 269118,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2911296",
-    "type": "city",
-    "name": "Altona",
-    "parentId": "geonames:2911297",
-    "countryCode": "DE",
-    "admin1Code": "DE.04",
-    "population": 250192,
     "aliases": []
   },
   {
@@ -6841,40 +5004,6 @@
     ]
   },
   {
-    "id": "geonames:2911522",
-    "type": "city",
-    "name": "Halle (Saale)",
-    "parentId": "geonames:2842565",
-    "countryCode": "DE",
-    "admin1Code": "DE.14",
-    "population": 237865,
-    "aliases": [
-      "Halle"
-    ]
-  },
-  {
-    "id": "geonames:2921466",
-    "type": "city",
-    "name": "Gelsenkirchen",
-    "parentId": "geonames:2861876",
-    "countryCode": "DE",
-    "admin1Code": "DE.07",
-    "population": 270028,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2925177",
-    "type": "city",
-    "name": "Freiburg",
-    "parentId": "geonames:2953481",
-    "countryCode": "DE",
-    "admin1Code": "DE.01",
-    "population": 237460,
-    "aliases": [
-      "Freiburg im Breisgau"
-    ]
-  },
-  {
     "id": "geonames:2925533",
     "type": "city",
     "name": "Frankfurt am Main",
@@ -6895,16 +5024,6 @@
     "countryCode": "DE",
     "admin1Code": "DE.07",
     "population": 593085,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2929670",
-    "type": "city",
-    "name": "Erfurt",
-    "parentId": "geonames:2822542",
-    "countryCode": "DE",
-    "admin1Code": "DE.15",
-    "population": 218793,
     "aliases": []
   },
   {
@@ -6951,16 +5070,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2940132",
-    "type": "city",
-    "name": "Chemnitz",
-    "parentId": "geonames:2842566",
-    "countryCode": "DE",
-    "admin1Code": "DE.13",
-    "population": 247220,
-    "aliases": []
-  },
-  {
     "id": "geonames:2944387",
     "type": "admin1",
     "name": "Bremen",
@@ -6982,18 +5091,6 @@
     "admin1Code": "DE.03",
     "population": 546501,
     "aliases": []
-  },
-  {
-    "id": "geonames:2945024",
-    "type": "city",
-    "name": "Braunschweig",
-    "parentId": "geonames:2862926",
-    "countryCode": "DE",
-    "admin1Code": "DE.06",
-    "population": 244715,
-    "aliases": [
-      "Brunswick"
-    ]
   },
   {
     "id": "geonames:2945356",
@@ -7108,28 +5205,6 @@
     ]
   },
   {
-    "id": "geonames:2965140",
-    "type": "city",
-    "name": "Cork",
-    "parentId": "geonames:7521315",
-    "countryCode": "IE",
-    "admin1Code": "IE.M",
-    "population": 224004,
-    "aliases": [
-      "Cork city"
-    ]
-  },
-  {
-    "id": "geonames:2970479",
-    "type": "city",
-    "name": "Paris 15 Vaugirard",
-    "parentId": "geonames:3012874",
-    "countryCode": "FR",
-    "admin1Code": "FR.11",
-    "population": 229713,
-    "aliases": []
-  },
-  {
     "id": "geonames:2972315",
     "type": "city",
     "name": "Toulouse",
@@ -7137,26 +5212,6 @@
     "countryCode": "FR",
     "admin1Code": "FR.76",
     "population": 511684,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2973783",
-    "type": "city",
-    "name": "Strasbourg",
-    "parentId": "geonames:11071622",
-    "countryCode": "FR",
-    "admin1Code": "FR.44",
-    "population": 274845,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2983990",
-    "type": "city",
-    "name": "Rennes",
-    "parentId": "geonames:3030293",
-    "countryCode": "FR",
-    "admin1Code": "FR.53",
-    "population": 227830,
     "aliases": []
   },
   {
@@ -7214,16 +5269,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:2992166",
-    "type": "city",
-    "name": "Montpellier",
-    "parentId": "geonames:11071623",
-    "countryCode": "FR",
-    "admin1Code": "FR.76",
-    "population": 248252,
-    "aliases": []
-  },
-  {
     "id": "geonames:2995469",
     "type": "city",
     "name": "Marseille",
@@ -7241,16 +5286,6 @@
     "countryCode": "FR",
     "admin1Code": "FR.84",
     "population": 520774,
-    "aliases": []
-  },
-  {
-    "id": "geonames:2998324",
-    "type": "city",
-    "name": "Lille",
-    "parentId": "geonames:11071624",
-    "countryCode": "FR",
-    "admin1Code": "FR.32",
-    "population": 238695,
     "aliases": []
   },
   {
@@ -7303,16 +5338,6 @@
     ]
   },
   {
-    "id": "geonames:3031582",
-    "type": "city",
-    "name": "Bordeaux",
-    "parentId": "geonames:11071620",
-    "countryCode": "FR",
-    "admin1Code": "FR.75",
-    "population": 265328,
-    "aliases": []
-  },
-  {
     "id": "geonames:3081368",
     "type": "city",
     "name": "Wrocław",
@@ -7332,16 +5357,6 @@
     "countryCode": "PL",
     "admin1Code": "PL.87",
     "population": 395513,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3085128",
-    "type": "city",
-    "name": "Sosnowiec",
-    "parentId": "geonames:3337497",
-    "countryCode": "PL",
-    "admin1Code": "PL.83",
-    "population": 227295,
     "aliases": []
   },
   {
@@ -7382,26 +5397,6 @@
     ]
   },
   {
-    "id": "geonames:3096472",
-    "type": "city",
-    "name": "Katowice",
-    "parentId": "geonames:3337497",
-    "countryCode": "PL",
-    "admin1Code": "PL.83",
-    "population": 286960,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3099424",
-    "type": "city",
-    "name": "Gdynia",
-    "parentId": "geonames:3337496",
-    "countryCode": "PL",
-    "admin1Code": "PL.82",
-    "population": 257000,
-    "aliases": []
-  },
-  {
     "id": "geonames:3099434",
     "type": "city",
     "name": "Gdańsk",
@@ -7412,16 +5407,6 @@
     "aliases": [
       "Gdansk"
     ]
-  },
-  {
-    "id": "geonames:3100946",
-    "type": "city",
-    "name": "Częstochowa",
-    "parentId": "geonames:3337497",
-    "countryCode": "PL",
-    "admin1Code": "PL.83",
-    "population": 248125,
-    "aliases": []
   },
   {
     "id": "geonames:3102014",
@@ -7447,28 +5432,6 @@
     ]
   },
   {
-    "id": "geonames:3104499",
-    "type": "city",
-    "name": "Gasteiz / Vitoria",
-    "parentId": "geonames:3336903",
-    "countryCode": "ES",
-    "admin1Code": "ES.59",
-    "population": 257407,
-    "aliases": [
-      "Vitoria-Gasteiz"
-    ]
-  },
-  {
-    "id": "geonames:3105976",
-    "type": "city",
-    "name": "Vigo",
-    "parentId": "geonames:3336902",
-    "countryCode": "ES",
-    "admin1Code": "ES.58",
-    "population": 293642,
-    "aliases": []
-  },
-  {
     "id": "geonames:3106672",
     "type": "city",
     "name": "Valladolid",
@@ -7476,46 +5439,6 @@
     "countryCode": "ES",
     "admin1Code": "ES.55",
     "population": 300618,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3108286",
-    "type": "city",
-    "name": "Terrassa",
-    "parentId": "geonames:3336901",
-    "countryCode": "ES",
-    "admin1Code": "ES.56",
-    "population": 218535,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3111199",
-    "type": "city",
-    "name": "Sabadell",
-    "parentId": "geonames:3336901",
-    "countryCode": "ES",
-    "admin1Code": "ES.56",
-    "population": 211734,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3112737",
-    "type": "city",
-    "name": "Puente de Vallecas",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 244151,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3114472",
-    "type": "city",
-    "name": "Pamplona",
-    "parentId": "geonames:3115609",
-    "countryCode": "ES",
-    "admin1Code": "ES.32",
-    "population": 208243,
     "aliases": []
   },
   {
@@ -7531,16 +5454,6 @@
     ]
   },
   {
-    "id": "geonames:3114711",
-    "type": "city",
-    "name": "Oviedo",
-    "parentId": "geonames:3114710",
-    "countryCode": "ES",
-    "admin1Code": "ES.34",
-    "population": 220027,
-    "aliases": []
-  },
-  {
     "id": "geonames:3115609",
     "type": "admin1",
     "name": "Navarre",
@@ -7551,16 +5464,6 @@
     "aliases": [
       "Autonomous Region of Navarre"
     ]
-  },
-  {
-    "id": "geonames:3116025",
-    "type": "city",
-    "name": "Móstoles",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 207095,
-    "aliases": []
   },
   {
     "id": "geonames:3117732",
@@ -7586,58 +5489,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:3119841",
-    "type": "city",
-    "name": "A Coruña",
-    "parentId": "geonames:3336902",
-    "countryCode": "ES",
-    "admin1Code": "ES.58",
-    "population": 250438,
-    "aliases": [
-      "The Groyne"
-    ]
-  },
-  {
-    "id": "geonames:3120619",
-    "type": "city",
-    "name": "L'Hospitalet de Llobregat",
-    "parentId": "geonames:3336901",
-    "countryCode": "ES",
-    "admin1Code": "ES.56",
-    "population": 257038,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3121424",
-    "type": "city",
-    "name": "Gijón",
-    "parentId": "geonames:3114710",
-    "countryCode": "ES",
-    "admin1Code": "ES.34",
-    "population": 271780,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3121969",
-    "type": "city",
-    "name": "Fuencarral",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 238765,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3124964",
-    "type": "city",
-    "name": "Ciudad Lineal",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 228171,
-    "aliases": []
-  },
-  {
     "id": "geonames:3128026",
     "type": "city",
     "name": "Bilbao",
@@ -7655,26 +5506,6 @@
     "countryCode": "ES",
     "admin1Code": "ES.56",
     "population": 1686208,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3129028",
-    "type": "city",
-    "name": "Badalona",
-    "parentId": "geonames:3336901",
-    "countryCode": "ES",
-    "admin1Code": "ES.56",
-    "population": 217741,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3247449",
-    "type": "city",
-    "name": "Aachen",
-    "parentId": "geonames:2861876",
-    "countryCode": "DE",
-    "admin1Code": "DE.07",
-    "population": 265208,
     "aliases": []
   },
   {
@@ -7872,18 +5703,6 @@
     ]
   },
   {
-    "id": "geonames:3513966",
-    "type": "city",
-    "name": "Zumpango",
-    "parentId": "geonames:3523272",
-    "countryCode": "MX",
-    "admin1Code": "MX.15",
-    "population": 280455,
-    "aliases": [
-      "Zumpango de Ocampo"
-    ]
-  },
-  {
     "id": "geonames:3514211",
     "type": "admin1",
     "name": "Yucatán",
@@ -8043,16 +5862,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:3516109",
-    "type": "city",
-    "name": "Tehuacán",
-    "parentId": "geonames:3521082",
-    "countryCode": "MX",
-    "admin1Code": "MX.21",
-    "population": 248716,
-    "aliases": []
-  },
-  {
     "id": "geonames:3516266",
     "type": "city",
     "name": "Tapachula",
@@ -8096,16 +5905,6 @@
     "aliases": [
       "TAB"
     ]
-  },
-  {
-    "id": "geonames:3519537",
-    "type": "city",
-    "name": "San Cristóbal de las Casas",
-    "parentId": "geonames:3531011",
-    "countryCode": "MX",
-    "admin1Code": "MX.05",
-    "population": 215874,
-    "aliases": []
   },
   {
     "id": "geonames:3520339",
@@ -8168,30 +5967,6 @@
     ]
   },
   {
-    "id": "geonames:3522210",
-    "type": "city",
-    "name": "Pachuca de Soto",
-    "parentId": "geonames:3527115",
-    "countryCode": "MX",
-    "admin1Code": "MX.13",
-    "population": 256584,
-    "aliases": [
-      "Pachuca"
-    ]
-  },
-  {
-    "id": "geonames:3522507",
-    "type": "city",
-    "name": "Oaxaca",
-    "parentId": "geonames:3522509",
-    "countryCode": "MX",
-    "admin1Code": "MX.20",
-    "population": 255029,
-    "aliases": [
-      "Oaxaca City"
-    ]
-  },
-  {
     "id": "geonames:3522509",
     "type": "admin1",
     "name": "Oaxaca",
@@ -8225,18 +6000,6 @@
     "admin1Code": "MX.28",
     "population": 416055,
     "aliases": []
-  },
-  {
-    "id": "geonames:3522732",
-    "type": "city",
-    "name": "Nicolás Romero",
-    "parentId": "geonames:3523272",
-    "countryCode": "MX",
-    "admin1Code": "MX.15",
-    "population": 281799,
-    "aliases": [
-      "Ciudad Nicolás Romero"
-    ]
   },
   {
     "id": "geonames:3522790",
@@ -8297,26 +6060,6 @@
     "aliases": [
       "Matamoros"
     ]
-  },
-  {
-    "id": "geonames:3523760",
-    "type": "city",
-    "name": "Magdalena Contreras",
-    "parentId": "geonames:3527646",
-    "countryCode": "MX",
-    "admin1Code": "MX.09",
-    "population": 238431,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3526485",
-    "type": "city",
-    "name": "Jiutepec",
-    "parentId": "geonames:3522961",
-    "countryCode": "MX",
-    "admin1Code": "MX.17",
-    "population": 215357,
-    "aliases": []
   },
   {
     "id": "geonames:3526617",
@@ -8432,16 +6175,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:3530240",
-    "type": "city",
-    "name": "Córdoba",
-    "parentId": "geonames:3514780",
-    "countryCode": "MX",
-    "admin1Code": "MX.30",
-    "population": 204721,
-    "aliases": []
-  },
-  {
     "id": "geonames:3530517",
     "type": "city",
     "name": "Coatzacoalcos",
@@ -8453,16 +6186,6 @@
       "Puerto Mexico",
       "Port of Mexico"
     ]
-  },
-  {
-    "id": "geonames:3530569",
-    "type": "city",
-    "name": "Coacalco",
-    "parentId": "geonames:3523272",
-    "countryCode": "MX",
-    "admin1Code": "MX.15",
-    "population": 277959,
-    "aliases": []
   },
   {
     "id": "geonames:3530580",
@@ -8499,16 +6222,6 @@
     ]
   },
   {
-    "id": "geonames:3530757",
-    "type": "city",
-    "name": "Cholula",
-    "parentId": "geonames:3521082",
-    "countryCode": "MX",
-    "admin1Code": "MX.21",
-    "population": 292881,
-    "aliases": []
-  },
-  {
     "id": "geonames:3531011",
     "type": "admin1",
     "name": "Chiapas",
@@ -8543,16 +6256,6 @@
       "CAM",
       "Camps"
     ]
-  },
-  {
-    "id": "geonames:3531732",
-    "type": "city",
-    "name": "Campeche",
-    "parentId": "geonames:3531730",
-    "countryCode": "MX",
-    "admin1Code": "MX.04",
-    "population": 220389,
-    "aliases": []
   },
   {
     "id": "geonames:3532497",
@@ -8637,16 +6340,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:3827606",
-    "type": "city",
-    "name": "Buenavista",
-    "parentId": "geonames:3523272",
-    "countryCode": "MX",
-    "admin1Code": "MX.15",
-    "population": 216776,
-    "aliases": []
-  },
-  {
     "id": "geonames:3979770",
     "type": "city",
     "name": "Zapopan",
@@ -8667,16 +6360,6 @@
     "aliases": [
       "ZAC"
     ]
-  },
-  {
-    "id": "geonames:3980760",
-    "type": "city",
-    "name": "Uruapan",
-    "parentId": "geonames:3995955",
-    "countryCode": "MX",
-    "admin1Code": "MX.16",
-    "population": 299523,
-    "aliases": []
   },
   {
     "id": "geonames:3981254",
@@ -8807,16 +6490,6 @@
     ]
   },
   {
-    "id": "geonames:3985710",
-    "type": "city",
-    "name": "Cabo San Lucas",
-    "parentId": "geonames:4017698",
-    "countryCode": "MX",
-    "admin1Code": "MX.03",
-    "population": 202694,
-    "aliases": []
-  },
-  {
     "id": "geonames:3988086",
     "type": "city",
     "name": "Saltillo",
@@ -8837,16 +6510,6 @@
     "aliases": [
       "Querétaro City"
     ]
-  },
-  {
-    "id": "geonames:3991328",
-    "type": "city",
-    "name": "Puerto Vallarta",
-    "parentId": "geonames:4004156",
-    "countryCode": "MX",
-    "admin1Code": "MX.14",
-    "population": 224166,
-    "aliases": []
   },
   {
     "id": "geonames:3995012",
@@ -8878,16 +6541,6 @@
     "countryCode": "MX",
     "admin1Code": "MX.19",
     "population": 1135512,
-    "aliases": []
-  },
-  {
-    "id": "geonames:3995523",
-    "type": "city",
-    "name": "Monclova",
-    "parentId": "geonames:4013674",
-    "countryCode": "MX",
-    "admin1Code": "MX.07",
-    "population": 215271,
     "aliases": []
   },
   {
@@ -8924,16 +6577,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:3997479",
-    "type": "city",
-    "name": "Los Mochis",
-    "parentId": "geonames:3983035",
-    "countryCode": "MX",
-    "admin1Code": "MX.25",
-    "population": 256613,
-    "aliases": []
-  },
-  {
     "id": "geonames:3998655",
     "type": "city",
     "name": "León de los Aldama",
@@ -8944,16 +6587,6 @@
     "aliases": [
       "León"
     ]
-  },
-  {
-    "id": "geonames:4000900",
-    "type": "city",
-    "name": "La Paz",
-    "parentId": "geonames:4017698",
-    "countryCode": "MX",
-    "admin1Code": "MX.03",
-    "population": 250141,
-    "aliases": []
   },
   {
     "id": "geonames:4003757",
@@ -8985,16 +6618,6 @@
     "countryCode": "MX",
     "admin1Code": "MX.11",
     "population": 380941,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4004886",
-    "type": "city",
-    "name": "Nogales",
-    "parentId": "geonames:3982846",
-    "countryCode": "MX",
-    "admin1Code": "MX.26",
-    "population": 264782,
     "aliases": []
   },
   {
@@ -9038,16 +6661,6 @@
     "countryCode": "MX",
     "admin1Code": "MX.14",
     "population": 1385629,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4005775",
-    "type": "city",
-    "name": "Gómez Palacio",
-    "parentId": "geonames:4011741",
-    "countryCode": "MX",
-    "admin1Code": "MX.10",
-    "population": 257352,
     "aliases": []
   },
   {
@@ -9153,16 +6766,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:4013728",
-    "type": "city",
-    "name": "Ciudad Acuña",
-    "parentId": "geonames:4013674",
-    "countryCode": "MX",
-    "admin1Code": "MX.07",
-    "population": 216099,
-    "aliases": []
-  },
-  {
     "id": "geonames:4014336",
     "type": "admin1",
     "name": "Chihuahua",
@@ -9261,16 +6864,6 @@
     ]
   },
   {
-    "id": "geonames:4068590",
-    "type": "city",
-    "name": "Huntsville",
-    "parentId": "geonames:4829764",
-    "countryCode": "US",
-    "admin1Code": "US.AL",
-    "population": 215006,
-    "aliases": []
-  },
-  {
     "id": "geonames:4099753",
     "type": "admin1",
     "name": "Arkansas",
@@ -9283,16 +6876,6 @@
       "AR",
       "Land of Opportunity"
     ]
-  },
-  {
-    "id": "geonames:4119403",
-    "type": "city",
-    "name": "Little Rock",
-    "parentId": "geonames:4099753",
-    "countryCode": "US",
-    "admin1Code": "US.AR",
-    "population": 202591,
-    "aliases": []
   },
   {
     "id": "geonames:4138106",
@@ -9355,16 +6938,6 @@
     ]
   },
   {
-    "id": "geonames:4158476",
-    "type": "city",
-    "name": "Hialeah",
-    "parentId": "geonames:4155751",
-    "countryCode": "US",
-    "admin1Code": "US.FL",
-    "population": 237069,
-    "aliases": []
-  },
-  {
     "id": "geonames:4160021",
     "type": "city",
     "name": "Jacksonville",
@@ -9395,29 +6968,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:4171563",
-    "type": "city",
-    "name": "St. Petersburg",
-    "parentId": "geonames:4155751",
-    "countryCode": "US",
-    "admin1Code": "US.FL",
-    "population": 257083,
-    "aliases": [
-      "Saint Petersburg",
-      "Saint Pete"
-    ]
-  },
-  {
-    "id": "geonames:4174715",
-    "type": "city",
-    "name": "Tallahassee",
-    "parentId": "geonames:4155751",
-    "countryCode": "US",
-    "admin1Code": "US.FL",
-    "population": 201731,
-    "aliases": []
-  },
-  {
     "id": "geonames:4174757",
     "type": "city",
     "name": "Tampa",
@@ -9435,16 +6985,6 @@
     "countryCode": "US",
     "admin1Code": "US.GA",
     "population": 510823,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4188985",
-    "type": "city",
-    "name": "Columbus",
-    "parentId": "geonames:4197000",
-    "countryCode": "US",
-    "admin1Code": "US.GA",
-    "population": 206922,
     "aliases": []
   },
   {
@@ -9526,26 +7066,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:4300488",
-    "type": "city",
-    "name": "Meads",
-    "parentId": "geonames:6254925",
-    "countryCode": "US",
-    "admin1Code": "US.KY",
-    "population": 288649,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4315588",
-    "type": "city",
-    "name": "Baton Rouge",
-    "parentId": "geonames:4331987",
-    "countryCode": "US",
-    "admin1Code": "US.LA",
-    "population": 227470,
-    "aliases": []
-  },
-  {
     "id": "geonames:4331987",
     "type": "admin1",
     "name": "Louisiana",
@@ -9623,19 +7143,6 @@
     ]
   },
   {
-    "id": "geonames:4407066",
-    "type": "city",
-    "name": "St. Louis",
-    "parentId": "geonames:4398678",
-    "countryCode": "US",
-    "admin1Code": "US.MO",
-    "population": 279695,
-    "aliases": [
-      "St Louis",
-      "Saint Louis"
-    ]
-  },
-  {
     "id": "geonames:4436296",
     "type": "admin1",
     "name": "Mississippi",
@@ -9657,36 +7164,6 @@
     "countryCode": "US",
     "admin1Code": "US.NC",
     "population": 911311,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4464368",
-    "type": "city",
-    "name": "Durham",
-    "parentId": "geonames:4482348",
-    "countryCode": "US",
-    "admin1Code": "US.NC",
-    "population": 257636,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4466033",
-    "type": "city",
-    "name": "Fayetteville",
-    "parentId": "geonames:4482348",
-    "countryCode": "US",
-    "admin1Code": "US.NC",
-    "population": 201963,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4469146",
-    "type": "city",
-    "name": "Greensboro",
-    "parentId": "geonames:4482348",
-    "countryCode": "US",
-    "admin1Code": "US.NC",
-    "population": 285342,
     "aliases": []
   },
   {
@@ -9722,18 +7199,6 @@
     "admin1Code": "US.NC",
     "population": 338759,
     "aliases": []
-  },
-  {
-    "id": "geonames:4499612",
-    "type": "city",
-    "name": "Winston-Salem",
-    "parentId": "geonames:4482348",
-    "countryCode": "US",
-    "admin1Code": "US.NC",
-    "population": 241218,
-    "aliases": [
-      "Winston Salem"
-    ]
   },
   {
     "id": "geonames:4508722",
@@ -9893,16 +7358,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:4684724",
-    "type": "city",
-    "name": "Cypress",
-    "parentId": "geonames:4736286",
-    "countryCode": "US",
-    "admin1Code": "US.TX",
-    "population": 200839,
-    "aliases": []
-  },
-  {
     "id": "geonames:4684888",
     "type": "city",
     "name": "Dallas",
@@ -9925,16 +7380,6 @@
     ]
   },
   {
-    "id": "geonames:4693003",
-    "type": "city",
-    "name": "Garland",
-    "parentId": "geonames:4736286",
-    "countryCode": "US",
-    "admin1Code": "US.TX",
-    "population": 236897,
-    "aliases": []
-  },
-  {
     "id": "geonames:4699066",
     "type": "city",
     "name": "Houston",
@@ -9942,36 +7387,6 @@
     "countryCode": "US",
     "admin1Code": "US.TX",
     "population": 2314157,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4700168",
-    "type": "city",
-    "name": "Irving",
-    "parentId": "geonames:4736286",
-    "countryCode": "US",
-    "admin1Code": "US.TX",
-    "population": 236607,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4705349",
-    "type": "city",
-    "name": "Laredo",
-    "parentId": "geonames:4736286",
-    "countryCode": "US",
-    "admin1Code": "US.TX",
-    "population": 256153,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4719457",
-    "type": "city",
-    "name": "Plano",
-    "parentId": "geonames:4736286",
-    "countryCode": "US",
-    "admin1Code": "US.TX",
-    "population": 283558,
     "aliases": []
   },
   {
@@ -9997,46 +7412,6 @@
       "State of Texas",
       "TX"
     ]
-  },
-  {
-    "id": "geonames:4744709",
-    "type": "city",
-    "name": "Arlington",
-    "parentId": "geonames:6254928",
-    "countryCode": "US",
-    "admin1Code": "US.VA",
-    "population": 207627,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4752186",
-    "type": "city",
-    "name": "Chesapeake",
-    "parentId": "geonames:6254928",
-    "countryCode": "US",
-    "admin1Code": "US.VA",
-    "population": 235429,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4776222",
-    "type": "city",
-    "name": "Norfolk",
-    "parentId": "geonames:6254928",
-    "countryCode": "US",
-    "admin1Code": "US.VA",
-    "population": 238005,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4781708",
-    "type": "city",
-    "name": "Richmond",
-    "parentId": "geonames:6254928",
-    "countryCode": "US",
-    "admin1Code": "US.VA",
-    "population": 226610,
-    "aliases": []
   },
   {
     "id": "geonames:4791259",
@@ -10093,16 +7468,6 @@
     ]
   },
   {
-    "id": "geonames:4853828",
-    "type": "city",
-    "name": "Des Moines",
-    "parentId": "geonames:4862182",
-    "countryCode": "US",
-    "admin1Code": "US.IA",
-    "population": 214133,
-    "aliases": []
-  },
-  {
     "id": "geonames:4862182",
     "type": "admin1",
     "name": "Iowa",
@@ -10115,16 +7480,6 @@
       "IA",
       "Hawkeye State"
     ]
-  },
-  {
-    "id": "geonames:4883817",
-    "type": "city",
-    "name": "Aurora",
-    "parentId": "geonames:4896861",
-    "countryCode": "US",
-    "admin1Code": "US.IL",
-    "population": 200661,
-    "aliases": []
   },
   {
     "id": "geonames:4887398",
@@ -10149,16 +7504,6 @@
       "IL",
       "Prairie State"
     ]
-  },
-  {
-    "id": "geonames:4920423",
-    "type": "city",
-    "name": "Fort Wayne",
-    "parentId": "geonames:4921868",
-    "countryCode": "US",
-    "admin1Code": "US.IN",
-    "population": 260326,
-    "aliases": []
   },
   {
     "id": "geonames:4921868",
@@ -10192,16 +7537,6 @@
     "countryCode": "US",
     "admin1Code": "US.MA",
     "population": 571281,
-    "aliases": []
-  },
-  {
-    "id": "geonames:4956184",
-    "type": "city",
-    "name": "Worcester",
-    "parentId": "geonames:6254926",
-    "countryCode": "US",
-    "admin1Code": "US.MA",
-    "population": 206518,
     "aliases": []
   },
   {
@@ -10279,16 +7614,6 @@
     ]
   },
   {
-    "id": "geonames:5072006",
-    "type": "city",
-    "name": "Lincoln",
-    "parentId": "geonames:5073708",
-    "countryCode": "US",
-    "admin1Code": "US.NE",
-    "population": 294757,
-    "aliases": []
-  },
-  {
     "id": "geonames:5073708",
     "type": "admin1",
     "name": "Nebraska",
@@ -10327,16 +7652,6 @@
     ]
   },
   {
-    "id": "geonames:5099836",
-    "type": "city",
-    "name": "Jersey City",
-    "parentId": "geonames:5101760",
-    "countryCode": "US",
-    "admin1Code": "US.NJ",
-    "population": 264290,
-    "aliases": []
-  },
-  {
     "id": "geonames:5101760",
     "type": "admin1",
     "name": "New Jersey",
@@ -10349,16 +7664,6 @@
       "State of New Jersey",
       "Garden State"
     ]
-  },
-  {
-    "id": "geonames:5101798",
-    "type": "city",
-    "name": "Newark",
-    "parentId": "geonames:5101760",
-    "countryCode": "US",
-    "admin1Code": "US.NJ",
-    "population": 281944,
-    "aliases": []
   },
   {
     "id": "geonames:5110266",
@@ -10385,26 +7690,6 @@
       "Borough of Brooklyn",
       "BK"
     ]
-  },
-  {
-    "id": "geonames:5110629",
-    "type": "city",
-    "name": "Buffalo",
-    "parentId": "geonames:5128638",
-    "countryCode": "US",
-    "admin1Code": "US.NY",
-    "population": 258071,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5122520",
-    "type": "city",
-    "name": "Jamaica",
-    "parentId": "geonames:5128638",
-    "countryCode": "US",
-    "admin1Code": "US.NY",
-    "population": 216866,
-    "aliases": []
   },
   {
     "id": "geonames:5125771",
@@ -10463,16 +7748,6 @@
     ]
   },
   {
-    "id": "geonames:5134086",
-    "type": "city",
-    "name": "Rochester",
-    "parentId": "geonames:5128638",
-    "countryCode": "US",
-    "admin1Code": "US.NY",
-    "population": 209802,
-    "aliases": []
-  },
-  {
     "id": "geonames:5139568",
     "type": "city",
     "name": "Staten Island",
@@ -10483,26 +7758,6 @@
     "aliases": [
       "Borough of Staten Island"
     ]
-  },
-  {
-    "id": "geonames:5142036",
-    "type": "city",
-    "name": "Upper West Side",
-    "parentId": "geonames:5128638",
-    "countryCode": "US",
-    "admin1Code": "US.NY",
-    "population": 226989,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5145215",
-    "type": "city",
-    "name": "Yonkers",
-    "parentId": "geonames:5128638",
-    "countryCode": "US",
-    "admin1Code": "US.NY",
-    "population": 201116,
-    "aliases": []
   },
   {
     "id": "geonames:5150529",
@@ -10527,16 +7782,6 @@
       "OH",
       "Buckeye State"
     ]
-  },
-  {
-    "id": "geonames:5174035",
-    "type": "city",
-    "name": "Toledo",
-    "parentId": "geonames:5165418",
-    "countryCode": "US",
-    "admin1Code": "US.OH",
-    "population": 265638,
-    "aliases": []
   },
   {
     "id": "geonames:5206379",
@@ -10578,16 +7823,6 @@
     ]
   },
   {
-    "id": "geonames:5261457",
-    "type": "city",
-    "name": "Madison",
-    "parentId": "geonames:5279468",
-    "countryCode": "US",
-    "admin1Code": "US.WI",
-    "population": 280305,
-    "aliases": []
-  },
-  {
     "id": "geonames:5263045",
     "type": "city",
     "name": "Milwaukee",
@@ -10612,46 +7847,6 @@
     ]
   },
   {
-    "id": "geonames:5289282",
-    "type": "city",
-    "name": "Chandler",
-    "parentId": "geonames:5551752",
-    "countryCode": "US",
-    "admin1Code": "US.AZ",
-    "population": 260828,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5295903",
-    "type": "city",
-    "name": "Gilbert",
-    "parentId": "geonames:5551752",
-    "countryCode": "US",
-    "admin1Code": "US.AZ",
-    "population": 247542,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5295985",
-    "type": "city",
-    "name": "Glendale",
-    "parentId": "geonames:5551752",
-    "countryCode": "US",
-    "admin1Code": "US.AZ",
-    "population": 240126,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5303929",
-    "type": "city",
-    "name": "Maryvale",
-    "parentId": "geonames:5551752",
-    "countryCode": "US",
-    "admin1Code": "US.AZ",
-    "population": 208189,
-    "aliases": []
-  },
-  {
     "id": "geonames:5304391",
     "type": "city",
     "name": "Mesa",
@@ -10669,16 +7864,6 @@
     "countryCode": "US",
     "admin1Code": "US.AZ",
     "population": 1650070,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5313457",
-    "type": "city",
-    "name": "Scottsdale",
-    "parentId": "geonames:5551752",
-    "countryCode": "US",
-    "admin1Code": "US.AZ",
-    "population": 236839,
     "aliases": []
   },
   {
@@ -10728,36 +7913,6 @@
     ]
   },
   {
-    "id": "geonames:5336899",
-    "type": "city",
-    "name": "Chula Vista",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 265757,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5349755",
-    "type": "city",
-    "name": "Fontana",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 212704,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5350734",
-    "type": "city",
-    "name": "Fremont",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 232206,
-    "aliases": []
-  },
-  {
     "id": "geonames:5350937",
     "type": "city",
     "name": "Fresno",
@@ -10765,36 +7920,6 @@
     "countryCode": "US",
     "admin1Code": "US.CA",
     "population": 542107,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5352423",
-    "type": "city",
-    "name": "Glendale",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 201020,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5358705",
-    "type": "city",
-    "name": "Huntington Beach",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 201899,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5359777",
-    "type": "city",
-    "name": "Irvine",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 256927,
     "aliases": []
   },
   {
@@ -10821,26 +7946,6 @@
     ]
   },
   {
-    "id": "geonames:5373900",
-    "type": "city",
-    "name": "Modesto",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 211266,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5374732",
-    "type": "city",
-    "name": "Moreno Valley",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 204198,
-    "aliases": []
-  },
-  {
     "id": "geonames:5378538",
     "type": "city",
     "name": "Oakland",
@@ -10848,16 +7953,6 @@
     "countryCode": "US",
     "admin1Code": "US.CA",
     "population": 419267,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5380184",
-    "type": "city",
-    "name": "Oxnard",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 207254,
     "aliases": []
   },
   {
@@ -10878,16 +7973,6 @@
     "countryCode": "US",
     "admin1Code": "US.CA",
     "population": 524943,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5391710",
-    "type": "city",
-    "name": "San Bernardino",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 216108,
     "aliases": []
   },
   {
@@ -11020,16 +8105,6 @@
     ]
   },
   {
-    "id": "geonames:5505411",
-    "type": "city",
-    "name": "Henderson",
-    "parentId": "geonames:5509151",
-    "countryCode": "US",
-    "admin1Code": "US.NV",
-    "population": 285667,
-    "aliases": []
-  },
-  {
     "id": "geonames:5506956",
     "type": "city",
     "name": "Las Vegas",
@@ -11056,36 +8131,6 @@
     ]
   },
   {
-    "id": "geonames:5509403",
-    "type": "city",
-    "name": "North Las Vegas",
-    "parentId": "geonames:5509151",
-    "countryCode": "US",
-    "admin1Code": "US.NV",
-    "population": 234807,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5509952",
-    "type": "city",
-    "name": "Paradise",
-    "parentId": "geonames:5509151",
-    "countryCode": "US",
-    "admin1Code": "US.NV",
-    "population": 223167,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5511077",
-    "type": "city",
-    "name": "Reno",
-    "parentId": "geonames:5509151",
-    "countryCode": "US",
-    "admin1Code": "US.NV",
-    "population": 264165,
-    "aliases": []
-  },
-  {
     "id": "geonames:5520993",
     "type": "city",
     "name": "El Paso",
@@ -11093,16 +8138,6 @@
     "countryCode": "US",
     "admin1Code": "US.TX",
     "population": 678815,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5525577",
-    "type": "city",
-    "name": "Lubbock",
-    "parentId": "geonames:4736286",
-    "countryCode": "US",
-    "admin1Code": "US.TX",
-    "population": 249042,
     "aliases": []
   },
   {
@@ -11133,16 +8168,6 @@
       "Grand Canyon State",
       "Ariz."
     ]
-  },
-  {
-    "id": "geonames:5586437",
-    "type": "city",
-    "name": "Boise",
-    "parentId": "geonames:5596512",
-    "countryCode": "US",
-    "admin1Code": "US.ID",
-    "population": 235684,
-    "aliases": []
   },
   {
     "id": "geonames:5596512",
@@ -11225,19 +8250,6 @@
     ]
   },
   {
-    "id": "geonames:5780993",
-    "type": "city",
-    "name": "Salt Lake City",
-    "parentId": "geonames:5549030",
-    "countryCode": "US",
-    "admin1Code": "US.UT",
-    "population": 215548,
-    "aliases": [
-      "Salt Lake",
-      "SLC"
-    ]
-  },
-  {
     "id": "geonames:5809844",
     "type": "city",
     "name": "Seattle",
@@ -11245,26 +8257,6 @@
     "countryCode": "US",
     "admin1Code": "US.WA",
     "population": 780995,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5811696",
-    "type": "city",
-    "name": "Spokane",
-    "parentId": "geonames:5815135",
-    "countryCode": "US",
-    "admin1Code": "US.WA",
-    "population": 229447,
-    "aliases": []
-  },
-  {
-    "id": "geonames:5812944",
-    "type": "city",
-    "name": "Tacoma",
-    "parentId": "geonames:5815135",
-    "countryCode": "US",
-    "admin1Code": "US.WA",
-    "population": 222906,
     "aliases": []
   },
   {
@@ -11334,16 +8326,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:5879400",
-    "type": "city",
-    "name": "Anchorage",
-    "parentId": "geonames:5879092",
-    "countryCode": "US",
-    "admin1Code": "US.AK",
-    "population": 289600,
-    "aliases": []
-  },
-  {
     "id": "geonames:5883102",
     "type": "admin1",
     "name": "Alberta",
@@ -11378,16 +8360,6 @@
     "aliases": [
       "BC"
     ]
-  },
-  {
-    "id": "geonames:5911606",
-    "type": "city",
-    "name": "Burnaby",
-    "parentId": "geonames:5909050",
-    "countryCode": "CA",
-    "admin1Code": "CA.02",
-    "population": 249125,
-    "aliases": []
   },
   {
     "id": "geonames:5913490",
@@ -11440,16 +8412,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:5992996",
-    "type": "city",
-    "name": "Kitchener",
-    "parentId": "geonames:6093943",
-    "countryCode": "CA",
-    "admin1Code": "CA.08",
-    "population": 256885,
-    "aliases": []
-  },
-  {
     "id": "geonames:6050610",
     "type": "city",
     "name": "Laval",
@@ -11467,16 +8429,6 @@
     "countryCode": "CA",
     "admin1Code": "CA.08",
     "population": 422324,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6059891",
-    "type": "city",
-    "name": "Longueuil",
-    "parentId": "geonames:6115047",
-    "countryCode": "CA",
-    "admin1Code": "CA.10",
-    "population": 229330,
     "aliases": []
   },
   {
@@ -11576,16 +8528,6 @@
     ]
   },
   {
-    "id": "geonames:6092122",
-    "type": "city",
-    "name": "Oakville",
-    "parentId": "geonames:6093943",
-    "countryCode": "CA",
-    "admin1Code": "CA.08",
-    "population": 213759,
-    "aliases": []
-  },
-  {
     "id": "geonames:6093943",
     "type": "admin1",
     "name": "Ontario",
@@ -11635,36 +8577,6 @@
     ]
   },
   {
-    "id": "geonames:6119109",
-    "type": "city",
-    "name": "Regina",
-    "parentId": "geonames:6141242",
-    "countryCode": "CA",
-    "admin1Code": "CA.11",
-    "population": 226404,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6122085",
-    "type": "city",
-    "name": "Richmond",
-    "parentId": "geonames:5909050",
-    "countryCode": "CA",
-    "admin1Code": "CA.02",
-    "population": 209937,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6122091",
-    "type": "city",
-    "name": "Richmond Hill",
-    "parentId": "geonames:6093943",
-    "countryCode": "CA",
-    "admin1Code": "CA.08",
-    "population": 202022,
-    "aliases": []
-  },
-  {
     "id": "geonames:6141242",
     "type": "admin1",
     "name": "Saskatchewan",
@@ -11676,16 +8588,6 @@
       "SK",
       "Sask."
     ]
-  },
-  {
-    "id": "geonames:6141256",
-    "type": "city",
-    "name": "Saskatoon",
-    "parentId": "geonames:6141242",
-    "countryCode": "CA",
-    "admin1Code": "CA.11",
-    "population": 266141,
-    "aliases": []
   },
   {
     "id": "geonames:6159905",
@@ -11725,26 +8627,6 @@
     "countryCode": "CA",
     "admin1Code": "CA.08",
     "population": 323103,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6174041",
-    "type": "city",
-    "name": "Victoria",
-    "parentId": "geonames:5909050",
-    "countryCode": "CA",
-    "admin1Code": "CA.02",
-    "population": 289625,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6182962",
-    "type": "city",
-    "name": "Windsor",
-    "parentId": "geonames:6093943",
-    "countryCode": "CA",
-    "admin1Code": "CA.08",
-    "population": 229660,
     "aliases": []
   },
   {
@@ -11871,46 +8753,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:6544100",
-    "type": "city",
-    "name": "Eixample",
-    "parentId": "geonames:3336901",
-    "countryCode": "ES",
-    "admin1Code": "ES.56",
-    "population": 266477,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6544105",
-    "type": "city",
-    "name": "Sant Martí",
-    "parentId": "geonames:3336901",
-    "countryCode": "ES",
-    "admin1Code": "ES.56",
-    "population": 235719,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6544489",
-    "type": "city",
-    "name": "Latina",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 256644,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6544493",
-    "type": "city",
-    "name": "Carabanchel",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 253678,
-    "aliases": []
-  },
-  {
     "id": "geonames:6619347",
     "type": "city",
     "name": "Navi Mumbai",
@@ -11921,26 +8763,6 @@
     "aliases": [
       "New Bombay"
     ]
-  },
-  {
-    "id": "geonames:6690108",
-    "type": "city",
-    "name": "Panchkula",
-    "parentId": "geonames:1270260",
-    "countryCode": "IN",
-    "admin1Code": "IN.10",
-    "population": 211355,
-    "aliases": []
-  },
-  {
-    "id": "geonames:6697563",
-    "type": "city",
-    "name": "Neyagawa",
-    "parentId": "geonames:1853904",
-    "countryCode": "JP",
-    "admin1Code": "JP.32",
-    "population": 238549,
-    "aliases": []
   },
   {
     "id": "geonames:6697759",
@@ -11975,16 +8797,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:6954929",
-    "type": "city",
-    "name": "Greater Noida",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 293908,
-    "aliases": []
-  },
-  {
     "id": "geonames:6957079",
     "type": "city",
     "name": "Benito Juárez",
@@ -11992,36 +8804,6 @@
     "countryCode": "MX",
     "admin1Code": "MX.09",
     "population": 385439,
-    "aliases": []
-  },
-  {
-    "id": "geonames:7279746",
-    "type": "city",
-    "name": "Noida",
-    "parentId": "geonames:1253626",
-    "countryCode": "IN",
-    "admin1Code": "IN.36",
-    "population": 293908,
-    "aliases": []
-  },
-  {
-    "id": "geonames:7279754",
-    "type": "city",
-    "name": "Singrauli",
-    "parentId": "geonames:1264542",
-    "countryCode": "IN",
-    "admin1Code": "IN.35",
-    "population": 220257,
-    "aliases": []
-  },
-  {
-    "id": "geonames:7280708",
-    "type": "city",
-    "name": "Colonia del Valle",
-    "parentId": "geonames:3527646",
-    "countryCode": "MX",
-    "admin1Code": "MX.09",
-    "population": 250000,
     "aliases": []
   },
   {
@@ -12035,58 +8817,6 @@
     "aliases": [
       "Logan"
     ]
-  },
-  {
-    "id": "geonames:7289169",
-    "type": "city",
-    "name": "Tri-Cities",
-    "parentId": "geonames:5815135",
-    "countryCode": "US",
-    "admin1Code": "US.WA",
-    "population": 244036,
-    "aliases": []
-  },
-  {
-    "id": "geonames:7289760",
-    "type": "city",
-    "name": "Sengkang New Town",
-    "parentId": "country:SG",
-    "countryCode": "SG",
-    "admin1Code": "SG.02",
-    "population": 267600,
-    "aliases": [
-      "Sengkang"
-    ]
-  },
-  {
-    "id": "geonames:7302826",
-    "type": "city",
-    "name": "Lal Bahadur Nagar",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 261987,
-    "aliases": []
-  },
-  {
-    "id": "geonames:7302833",
-    "type": "city",
-    "name": "Gajuwaka",
-    "parentId": "geonames:1278629",
-    "countryCode": "IN",
-    "admin1Code": "IN.02",
-    "population": 258944,
-    "aliases": []
-  },
-  {
-    "id": "geonames:7302845",
-    "type": "city",
-    "name": "Quthbullapur",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 225816,
-    "aliases": []
   },
   {
     "id": "geonames:7521313",
@@ -12139,16 +8869,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:760778",
-    "type": "city",
-    "name": "Radom",
-    "parentId": "geonames:858787",
-    "countryCode": "PL",
-    "admin1Code": "PL.78",
-    "population": 226794,
-    "aliases": []
-  },
-  {
     "id": "geonames:7626690",
     "type": "city",
     "name": "Pimpri-Chinchwad",
@@ -12156,16 +8876,6 @@
     "countryCode": "IN",
     "admin1Code": "IN.16",
     "population": 1727692,
-    "aliases": []
-  },
-  {
-    "id": "geonames:764484",
-    "type": "city",
-    "name": "Mokotów",
-    "parentId": "geonames:858787",
-    "countryCode": "PL",
-    "admin1Code": "PL.78",
-    "population": 217683,
     "aliases": []
   },
   {
@@ -12179,28 +8889,6 @@
     "aliases": []
   },
   {
-    "id": "geonames:776069",
-    "type": "city",
-    "name": "Białystok",
-    "parentId": "geonames:858789",
-    "countryCode": "PL",
-    "admin1Code": "PL.81",
-    "population": 295683,
-    "aliases": [
-      "Bialystok"
-    ]
-  },
-  {
-    "id": "geonames:8285534",
-    "type": "city",
-    "name": "Fuencarral-El Pardo",
-    "parentId": "geonames:3117732",
-    "countryCode": "ES",
-    "admin1Code": "ES.29",
-    "population": 220085,
-    "aliases": []
-  },
-  {
     "id": "geonames:8310663",
     "type": "city",
     "name": "Central Coast",
@@ -12208,16 +8896,6 @@
     "countryCode": "AU",
     "admin1Code": "AU.02",
     "population": 346596,
-    "aliases": []
-  },
-  {
-    "id": "geonames:8347656",
-    "type": "city",
-    "name": "Ramagundam",
-    "parentId": "geonames:1254788",
-    "countryCode": "IN",
-    "admin1Code": "IN.40",
-    "population": 242979,
     "aliases": []
   },
   {
