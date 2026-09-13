@@ -144,6 +144,11 @@
     "aliases": []
   },
   {
+    "id": "kotlin",
+    "name": "Kotlin",
+    "aliases": []
+  },
+  {
     "id": "kubernetes",
     "name": "Kubernetes",
     "aliases": [
