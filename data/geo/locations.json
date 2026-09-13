@@ -8253,7 +8253,7 @@
     "id": "geonames:5809844",
     "type": "city",
     "name": "Seattle",
-    "parentId": "geonames:5815135",
+    "parentId": "custom:greater-seattle-area",
     "countryCode": "US",
     "admin1Code": "US.WA",
     "population": 780995,
