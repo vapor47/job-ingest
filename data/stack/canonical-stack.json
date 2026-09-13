@@ -20,6 +20,11 @@
     "aliases": []
   },
   {
+    "id": "apache-thrift",
+    "name": "Apache Thrift",
+    "aliases": []
+  },
+  {
     "id": "aws",
     "name": "AWS",
     "aliases": []
