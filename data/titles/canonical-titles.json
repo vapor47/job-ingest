@@ -15,6 +15,11 @@
     "aliases": []
   },
   {
+    "id": "engineering-manager",
+    "name": "Engineering Manager",
+    "aliases": []
+  },
+  {
     "id": "forward-deployed-engineer",
     "name": "Forward Deployed Engineer",
     "aliases": []
