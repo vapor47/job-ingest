@@ -276,6 +276,11 @@
     ]
   },
   {
+    "id": "react-native",
+    "name": "React Native",
+    "aliases": []
+  },
+  {
     "id": "redis",
     "name": "Redis",
     "aliases": []
