@@ -15,6 +15,11 @@
     "aliases": []
   },
   {
+    "id": "angular",
+    "name": "Angular",
+    "aliases": []
+  },
+  {
     "id": "aws",
     "name": "AWS",
     "aliases": []
