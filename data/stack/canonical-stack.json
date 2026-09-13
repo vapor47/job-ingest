@@ -219,6 +219,11 @@
     "aliases": []
   },
   {
+    "id": "polymer",
+    "name": "Polymer",
+    "aliases": []
+  },
+  {
     "id": "postgresql",
     "name": "PostgreSQL",
     "aliases": [
