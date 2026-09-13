@@ -94,6 +94,11 @@
     "aliases": []
   },
   {
+    "id": "flink",
+    "name": "Flink",
+    "aliases": []
+  },
+  {
     "id": "gcp",
     "name": "GCP",
     "aliases": []
