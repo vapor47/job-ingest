@@ -333,8 +333,11 @@
     "parentId": "custom:san-francisco-bay-area",
     "countryCode": "US",
     "admin1Code": "US.CA",
-    "population": null,
-    "aliases": []
+    "population": 827526,
+    "aliases": [
+      "Frisco",
+      "SF"
+    ]
   },
   {
     "id": "custom:san-francisco-bay-area",
@@ -7994,19 +7997,6 @@
     "admin1Code": "US.CA",
     "population": 1404452,
     "aliases": []
-  },
-  {
-    "id": "geonames:5391959",
-    "type": "city",
-    "name": "San Francisco",
-    "parentId": "geonames:5332921",
-    "countryCode": "US",
-    "admin1Code": "US.CA",
-    "population": 827526,
-    "aliases": [
-      "Frisco",
-      "SF"
-    ]
   },
   {
     "id": "geonames:5392171",
