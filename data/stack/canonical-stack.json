@@ -266,6 +266,11 @@
     "aliases": []
   },
   {
+    "id": "rest",
+    "name": "REST",
+    "aliases": []
+  },
+  {
     "id": "rspec",
     "name": "RSpec",
     "aliases": []
