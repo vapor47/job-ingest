@@ -54,6 +54,11 @@
     "aliases": []
   },
   {
+    "id": "databricks",
+    "name": "Databricks",
+    "aliases": []
+  },
+  {
     "id": "docker",
     "name": "Docker",
     "aliases": []
