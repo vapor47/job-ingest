@@ -131,6 +131,11 @@
     "aliases": []
   },
   {
+    "id": "memcache",
+    "name": "Memcache",
+    "aliases": []
+  },
+  {
     "id": "mongodb",
     "name": "MongoDB",
     "aliases": []
