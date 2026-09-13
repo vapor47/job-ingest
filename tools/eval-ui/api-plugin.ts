@@ -82,6 +82,15 @@ async function readLocations(): Promise<LocationNode[]> {
 // typing "California" as an add-new parent would otherwise resolve to whichever of
 // California/Baja California/Baja California Sur (all substring matches, all population null)
 // happened to appear first in the file, rather than the one actually typed.
+//
+// Among exact matches, a state/country name wins over a city of the same name before population
+// is even considered — "Washington" the city (D.C., pop ~690k) was beating "Washington" the
+// state (admin1, population always null) for exactly that reason, silently nesting Bellevue and
+// Greater Seattle Area under the wrong Washington. A name collision between a real city and a
+// same-named admin1/country is rare enough that ranking type first here doesn't cost normal
+// city-vs-city or admin1-vs-admin1 searches anything.
+const TYPE_RANK: Record<string, number> = { country: 0, admin1: 1, remote: 2, city: 3, custom: 4 };
+
 function matchLocations(nodes: LocationNode[], q: string): LocationNode[] {
   const needle = q.trim().toLowerCase();
   if (!needle) return [];
@@ -90,7 +99,9 @@ function matchLocations(nodes: LocationNode[], q: string): LocationNode[] {
     .filter((n) => n.name.toLowerCase().includes(needle) || n.aliases.some((a) => a.toLowerCase().includes(needle)))
     .sort((a, b) => {
       const exactDiff = Number(isExact(b)) - Number(isExact(a));
-      return exactDiff !== 0 ? exactDiff : (b.population ?? 0) - (a.population ?? 0);
+      if (exactDiff !== 0) return exactDiff;
+      const typeDiff = (TYPE_RANK[a.type] ?? 9) - (TYPE_RANK[b.type] ?? 9);
+      return typeDiff !== 0 ? typeDiff : (b.population ?? 0) - (a.population ?? 0);
     });
 }
 
@@ -186,8 +197,15 @@ export function evalApiPlugin(): Plugin {
             const nodes = await readLocations();
 
             // "Menlo Park, San Francisco Bay Area" nests under an existing (or just-added)
-            // node instead of always filing a flat orphan. Split on the *last* comma only —
-            // no existing location name contains one, so this can't misparse real data.
+            // node instead of always filing a flat orphan. Splitting on the *last* comma only
+            // supports one level of nesting — "Greater Seattle Area, Washington, United States"
+            // would silently fold "Washington" into the child's name and skip the state level
+            // entirely, so reject more than one comma instead of corrupting the entry.
+            if ((body.name.match(/,/g) ?? []).length > 1) {
+              res.statusCode = 400;
+              res.end('Only one level of nesting is supported ("Child, Parent") — add the parent first, then nest the child under it.');
+              return;
+            }
             const commaAt = body.name.lastIndexOf(",");
             const namePart = (commaAt === -1 ? body.name : body.name.slice(0, commaAt)).trim();
             const parentText = commaAt === -1 ? "" : body.name.slice(commaAt + 1).trim();
