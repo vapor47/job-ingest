@@ -5,6 +5,36 @@
     "aliases": []
   },
   {
+    "id": "azure",
+    "name": "Azure",
+    "aliases": []
+  },
+  {
+    "id": "bazel",
+    "name": "Bazel",
+    "aliases": []
+  },
+  {
+    "id": "c",
+    "name": "C",
+    "aliases": []
+  },
+  {
+    "id": "cassandra",
+    "name": "Cassandra",
+    "aliases": []
+  },
+  {
+    "id": "ci-cd",
+    "name": "CI/CD",
+    "aliases": []
+  },
+  {
+    "id": "computer-vision",
+    "name": "Computer Vision",
+    "aliases": []
+  },
+  {
     "id": "cplusplus",
     "name": "C++",
     "aliases": [
@@ -19,8 +49,28 @@
     ]
   },
   {
+    "id": "css",
+    "name": "CSS",
+    "aliases": []
+  },
+  {
     "id": "docker",
     "name": "Docker",
+    "aliases": []
+  },
+  {
+    "id": "dynamodb",
+    "name": "DynamoDB",
+    "aliases": []
+  },
+  {
+    "id": "elasticsearch",
+    "name": "Elasticsearch",
+    "aliases": []
+  },
+  {
+    "id": "gcp",
+    "name": "GCP",
     "aliases": []
   },
   {
@@ -29,6 +79,16 @@
     "aliases": [
       "golang"
     ]
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "aliases": []
+  },
+  {
+    "id": "html",
+    "name": "HTML",
+    "aliases": []
   },
   {
     "id": "java",
@@ -44,11 +104,41 @@
     ]
   },
   {
+    "id": "kafka",
+    "name": "Kafka",
+    "aliases": []
+  },
+  {
     "id": "kubernetes",
     "name": "Kubernetes",
     "aliases": [
       "k8s"
     ]
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "aliases": []
+  },
+  {
+    "id": "langgraph",
+    "name": "LangGraph",
+    "aliases": []
+  },
+  {
+    "id": "matlab",
+    "name": "MATLAB",
+    "aliases": []
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "aliases": []
+  },
+  {
+    "id": "next-js",
+    "name": "Next.js",
+    "aliases": []
   },
   {
     "id": "node-js",
@@ -57,6 +147,16 @@
       "node",
       "nodejs"
     ]
+  },
+  {
+    "id": "nosql",
+    "name": "NoSQL",
+    "aliases": []
+  },
+  {
+    "id": "opentelemetry",
+    "name": "OpenTelemetry",
+    "aliases": []
   },
   {
     "id": "postgresql",
@@ -74,6 +174,11 @@
     ]
   },
   {
+    "id": "rds",
+    "name": "RDS",
+    "aliases": []
+  },
+  {
     "id": "react",
     "name": "React",
     "aliases": [
@@ -81,8 +186,23 @@
     ]
   },
   {
+    "id": "redis",
+    "name": "Redis",
+    "aliases": []
+  },
+  {
+    "id": "rspec",
+    "name": "RSpec",
+    "aliases": []
+  },
+  {
     "id": "ruby",
     "name": "Ruby",
+    "aliases": []
+  },
+  {
+    "id": "ruby-on-rails",
+    "name": "Ruby on Rails",
     "aliases": []
   },
   {
@@ -91,10 +211,45 @@
     "aliases": []
   },
   {
+    "id": "scala",
+    "name": "Scala",
+    "aliases": []
+  },
+  {
+    "id": "seo",
+    "name": "SEO",
+    "aliases": []
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+    "aliases": []
+  },
+  {
+    "id": "tailwind-css",
+    "name": "Tailwind CSS",
+    "aliases": []
+  },
+  {
+    "id": "temporal",
+    "name": "Temporal",
+    "aliases": []
+  },
+  {
+    "id": "terraform",
+    "name": "Terraform",
+    "aliases": []
+  },
+  {
     "id": "typescript",
     "name": "TypeScript",
     "aliases": [
       "ts"
     ]
+  },
+  {
+    "id": "vue-js",
+    "name": "Vue.js",
+    "aliases": []
   }
 ]

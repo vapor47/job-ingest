@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "id": "ai-engineer",
+    "name": "AI Engineer",
+    "aliases": []
+  },
+  {
+    "id": "backend-engineer",
+    "name": "Backend Engineer",
+    "aliases": []
+  },
+  {
+    "id": "forward-deployed-engineer",
+    "name": "Forward Deployed Engineer",
+    "aliases": []
+  },
+  {
+    "id": "fullstack-engineer",
+    "name": "Fullstack Engineer",
+    "aliases": []
+  },
+  {
+    "id": "machine-learning-engineer",
+    "name": "Machine Learning Engineer",
+    "aliases": []
+  },
+  {
+    "id": "product-engineer",
+    "name": "Product Engineer",
+    "aliases": []
+  },
+  {
+    "id": "software-engineer",
+    "name": "Software Engineer",
+    "aliases": []
+  },
+  {
+    "id": "systems-engineer",
+    "name": "Systems Engineer",
+    "aliases": []
+  }
+]
