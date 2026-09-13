@@ -1,5 +1,5 @@
 {
-  "total": 150,
+  "total": 200,
   "byAts": {
     "ashby": 39,
     "greenhouse": 103,
@@ -24,5 +24,10 @@
     "multiLevel": 8,
     "hourly": 20,
     "upToX": 8
+  },
+  "lastBatch": {
+    "size": 50,
+    "engineering": 45,
+    "ambiguousNonEngineering": 5
   }
 }
