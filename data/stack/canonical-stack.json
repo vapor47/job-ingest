@@ -5,6 +5,11 @@
     "aliases": []
   },
   {
+    "id": "ai-ml",
+    "name": "AI/ML",
+    "aliases": []
+  },
+  {
     "id": "airflow",
     "name": "Airflow",
     "aliases": []
