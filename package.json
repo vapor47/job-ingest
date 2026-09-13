@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --test src/**/*.test.ts",
     "eval:pool": "node scripts/build-eval-pool.ts",
+    "eval:split": "node scripts/build-eval-split.ts",
     "eval:validate": "node scripts/validate-labels.ts",
     "eval:ui": "vite --config tools/eval-ui/vite.config.ts"
   },

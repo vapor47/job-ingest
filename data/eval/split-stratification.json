@@ -1,0 +1,36 @@
+{
+  "salt": "jos-53-eval-split-v1",
+  "devShare": 0.6,
+  "total": 98,
+  "dev": {
+    "count": 58,
+    "byAts": {
+      "ashby": 20,
+      "greenhouse": 36,
+      "lever": 2
+    },
+    "byJurisdiction": {
+      "other": 12,
+      "n/a": 21,
+      "CA": 16,
+      "remote": 8,
+      "TX": 1
+    }
+  },
+  "heldOut": {
+    "count": 40,
+    "byAts": {
+      "ashby": 8,
+      "greenhouse": 29,
+      "lever": 3
+    },
+    "byJurisdiction": {
+      "n/a": 18,
+      "NY": 4,
+      "CA": 9,
+      "WA": 2,
+      "remote": 5,
+      "other": 2
+    }
+  }
+}
