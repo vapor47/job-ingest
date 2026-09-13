@@ -79,6 +79,11 @@
     "aliases": []
   },
   {
+    "id": "deep-learning",
+    "name": "Deep Learning",
+    "aliases": []
+  },
+  {
     "id": "docker",
     "name": "Docker",
     "aliases": []
