@@ -35,6 +35,11 @@
     "aliases": []
   },
   {
+    "id": "cdc",
+    "name": "CDC",
+    "aliases": []
+  },
+  {
     "id": "ci-cd",
     "name": "CI/CD",
     "aliases": []
