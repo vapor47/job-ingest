@@ -226,6 +226,11 @@
     "aliases": []
   },
   {
+    "id": "spark",
+    "name": "Spark",
+    "aliases": []
+  },
+  {
     "id": "sql",
     "name": "SQL",
     "aliases": []
