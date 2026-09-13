@@ -14,16 +14,43 @@
 //   POST /api/titles               -> append a new canonical title { name }, return it
 //   GET  /api/stack?q=<text>       -> up to 20 name/alias matches from the canonical stack library
 //   POST /api/stack                -> append a new stack entry { name }, return it
+//
+// Every growable-library POST (locations/titles/stack) auto-commits its file immediately —
+// see commitDataFile below for why.
 
 import { readFile, writeFile } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import path from "node:path";
 import type { Plugin, ViteDevServer } from "vite";
+
+const execFileAsync = promisify(execFile);
 
 const REPO_ROOT = path.resolve(import.meta.dirname, "../..");
 const POOL_PATH = path.join(REPO_ROOT, "data/eval/pool.jsonl");
 const LOCATIONS_PATH = path.join(REPO_ROOT, "data/geo/locations.json");
 const TITLES_PATH = path.join(REPO_ROOT, "data/titles/canonical-titles.json");
 const STACK_PATH = path.join(REPO_ROOT, "data/stack/canonical-stack.json");
+
+// The growable libraries (locations/titles/stack) only ever grow by one entry per POST, but
+// that entry lived only in the uncommitted working tree until the next manual commit — a
+// stray edit or `git checkout --` in between silently erased labeling work with no trace
+// (lost 401 location nodes, then a full trim of stack/titles, both undetected for days).
+// Auto-committing each addition immediately makes every growable-library write durable and
+// individually revertable. Deliberately not applied to pool.jsonl's PUT autosave: that fires
+// on every field edit, so committing there would flood history — pool.jsonl's durability is
+// handled separately (see job_ingest_project memory) via periodic commits.
+async function commitDataFile(absPath: string, message: string) {
+  const rel = path.relative(REPO_ROOT, absPath);
+  try {
+    await execFileAsync("git", ["add", rel], { cwd: REPO_ROOT });
+    await execFileAsync("git", ["commit", "-m", message], { cwd: REPO_ROOT });
+  } catch (e) {
+    // Best-effort: the write to disk already succeeded, so a failed auto-commit (nothing to
+    // commit, a rebase in progress, etc.) shouldn't fail the labeling request itself.
+    console.warn(`auto-commit failed for ${rel}:`, (e as Error).message);
+  }
+}
 
 // Shared by /api/titles and /api/stack's "add new" handlers. Symbols are spelled out rather
 // than stripped so distinct names don't collide onto the same id ("C++" vs "C#" both reducing
@@ -241,6 +268,7 @@ export function evalApiPlugin(): Plugin {
               };
               nodes.push(node);
               await writeFile(LOCATIONS_PATH, JSON.stringify(nodes.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+              await commitDataFile(LOCATIONS_PATH, `Add location node: ${node.name}`);
               res.setHeader("content-type", "application/json");
               res.end(JSON.stringify({ node, orphaned: !parent, attemptedParent: !parent ? region : null, parentName: parent?.name ?? null }));
               return;
@@ -285,6 +313,7 @@ export function evalApiPlugin(): Plugin {
             };
             nodes.push(node);
             await writeFile(LOCATIONS_PATH, JSON.stringify(nodes.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+            await commitDataFile(LOCATIONS_PATH, `Add location node: ${node.name}`);
             res.setHeader("content-type", "application/json");
             res.end(JSON.stringify({ node, orphaned, attemptedParent: orphaned ? parentText : null, parentName: parent?.name ?? null }));
             return;
@@ -324,6 +353,7 @@ export function evalApiPlugin(): Plugin {
             const node: TitleNode = { id, name: body.name.trim(), aliases: [] };
             titles.push(node);
             await writeFile(TITLES_PATH, JSON.stringify(titles.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+            await commitDataFile(TITLES_PATH, `Add canonical title: ${node.name}`);
             res.setHeader("content-type", "application/json");
             res.end(JSON.stringify(node));
             return;
@@ -363,6 +393,7 @@ export function evalApiPlugin(): Plugin {
             const node: StackNode = { id, name: body.name.trim(), aliases: [] };
             stack.push(node);
             await writeFile(STACK_PATH, JSON.stringify(stack.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+            await commitDataFile(STACK_PATH, `Add canonical stack entry: ${node.name}`);
             res.setHeader("content-type", "application/json");
             res.end(JSON.stringify(node));
             return;
