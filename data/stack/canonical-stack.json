@@ -181,6 +181,11 @@
     "aliases": []
   },
   {
+    "id": "lit",
+    "name": "Lit",
+    "aliases": []
+  },
+  {
     "id": "matlab",
     "name": "MATLAB",
     "aliases": []
