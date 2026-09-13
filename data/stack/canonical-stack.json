@@ -254,6 +254,11 @@
     ]
   },
   {
+    "id": "r",
+    "name": "R",
+    "aliases": []
+  },
+  {
     "id": "rabbitmq",
     "name": "RabbitMQ",
     "aliases": []
