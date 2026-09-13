@@ -189,6 +189,11 @@
     ]
   },
   {
+    "id": "rabbitmq",
+    "name": "RabbitMQ",
+    "aliases": []
+  },
+  {
     "id": "rds",
     "name": "RDS",
     "aliases": []
