@@ -46,22 +46,27 @@ So *"no critical field left null"* is a target against **missed** nulls and agai
 coverage ceiling. It is never a licence for the model to guess.
 
 **Critical fields** are the ones a real filter reads, where a null costs the user a usable
-result: `seniority`, `locationPolicy`, `sponsorship`, `compMin`/`compMax`. This set is defined
+result: `seniority`, `locationPolicy`, `compMin`/`compMax`. This set is defined
 by EVAL-5 (JOS-56) and drives its decision-usable rate — keep the two in sync.
+
+`sponsorship` is dropped from the schema for now — it was almost never stated on postings,
+so the field wasn't earning its keep pre-MVP. Revisit post-MVP if a source with better
+sponsorship coverage shows up.
 
 ### Labeler flags
 
 When you hesitate on a field — the rubric does not cleanly decide it, or the posting is
-genuinely ambiguous — record a flag on that record naming the field and the reason. A bare
-"Software Engineer" with no level word is the canonical case: label it `null` per the rule,
-**and flag it**. Most records get no flags.
+genuinely ambiguous — record a flag on that record naming the field and the reason. An
+early-stage startup posting with no level word is the canonical case: levels often genuinely
+aren't set yet at that stage, so the default-to-`mid` rule may not apply — use judgment and
+**flag it** either way. Most records get no flags.
 
 Flags are not labels. They do two jobs:
 
 - mark rubric gaps to fix before the next labeling pass
 - identify postings where a model disagreement may be legitimate rather than wrong
 
-## The six resolved cases
+## Resolved cases
 
 | Case | Answer |
 |---|---|
@@ -69,8 +74,11 @@ Flags are not labels. They do two jobs:
 | "Senior / Staff Engineer" | `["senior", "staff"]`. Every named level is recorded — collapsing to one would wrongly exclude the posting from a level-specific search. |
 | "$180,000 - $220,000 + equity" | `compMax` = `220000`. Base cash only; equity, bonus and signing are excluded. |
 | Posting lists 4 offices | All four, in `locationGeo`. It is an array field for this reason. |
-| Nothing said about sponsorship | `null`. Silence is never `false`. |
 | Hourly contract rate | Annualize at 2080 hours. `employmentType` = `contract` marks it as derived. |
+| Requires in-office presence, cadence unstated | `["in_person"]`. Candidates search remote vs. in-person first; that's a real answer, not a null. |
+| "Remote or onsite in SF" | `["remote", "onsite"]`. Array field for the same reason as `seniority`. |
+| Bare "Software Engineer", no level word | `["mid"]`. See `seniority`'s tie-break for the early-stage-startup exception. |
+| US posting, no currency stated but comp given | `USD`. Canada → `CAD`. See `compCurrency`'s tie-break. |
 
 ## Per-field rules
 
@@ -87,6 +95,10 @@ Flags are not labels. They do two jobs:
   library at `data/titles/canonical-titles.json`, searchable in the labeling tool's title field.
   If an existing entry fits, use it — do not create a near-duplicate ("ML Engineer" vs "Machine
   Learning Engineer"). Only add a new entry when the role genuinely isn't covered.
+- **Vocabulary lock:** A new canonical title is not added silently. Flag the record naming the
+  proposed title and let a human confirm it's genuinely new (vs. an existing entry it should map
+  to instead) before it's added to the library. This is forward guidance for any automated
+  extraction — the human labeling flow's existing "add new" UI click already satisfies it.
 - **Tie-break:** The bucket is level-agnostic — never fold seniority into it; that is
   `seniority`'s job. A title naming multiple disciplines ("Software Engineer, Data & Infra")
   picks the primary/first-listed one. If the title is too vague to bucket (e.g. a bare
@@ -124,22 +136,25 @@ Flags are not labels. They do two jobs:
 - **Tie-break:** A named range or pair lists every level it spans, in ladder order
   ("Senior/Staff" → `["senior", "staff"]`, "Software Engineer I-V" → `["junior", "mid",
   "senior", "staff", "principal"]`). An unbounded posting ("All Levels", "Software Engineer,
-  any level") lists every value in `SENIORITY`. A bare "Software Engineer" with no modifier is
-  `null`, not `["mid"]` — and gets a labeler flag, since seniority is a critical field and this
-  is the largest single source of null seniority. Management titles (Manager, Director, VP) are
-  `null` — the IC ladder does not apply to them.
+  any level") lists every value in `SENIORITY`. A bare "Software Engineer" with no modifier
+  defaults to `["mid"]` — that's the modal level for an unqualified title. **Exception:**
+  early-stage startups often haven't set levels at all yet, so the default may not hold there;
+  use judgment and flag it rather than applying the default blindly. Management titles
+  (Manager, Director, VP) are `null` — the IC ladder does not apply to them.
 
-### `locationPolicy` (enum: onsite | hybrid | remote, nullable)
+### `locationPolicy` (enum[]: remote | in_person | hybrid | onsite, nullable)
 
-- **Rule:** `remote` if the role may be performed fully remotely. `hybrid` if the posting
-  states any required in-office cadence. `onsite` if it requires full-time presence.
+- **Rule:** Candidates mostly search remote vs. in-person first — hybrid and onsite are
+  subcategories of in-person, not the primary axis. `["remote"]` if the role may be performed
+  fully remotely. `["in_person"]` if the posting clearly requires some in-office presence but
+  doesn't say whether it's every day or some days. `["hybrid"]` only when a partial cadence is
+  stated. `["onsite"]` only when full-time presence is stated. It is an array field: a posting
+  offering a genuine choice ("Remote or onsite in SF") records `["remote", "onsite"]` — picking
+  one would wrongly exclude it from whichever the candidate didn't search for.
 - **Tie-break:** A city name alone is a location, not a policy — `null`. Vague flexibility
   language ("remote-friendly", "flexible") with no stated cadence is `null`. "Remote (US)"
-  is `remote` with the region recorded in `locationGeo`, not `hybrid`. A posting that clearly
-  requires in-office presence but never states a cadence (some days vs. every day) is `null`
-  and gets a labeler flag — same as a bare "Software Engineer" title: stated, but not
-  specifically enough to pick `hybrid` over `onsite`. Never default to `onsite` just because
-  no partial cadence was named.
+  is `["remote"]` with the region recorded in `locationGeo`, not `hybrid`. Never pick `hybrid`
+  or `onsite` on a guess when only `in_person` is actually supported by the text.
 
 ### `locationGeo` (string[], nullable)
 
@@ -155,17 +170,12 @@ Flags are not labels. They do two jobs:
   are excluded. A single stated number sets `compMin` = `compMax`. Hourly × 2080,
   monthly × 12. `compCurrency` is the ISO 4217 code.
 - **Tie-break:** Multiple ranges (by level or location) record the overall span — lowest min,
-  highest max. A bare `$` is `USD` unless the posting points elsewhere (CAD, AUD). These
-  three fields move together: never a min without a currency, and if no comp is stated all
-  three are `null`.
-
-### `sponsorship` (boolean, nullable)
-
-- **Rule:** `true` only where the employer states it sponsors or provides visa sponsorship.
-  `false` only where it states it will not.
-- **Tie-break:** "Must be authorized to work in the US" on its own is `null` — it states a
-  requirement, not a sponsorship position. "...without requiring sponsorship now or in the
-  future" is `false`.
+  highest max. A bare `$` is `USD` unless the posting points elsewhere (CAD, AUD). If comp is
+  stated but currency isn't, infer it from `locationGeo`: a US location is `USD`, a Canada
+  location is `CAD`. Only fall back to `null` when the location itself doesn't pin a currency
+  (e.g. remote with no region, or a currency-ambiguous country). These three fields still move
+  together in the sense that never a min without a currency where one can be inferred, and if
+  no comp is stated at all, all three are `null`.
 
 ### `stack` (string[], nullable, growable library)
 

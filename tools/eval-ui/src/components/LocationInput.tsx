@@ -36,7 +36,7 @@ export function LocationInput({ value, onChange }: { value: string[] | null; onC
   async function addAsNew() {
     const { node, orphaned, attemptedParent, parentName } = await addLocation(query.trim());
     add(node.name);
-    if (orphaned) setStatus({ kind: "warning", text: `Couldn't find "${attemptedParent}" — added "${node.name}" ungrouped.` });
+    if (orphaned) setStatus({ kind: "warning", text: `Couldn't find "${attemptedParent}" - added "${node.name}" ungrouped.` });
     else if (parentName) setStatus({ kind: "success", text: `Nested "${node.name}" under "${parentName}".` });
   }
 

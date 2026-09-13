@@ -220,7 +220,6 @@ async function writePool(pool: Candidate[]) {
       compMin: null,
       compMax: null,
       compCurrency: null,
-      sponsorship: null,
       stack: null,
       employmentType: null,
       flags: [],

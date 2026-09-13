@@ -46,11 +46,7 @@ export function LabelForm({ record, onChange }: { record: PoolRecord; onChange: 
 
       <label>
         Location policy
-        <NullableSelect
-          value={record.locationPolicy}
-          options={LOCATION_POLICY}
-          onChange={(v) => onChange({ locationPolicy: v as PoolRecord["locationPolicy"] })}
-        />
+        <EnumCheckboxes value={record.locationPolicy} options={LOCATION_POLICY} onChange={(v) => onChange({ locationPolicy: v as PoolRecord["locationPolicy"] })} />
       </label>
 
       <label>
@@ -90,18 +86,6 @@ export function LabelForm({ record, onChange }: { record: PoolRecord; onChange: 
             onChange={(e) => onChange({ compCurrency: e.target.value })}
           />
         )}
-      </label>
-
-      <label>
-        Sponsorship
-        <select
-          value={record.sponsorship === null ? "" : String(record.sponsorship)}
-          onChange={(e) => onChange({ sponsorship: e.target.value === "" ? null : e.target.value === "true" })}
-        >
-          <option value="">Not stated</option>
-          <option value="true">Sponsors</option>
-          <option value="false">Does not sponsor</option>
-        </select>
       </label>
 
       <label>

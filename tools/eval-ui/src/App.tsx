@@ -9,7 +9,7 @@ import type { PoolRecord } from "./types.ts";
 // keeps the two counts in agreement instead of drifting apart.
 const LABEL_FIELDS: (keyof PoolRecord)[] = [
   "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
-  "compCurrency", "sponsorship", "stack", "employmentType",
+  "compCurrency", "stack", "employmentType",
 ];
 const isLabeled = (r: PoolRecord) => LABEL_FIELDS.some((k) => r[k] !== null) || (r.flags?.length ?? 0) > 0;
 

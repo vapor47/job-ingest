@@ -1,5 +1,15 @@
 [
   {
+    "id": "city:seoul",
+    "type": "city",
+    "name": "Seoul",
+    "parentId": "country:KR",
+    "countryCode": "KR",
+    "admin1Code": null,
+    "population": 9776000,
+    "aliases": []
+  },
+  {
     "id": "continent:AF",
     "type": "continent",
     "name": "Africa",
@@ -174,6 +184,20 @@
     "admin1Code": null,
     "population": null,
     "aliases": []
+  },
+  {
+    "id": "country:KR",
+    "type": "country",
+    "name": "South Korea",
+    "parentId": "continent:AS",
+    "countryCode": "KR",
+    "admin1Code": null,
+    "population": null,
+    "aliases": [
+      "Republic of Korea",
+      "Korea, Republic of",
+      "Korea"
+    ]
   },
   {
     "id": "country:MX",
@@ -12395,7 +12419,11 @@
   {
     "id": "remote:AU",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Australia",
+=======
+    "name": "Remote - Australia",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:AU",
     "countryCode": "AU",
     "admin1Code": null,
@@ -12405,7 +12433,11 @@
   {
     "id": "remote:CA",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Canada",
+=======
+    "name": "Remote - Canada",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:CA",
     "countryCode": "CA",
     "admin1Code": null,
@@ -12415,7 +12447,11 @@
   {
     "id": "remote:DE",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Germany",
+=======
+    "name": "Remote - Germany",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:DE",
     "countryCode": "DE",
     "admin1Code": null,
@@ -12425,7 +12461,11 @@
   {
     "id": "remote:ES",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Spain",
+=======
+    "name": "Remote - Spain",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:ES",
     "countryCode": "ES",
     "admin1Code": null,
@@ -12435,7 +12475,11 @@
   {
     "id": "remote:FR",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 France",
+=======
+    "name": "Remote - France",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:FR",
     "countryCode": "FR",
     "admin1Code": null,
@@ -12445,7 +12489,11 @@
   {
     "id": "remote:GB",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 United Kingdom",
+=======
+    "name": "Remote - United Kingdom",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:GB",
     "countryCode": "GB",
     "admin1Code": null,
@@ -12453,9 +12501,25 @@
     "aliases": []
   },
   {
+<<<<<<< HEAD
     "id": "remote:IE",
     "type": "remote",
     "name": "Remote \u2014 Ireland",
+=======
+    "id": "remote:global",
+    "type": "remote",
+    "name": "Remote - Global",
+    "parentId": null,
+    "countryCode": null,
+    "admin1Code": null,
+    "population": null,
+    "aliases": []
+  },
+  {
+    "id": "remote:IE",
+    "type": "remote",
+    "name": "Remote - Ireland",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:IE",
     "countryCode": "IE",
     "admin1Code": null,
@@ -12465,7 +12529,11 @@
   {
     "id": "remote:IN",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 India",
+=======
+    "name": "Remote - India",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:IN",
     "countryCode": "IN",
     "admin1Code": null,
@@ -12473,9 +12541,23 @@
     "aliases": []
   },
   {
+    "id": "remote:israel",
+    "type": "remote",
+    "name": "Remote - Israel",
+    "parentId": null,
+    "countryCode": null,
+    "admin1Code": null,
+    "population": null,
+    "aliases": []
+  },
+  {
     "id": "remote:JP",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Japan",
+=======
+    "name": "Remote - Japan",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:JP",
     "countryCode": "JP",
     "admin1Code": null,
@@ -12485,7 +12567,11 @@
   {
     "id": "remote:MX",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Mexico",
+=======
+    "name": "Remote - Mexico",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:MX",
     "countryCode": "MX",
     "admin1Code": null,
@@ -12495,7 +12581,11 @@
   {
     "id": "remote:PL",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Poland",
+=======
+    "name": "Remote - Poland",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:PL",
     "countryCode": "PL",
     "admin1Code": null,
@@ -12505,7 +12595,11 @@
   {
     "id": "remote:SG",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 Singapore",
+=======
+    "name": "Remote - Singapore",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:SG",
     "countryCode": "SG",
     "admin1Code": null,
@@ -12513,9 +12607,23 @@
     "aliases": []
   },
   {
+    "id": "remote:sweden",
+    "type": "remote",
+    "name": "Remote - Sweden",
+    "parentId": null,
+    "countryCode": null,
+    "admin1Code": null,
+    "population": null,
+    "aliases": []
+  },
+  {
     "id": "remote:US",
     "type": "remote",
+<<<<<<< HEAD
     "name": "Remote \u2014 United States",
+=======
+    "name": "Remote - United States",
+>>>>>>> 8bfd765 (locationPolicy: remote/in_person primary axis, multi-value array; drop sponsorship)
     "parentId": "country:US",
     "countryCode": "US",
     "admin1Code": null,

@@ -1,8 +1,11 @@
-import { pgTable, serial, text, integer, boolean, jsonb } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, integer, jsonb } from "drizzle-orm/pg-core";
 import { z } from "zod";
 
 export const SENIORITY = ["intern", "junior", "mid", "senior", "staff", "principal"] as const;
-export const LOCATION_POLICY = ["onsite", "hybrid", "remote"] as const;
+// "in_person" covers a posting that clearly requires some in-office presence without stating
+// whether it's every day or some days — candidates mostly filter on remote vs. in-person first,
+// so this is a real answer, not a fallback to null, when hybrid vs. onsite can't be determined.
+export const LOCATION_POLICY = ["remote", "in_person", "hybrid", "onsite"] as const;
 export const EMPLOYMENT_TYPE = ["full_time", "part_time", "contract", "internship"] as const;
 
 // Job-function bucket. Only "engineering" exists today — EVAL-1's first labeling pass is
@@ -19,12 +22,13 @@ export const jobPostings = pgTable("job_postings", {
   // Array, not a single enum: a posting can name more than one level ("Senior/Staff"), and
   // collapsing that to one value would wrongly exclude it from a level-specific search.
   seniority: jsonb("seniority").$type<string[] | null>(),
-  locationPolicy: text("location_policy", { enum: LOCATION_POLICY }),
+  // Also an array: a posting can offer a genuine choice ("Remote or onsite in SF"), and picking
+  // one would wrongly exclude it from whichever the candidate didn't search for.
+  locationPolicy: jsonb("location_policy").$type<string[] | null>(),
   locationGeo: jsonb("location_geo").$type<string[] | null>(),
   compMin: integer("comp_min"),
   compMax: integer("comp_max"),
   compCurrency: text("comp_currency"),
-  sponsorship: boolean("sponsorship"),
   stack: jsonb("stack").$type<string[] | null>(),
   employmentType: text("employment_type", { enum: EMPLOYMENT_TYPE }),
 });
@@ -42,12 +46,11 @@ export const jobPostingSchema = z.object({
   titleCanonical: z.string().nullable(),
   jobFunction: z.enum(JOB_FUNCTION).nullable(),
   seniority: z.array(z.enum(SENIORITY)).nullable(),
-  locationPolicy: z.enum(LOCATION_POLICY).nullable(),
+  locationPolicy: z.array(z.enum(LOCATION_POLICY)).nullable(),
   locationGeo: z.array(z.string()).nullable(),
   compMin: z.number().nullable(),
   compMax: z.number().nullable(),
   compCurrency: z.string().nullable(),
-  sponsorship: z.boolean().nullable(),
   stack: z.array(z.string()).nullable(),
   employmentType: z.enum(EMPLOYMENT_TYPE).nullable(),
 });

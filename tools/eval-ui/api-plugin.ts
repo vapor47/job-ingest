@@ -7,7 +7,9 @@
 //   GET  /api/locations?q=<text>   -> up to 20 name/alias matches (never ships all ~38k nodes)
 //   POST /api/locations            -> append a new node { name }, where name may be
 //                                      "Child, Parent" to nest under an existing (or
-//                                      just-added) node; returns { node, orphaned, attemptedParent, parentName }
+//                                      just-added) node, or "Remote - Country"/"Country -
+//                                      Remote" to quick-add a remote-type node for a country
+//                                      not yet in the taxonomy; returns { node, orphaned, attemptedParent, parentName }
 //   GET  /api/titles?q=<text>      -> up to 20 name/alias matches from the canonical title library
 //   POST /api/titles               -> append a new canonical title { name }, return it
 //   GET  /api/stack?q=<text>       -> up to 20 name/alias matches from the canonical stack library
@@ -41,7 +43,7 @@ function slugify(name: string): string {
 const FIELD_ORDER = [
   "id", "company", "ats", "boardToken", "externalId", "url", "strata",
   "title", "titleCanonical", "jobFunction", "seniority", "locationPolicy", "locationGeo", "compMin", "compMax",
-  "compCurrency", "sponsorship", "stack", "employmentType", "flags", "description",
+  "compCurrency", "stack", "employmentType", "flags", "description",
 ];
 
 function reorder(record: Record<string, unknown>) {
@@ -101,7 +103,16 @@ function matchLocations(nodes: LocationNode[], q: string): LocationNode[] {
       const exactDiff = Number(isExact(b)) - Number(isExact(a));
       if (exactDiff !== 0) return exactDiff;
       const typeDiff = (TYPE_RANK[a.type] ?? 9) - (TYPE_RANK[b.type] ?? 9);
-      return typeDiff !== 0 ? typeDiff : (b.population ?? 0) - (a.population ?? 0);
+      if (typeDiff !== 0) return typeDiff;
+      // ponytail: narrow boost, not a general country priority list — most candidates
+      // searching "remote" want the US result first, and population can't break the tie
+      // since every remote:* node is seeded with population: null. Upgrade path: a real
+      // priority signal (posting volume per country) if more than one country needs this.
+      if (a.type === "remote" && b.type === "remote") {
+        const usDiff = Number(b.countryCode === "US") - Number(a.countryCode === "US");
+        if (usDiff !== 0) return usDiff;
+      }
+      return (b.population ?? 0) - (a.population ?? 0);
     });
 }
 
@@ -195,6 +206,45 @@ export function evalApiPlugin(): Plugin {
           if (req.method === "POST") {
             const body = JSON.parse(await readBody(req)) as { name: string };
             const nodes = await readLocations();
+
+            // Quick-add for "remote" entries: the graph is scoped to 13 countries with real
+            // posting volume (JOS-63), so "remote - Israel" or "Sweden - Remote" has no seed
+            // data at all, not just a missing remote-type node. Resolve a parent through the
+            // same lookup as everything else when we can (covers continents and the 13 seeded
+            // countries), otherwise file it as an orphaned remote node — cheaper than
+            // maintaining a static ISO country lookup table for every country a listing might
+            // name. Skipped when the name has a comma: that's the existing explicit
+            // "Child, Parent" nesting syntax below, and takes precedence.
+            const remoteMatch = !body.name.includes(",")
+              ? body.name.match(/^remote[\s-–—]+(.+)$/i) ?? body.name.match(/^(.+?)[\s-–—]+remote$/i)
+              : null;
+            if (remoteMatch && remoteMatch[1].trim()) {
+              const region = remoteMatch[1].trim();
+              const parent = matchLocations(nodes, region)[0];
+              const properName = parent?.name ?? region.replace(/\b\w/g, (c) => c.toUpperCase());
+              const id = `remote:${parent?.countryCode ?? properName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+              const existing = nodes.find((n) => n.id === id);
+              if (existing) {
+                res.setHeader("content-type", "application/json");
+                res.end(JSON.stringify({ node: existing, orphaned: false, attemptedParent: null, parentName: null }));
+                return;
+              }
+              const node: LocationNode = {
+                id,
+                type: "remote",
+                name: `Remote - ${properName}`,
+                parentId: parent?.id ?? null,
+                countryCode: parent?.countryCode ?? null,
+                admin1Code: null,
+                population: null,
+                aliases: [],
+              };
+              nodes.push(node);
+              await writeFile(LOCATIONS_PATH, JSON.stringify(nodes.sort((a, b) => a.id.localeCompare(b.id)), null, 2) + "\n");
+              res.setHeader("content-type", "application/json");
+              res.end(JSON.stringify({ node, orphaned: !parent, attemptedParent: !parent ? region : null, parentName: parent?.name ?? null }));
+              return;
+            }
 
             // "Menlo Park, San Francisco Bay Area" nests under an existing (or just-added)
             // node instead of always filing a flat orphan. Splitting on the *last* comma only

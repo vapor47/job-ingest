@@ -7,12 +7,11 @@ const valid = {
   titleCanonical: "Backend Engineer",
   jobFunction: "engineering",
   seniority: ["senior"],
-  locationPolicy: "remote",
+  locationPolicy: ["remote"],
   locationGeo: ["US"],
   compMin: 180000,
   compMax: 220000,
   compCurrency: "USD",
-  sponsorship: false,
   stack: ["TypeScript", "PostgreSQL"],
   employmentType: "full_time",
 };
@@ -31,7 +30,11 @@ test("accepts nulls for every extracted field except title", () => {
 
 test("rejects an unknown enum value", () => {
   assert.throws(() => jobPostingSchema.parse({ ...valid, seniority: ["wizard"] }));
-  assert.throws(() => jobPostingSchema.parse({ ...valid, locationPolicy: "moon" }));
+  assert.throws(() => jobPostingSchema.parse({ ...valid, locationPolicy: ["moon"] }));
+});
+
+test("accepts locationPolicy naming more than one option, e.g. remote or a listed office", () => {
+  assert.doesNotThrow(() => jobPostingSchema.parse({ ...valid, locationPolicy: ["remote", "onsite"] }));
 });
 
 test("rejects a missing title", () => {
