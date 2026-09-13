@@ -64,6 +64,11 @@
     "aliases": []
   },
   {
+    "id": "dbt",
+    "name": "dbt",
+    "aliases": []
+  },
+  {
     "id": "docker",
     "name": "Docker",
     "aliases": []
