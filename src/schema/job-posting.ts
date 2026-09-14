@@ -57,6 +57,11 @@ export const jobPostingSchema = z.object({
 
 export type JobPosting = z.infer<typeof jobPostingSchema>;
 
+// Bumped whenever a field is added, removed, or its meaning changes — extraction runs stamp
+// this alongside (prompt hash, model id) so a prediction can always be traced back to the
+// contract it was extracted against (EVAL-3 acceptance).
+export const SCHEMA_VERSION = "job-posting-v1";
+
 export const ATS_SOURCES = ["greenhouse", "lever", "ashby"] as const;
 export type Ats = (typeof ATS_SOURCES)[number];
 

@@ -7,9 +7,12 @@
     "eval:pool": "node scripts/build-eval-pool.ts",
     "eval:split": "node scripts/build-eval-split.ts",
     "eval:validate": "node scripts/validate-labels.ts",
+    "eval:extract": "node scripts/extract.ts",
+    "eval:metrics": "node scripts/metrics.ts",
     "eval:ui": "vite --config tools/eval-ui/vite.config.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.125.0",
     "drizzle-orm": "^0.45.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
