@@ -166,6 +166,18 @@
     ]
   },
   {
+    "id": "country:IL",
+    "type": "country",
+    "name": "Israel",
+    "parentId": "continent:AS",
+    "countryCode": "IL",
+    "admin1Code": null,
+    "population": null,
+    "aliases": [
+      "State of Israel"
+    ]
+  },
+  {
     "id": "country:IN",
     "type": "country",
     "name": "India",
@@ -9210,8 +9222,8 @@
     "id": "remote:israel",
     "type": "remote",
     "name": "Remote - Israel",
-    "parentId": null,
-    "countryCode": null,
+    "parentId": "country:IL",
+    "countryCode": "IL",
     "admin1Code": null,
     "population": null,
     "aliases": []
