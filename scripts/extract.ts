@@ -68,7 +68,16 @@ async function extractOne(client: Anthropic, record: PoolRecord) {
     output_config: { format: zodOutputFormat(extractionSchema) },
   });
   if (!response.parsed_output) throw new Error("model output failed schema validation");
-  return { id: record.id, title: record.title, ...response.parsed_output };
+  const out = response.parsed_output;
+  // Structured output doesn't reliably self-enforce the jobFunction -> other-fields dependency
+  // (the model sometimes fills titleCanonical/seniority even after calling jobFunction null) —
+  // so enforce the labeling-rubric gate here instead of trusting the prompt alone.
+  if (out.jobFunction !== "engineering") {
+    for (const key of Object.keys(out) as (keyof typeof out)[]) {
+      if (key !== "jobFunction") (out as Record<string, unknown>)[key] = null;
+    }
+  }
+  return { id: record.id, title: record.title, ...out };
 }
 
 async function main() {
