@@ -376,6 +376,11 @@
     "aliases": []
   },
   {
+    "id": "traceql",
+    "name": "TraceQL",
+    "aliases": []
+  },
+  {
     "id": "typescript",
     "name": "TypeScript",
     "aliases": [
