@@ -9217,6 +9217,16 @@
     "aliases": []
   },
   {
+    "id": "remote:israel",
+    "type": "remote",
+    "name": "Remote - Israel",
+    "parentId": null,
+    "countryCode": null,
+    "admin1Code": null,
+    "population": null,
+    "aliases": []
+  },
+  {
     "id": "remote:JP",
     "type": "remote",
     "name": "Remote - Japan",
