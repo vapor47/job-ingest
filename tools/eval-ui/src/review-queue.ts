@@ -1,8 +1,10 @@
-// Snapshot of data/eval/labeling-review-queue.md's four buckets, as id lists for the UI's
-// queue filter. Static rather than derived live: buckets 2/4 depend on a specific predictions
-// run (data/eval/predictions/*_ca21ea12_*), which isn't loaded into this app. Re-generate this
-// file by hand (or via metrics.ts) if labeling-review-queue.md gets rebuilt.
-export type QueueKey = "all" | "jobFunctionStale" | "employmentTypeUnsupported" | "locationGeoFormat" | "stackUnderLabeled";
+// Snapshot of data/eval/labeling-review-queue.md's still-open buckets, as id lists for the UI's
+// queue filter. Static rather than derived live: the original bucket also depended on a specific
+// predictions run (data/eval/predictions/*_ca21ea12_*), which isn't loaded into this app.
+// Buckets 2 (employmentType unsupported), 3 (locationGeo format), and 4 (stack under-labeled) are
+// resolved (see labeling-review-queue.md) and removed from here — drop a bucket's entry the same
+// way once it's resolved, rather than leaving a closed bucket selectable in the filter.
+export type QueueKey = "all" | "jobFunctionStale";
 
 export const REVIEW_QUEUES: Record<Exclude<QueueKey, "all">, { label: string; ids: string[] }> = {
   jobFunctionStale: {
@@ -39,75 +41,6 @@ export const REVIEW_QUEUES: Record<Exclude<QueueKey, "all">, { label: string; id
       "greenhouse:waymo:7484282",
       "lever:zoox:d9496a78-88b3-4c62-bea2-0eb61288aa9c",
       "lever:zoox:f93c451d-b9b0-4480-ad7e-4c4d410e4100",
-    ],
-  },
-  employmentTypeUnsupported: {
-    label: "employmentType unsupported",
-    ids: [
-      "ashby:aiprise:3763c791-a387-4078-9ca4-00cbfbf9b1a6",
-      "ashby:harvey:e2976ecf-f785-4524-8545-bbd519ffdaae",
-      "ashby:middesk:aed2c535-cd58-4920-9618-a0cbbb62851e",
-      "ashby:openai:04435c05-7a05-4802-894d-c173327fbac8",
-      "ashby:snowflake:97813cac-e55c-4631-94fe-5eda15c7eaed",
-      "ashby:supabase:06752423-eebb-472c-95b5-c7ff2559fd60",
-      "ashby:vanta:87d75493-1d6e-490e-b5ac-d807f5fb5621",
-      "greenhouse:anthropic:5182605008",
-      "greenhouse:anthropic:5231496008",
-      "greenhouse:brex:8605070002",
-      "greenhouse:databricks:8220814002",
-      "greenhouse:databricks:8635188002",
-      "greenhouse:databricks:8656900002",
-      "greenhouse:databricks:8788266002",
-      "greenhouse:grafanalabs:6112827004",
-      "greenhouse:mongodb:7742875",
-      "greenhouse:sigmacomputing:7767727003",
-      "greenhouse:twilio:8007449",
-      "greenhouse:vercel:5474915004",
-      "greenhouse:vercel:5732855004",
-    ],
-  },
-  locationGeoFormat: {
-    label: "locationGeo format inconsistent",
-    ids: [
-      "ashby:aiprise:3763c791-a387-4078-9ca4-00cbfbf9b1a6",
-      "ashby:harvey:e2976ecf-f785-4524-8545-bbd519ffdaae",
-      "ashby:middesk:aed2c535-cd58-4920-9618-a0cbbb62851e",
-      "ashby:openai:04435c05-7a05-4802-894d-c173327fbac8",
-      "ashby:openai:577e6673-0a4a-491b-9a0d-facbdd3bdf3c",
-      "ashby:skydio:617d889f-1dcc-422e-a186-a04d495ae739",
-      "ashby:snowflake:97813cac-e55c-4631-94fe-5eda15c7eaed",
-      "ashby:supabase:06752423-eebb-472c-95b5-c7ff2559fd60",
-      "ashby:vanta:87d75493-1d6e-490e-b5ac-d807f5fb5621",
-      "greenhouse:anthropic:5182605008",
-      "greenhouse:anthropic:5231496008",
-      "greenhouse:brex:8605070002",
-      "greenhouse:chime:8573625002",
-      "greenhouse:databricks:8220814002",
-      "greenhouse:databricks:8635188002",
-      "greenhouse:databricks:8656900002",
-      "greenhouse:databricks:8788266002",
-      "greenhouse:gitlab:8688078002",
-      "greenhouse:mongodb:7742875",
-      "greenhouse:nuro:8161813",
-      "greenhouse:samsara:7431070",
-      "greenhouse:sigmacomputing:7767727003",
-      "greenhouse:twilio:8007449",
-      "greenhouse:vercel:5474915004",
-      "greenhouse:vercel:5732855004",
-    ],
-  },
-  stackUnderLabeled: {
-    label: "stack likely under-labeled",
-    ids: [
-      "ashby:linear:069c4628-88d7-4e4d-b393-c996fc7f3076",
-      "ashby:snowflake:97813cac-e55c-4631-94fe-5eda15c7eaed",
-      "ashby:supabase:06752423-eebb-472c-95b5-c7ff2559fd60",
-      "ashby:vanta:87d75493-1d6e-490e-b5ac-d807f5fb5621",
-      "greenhouse:chime:8573625002",
-      "greenhouse:databricks:8220814002",
-      "greenhouse:grafanalabs:6112827004",
-      "greenhouse:mongodb:7742875",
-      "greenhouse:vercel:5732855004",
     ],
   },
 };

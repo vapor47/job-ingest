@@ -2,6 +2,8 @@
 
 Generated from `data/eval/pool.jsonl` vs run `job-posting-v1_claude-opus-5_ca21ea12` (dev split, n=58). Four issue buckets surfaced by the eval; each is a candidate for a human relabel pass, not a model/prompt bug. Re-run `scripts/metrics.ts` after any relabeling to see the delta.
 
+Buckets 2, 3, and 4 below are resolved — by a rubric/prompt fix, a scoring fix, and a manual relabel pass respectively, none of which required editing `data/eval/pool.jsonl`. Tables are kept as the historical record of what was flagged. Bucket 1 is still open. Mark a bucket's status here (and remove it from `tools/eval-ui/src/review-queue.ts`'s live filter) as each is closed.
+
 ## 1. jobFunction stale (31 records)
 
 `jobFunction: engineering` in truth, but every other field is null. Two possible causes, worth distinguishing per record: (a) the record was behaviorally treated as non-engineering during labeling — per the rubric's own instruction to blank non-eng records — but `jobFunction` itself was never corrected off the pre-classification heuristic, or (b) the record simply hasn't been fully labeled yet. Some titles here read as clearly real engineering roles ("Senior Android Engineer, In-Car Experience"), which points more toward (b) for those. Only records with a `non-eng` flag were caught as (a); the rest need a human look to tell which case applies.
@@ -42,6 +44,8 @@ Generated from `data/eval/pool.jsonl` vs run `job-posting-v1_claude-opus-5_ca21e
 
 ## 2. employmentType unsupported (20 records)
 
+**Status: resolved 2026-09-15.** The rubric and extraction prompt now default `employmentType` to `full_time` when unstated (`docs/labeling-rubric.md`, `scripts/extract.ts`) — `internship`/`contract`/`part_time` still require an explicit statement, description-level derivation, or an hourly rate. Truth's `full_time` entries below were correct under the new rule all along; no relabeling needed.
+
 Truth states an `employmentType` (almost always `full_time`) with no explicit statement found anywhere in the posting text — contradicts the rubric's own rule ("From an explicit statement only. Silence is null"). Looks like the labeler defaulted to `full_time` for standard corporate postings. Either relabel to `null` per the existing rule, or change the rubric to allow a `full_time` default and update the extraction prompt to match.
 
 | id | title | truth value |
@@ -68,6 +72,8 @@ Truth states an `employmentType` (almost always `full_time`) with no explicit st
 | greenhouse:vercel:5732855004 | Site Engineer | full_time |
 
 ## 3. locationGeo format inconsistent (25 records)
+
+**Status: resolved 2026-09-15.** `scripts/metrics.ts` now resolves both truth and prediction through the location library at scoring time (`scripts/library-resolve.ts`, commit 5eb7e11), so a bare truth value like "San Francisco" and a formatted prediction like "San Francisco, CA" match. No relabeling of truth needed; a genuine (non-format) mismatch on any of these records would still score as a miss.
 
 Truth uses a bare city name (e.g. "San Francisco") instead of the rubric's own documented format `City, ST` / `City, Country`. The extraction prompt correctly follows the documented format, so these records score 0 precision/recall even when the model is substantively correct.
 
@@ -100,6 +106,8 @@ Truth uses a bare city name (e.g. "San Francisco") instead of the rubric's own d
 | greenhouse:vercel:5732855004 | Site Engineer | ["Remote — United States"] |
 
 ## 4. stack likely under-labeled (9 records)
+
+**Status: resolved 2026-09-15.** Manually relabeled.
 
 Model predicted 3+ named technologies beyond what truth captured. Spot-checked examples confirmed the extras are real, named techs in the posting text (e.g. an explicit "Our stack" section) that truth simply missed — not model hallucination. Worth a second pass against the source text; not all flagged records will turn out under-labeled, this is a candidate list based on prediction-vs-truth delta size, not a confirmed diagnosis per record.
 

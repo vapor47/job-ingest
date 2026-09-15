@@ -46,7 +46,7 @@ Field guide:
 - locationGeo: every place the role may be based, normalized to "City, ST" (US) or "City, Country". For remote roles, the stated eligibility region ("United States", "EU"). null if no region or office is named.
 - compMin, compMax, compCurrency: annual base salary cash only — no equity, bonus, signing, or benefits. A single stated number sets both min and max equal. Hourly x2080, monthly x12. Infer currency from location only when the posting gives a number but not a currency (US -> USD, Canada -> CAD); otherwise null. If no comp is stated, all three are null.
 - stack: technologies named in the posting (including "nice to have"), not technologies implied by the role. null if none are named.
-- employmentType: full_time/part_time/contract/internship from an explicit statement only, else null. Precedence when several apply: internship > contract > part_time > full_time.`;
+- employmentType: defaults to full_time — an unstated employment type on a standard posting means full-time, not null. internship requires an explicit statement in the title or description. contract or part_time come from an explicit statement, a clear derivation from the description (e.g. a stated contract length, "20 hrs/week"), or an hourly pay rate. Precedence when several signals apply: internship > contract > part_time > full_time.`;
 
 type PoolRecord = { id: string; title: string; description: string };
 

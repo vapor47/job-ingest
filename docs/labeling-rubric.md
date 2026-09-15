@@ -190,6 +190,12 @@ Flags are not labels. They do two jobs:
 
 ### `employmentType` (enum, nullable)
 
-- **Rule:** From an explicit statement only. Silence is `null`.
+- **Rule:** Defaults to `full_time` — this is the one field where silence is *not* `null`, because
+  an unstated employment type on a standard corporate posting means full-time, not "unknown."
+  `internship` requires an explicit statement — it's a title/description signal that's almost
+  always present when it applies, so don't default into it. `contract` and `part_time` are set
+  from an explicit statement, a clear derivation from the description (e.g. a stated contract
+  length, "20 hrs/week"), or an hourly pay rate — see the "Hourly contract rate" resolved case.
+  Absent any of those signals, `full_time` stands.
 - **Tie-break:** Precedence when several apply: `internship` > `contract` > `part_time` >
   `full_time`. "Contract-to-hire" is `contract`.
