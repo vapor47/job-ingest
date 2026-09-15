@@ -262,6 +262,11 @@
     ]
   },
   {
+    "id": "pulumi",
+    "name": "Pulumi",
+    "aliases": []
+  },
+  {
     "id": "python",
     "name": "Python",
     "aliases": [
