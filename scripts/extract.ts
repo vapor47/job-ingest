@@ -39,7 +39,7 @@ Global rules:
 
 Field guide:
 - titleCanonical: the role's canonical bucket (e.g. "Machine Learning Engineer"), level-agnostic. If the title is too vague to bucket, null.
-- jobFunction: "engineering" if a software/infrastructure/data engineering role, else null.
+- jobFunction: "engineering" if a software/infrastructure/data engineering role, else null. Only fill every other field below when this is "engineering" — leave every other field null when it isn't, even where the posting states values that would otherwise be labelable.
 - seniority: array of levels named in the title, else an explicit level statement in the body, else null. Numeric ladders: I/Associate/Entry/Junior/New Grad -> junior, II/Mid -> mid, III/Senior/Sr./Lead -> senior, Staff/Senior Staff -> staff, Principal/Distinguished/Fellow -> principal, Intern/Co-op -> intern. A named range lists every level it spans in ladder order. An unbounded posting ("All Levels") lists every level. A bare, unqualified title defaults to ["mid"]. Management titles (Manager, Director, VP) are null.
 - locationPolicy: array of remote/in_person/hybrid/onsite. "remote" if fully remote is allowed. "in_person" if in-office presence is required but cadence is unstated. "hybrid" only if a partial cadence is stated. "onsite" only if full-time presence is stated. A posting can list more than one (e.g. "Remote or onsite in SF" -> ["remote","onsite"]). A city name alone, or vague language like "remote-friendly" with no stated cadence, is null.
 - locationGeo: every place the role may be based, normalized to "City, ST" (US) or "City, Country". For remote roles, the stated eligibility region ("United States", "EU"). null if no region or office is named.
