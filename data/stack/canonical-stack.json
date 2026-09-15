@@ -216,6 +216,11 @@
     "aliases": []
   },
   {
+    "id": "mobx",
+    "name": "MobX",
+    "aliases": []
+  },
+  {
     "id": "mongodb",
     "name": "MongoDB",
     "aliases": []
