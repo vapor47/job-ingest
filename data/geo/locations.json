@@ -90,6 +90,16 @@
     "aliases": []
   },
   {
+    "id": "country:BR",
+    "type": "country",
+    "name": "Brazil",
+    "parentId": "continent:SA",
+    "countryCode": "BR",
+    "admin1Code": null,
+    "population": null,
+    "aliases": ["Federative Republic of Brazil"]
+  },
+  {
     "id": "country:CA",
     "type": "country",
     "name": "Canada",
@@ -374,11 +384,11 @@
     "id": "custom:s-o-paulo",
     "type": "custom",
     "name": "São Paulo",
-    "parentId": null,
-    "countryCode": null,
+    "parentId": "country:BR",
+    "countryCode": "BR",
     "admin1Code": null,
-    "population": null,
-    "aliases": []
+    "population": 12325000,
+    "aliases": ["Sao Paulo"]
   },
   {
     "id": "custom:san-francisco",
