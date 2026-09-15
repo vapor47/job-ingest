@@ -119,6 +119,11 @@
     "aliases": []
   },
   {
+    "id": "ember-js",
+    "name": "Ember.js",
+    "aliases": []
+  },
+  {
     "id": "etl",
     "name": "ETL",
     "aliases": []
