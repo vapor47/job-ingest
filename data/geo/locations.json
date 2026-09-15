@@ -225,6 +225,18 @@
     ]
   },
   {
+    "id": "country:SE",
+    "type": "country",
+    "name": "Sweden",
+    "parentId": "continent:EU",
+    "countryCode": "SE",
+    "admin1Code": null,
+    "population": null,
+    "aliases": [
+      "Kingdom of Sweden"
+    ]
+  },
+  {
     "id": "country:SG",
     "type": "country",
     "name": "Singapore",
@@ -340,7 +352,7 @@
     "id": "custom:remote-sweden",
     "type": "custom",
     "name": "Remote - Sweden",
-    "parentId": null,
+    "parentId": "country:SE",
     "countryCode": null,
     "admin1Code": null,
     "population": null,
