@@ -20,6 +20,11 @@
     "aliases": []
   },
   {
+    "id": "apache-spark",
+    "name": "Apache Spark",
+    "aliases": []
+  },
+  {
     "id": "apache-thrift",
     "name": "Apache Thrift",
     "aliases": []
