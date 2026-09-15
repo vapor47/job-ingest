@@ -327,6 +327,16 @@
     "aliases": []
   },
   {
+    "id": "custom:remote-europe",
+    "type": "custom",
+    "name": "Remote - Europe",
+    "parentId": "continent:EU",
+    "countryCode": null,
+    "admin1Code": null,
+    "population": null,
+    "aliases": []
+  },
+  {
     "id": "custom:san-francisco",
     "type": "custom",
     "name": "San Francisco",
