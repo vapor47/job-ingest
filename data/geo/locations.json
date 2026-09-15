@@ -392,16 +392,6 @@
     "aliases": []
   },
   {
-    "id": "custom:seoul",
-    "type": "custom",
-    "name": "Seoul",
-    "parentId": null,
-    "countryCode": null,
-    "admin1Code": null,
-    "population": null,
-    "aliases": []
-  },
-  {
     "id": "geonames:10581114",
     "type": "city",
     "name": "Jājmau",
