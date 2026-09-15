@@ -337,6 +337,16 @@
     "aliases": []
   },
   {
+    "id": "custom:remote-sweden",
+    "type": "custom",
+    "name": "Remote - Sweden",
+    "parentId": null,
+    "countryCode": null,
+    "admin1Code": null,
+    "population": null,
+    "aliases": []
+  },
+  {
     "id": "custom:san-francisco",
     "type": "custom",
     "name": "San Francisco",
