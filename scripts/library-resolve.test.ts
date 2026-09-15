@@ -1,6 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { resolveLocationNode, formatLocation, resolveSimpleNode, resolveLibraryFields, type LocationNode } from "./extract.ts";
+import {
+  resolveLocationNode, formatLocation, normalizeLocation,
+  resolveSimpleNode, normalizeSimple, resolveLibraryFields, type LocationNode,
+} from "./library-resolve.ts";
 
 const nodes: LocationNode[] = [
   { id: "country:US", type: "country", name: "United States", parentId: "continent:NA", countryCode: "US", admin1Code: null, population: null, aliases: [] },
@@ -35,11 +38,27 @@ test("formatLocation collapses a remote node to its parent's plain name", () => 
   assert.equal(formatLocation(nodes[4], byId), "United States");
 });
 
+test("normalizeLocation makes a bare truth-style name and a formatted prediction agree", () => {
+  const libs = { locations: nodes, locationsById: byId, titles: [], stack: [] };
+  assert.equal(normalizeLocation(libs, "Mountain View"), normalizeLocation(libs, "Mountain View, CA"));
+});
+
+test("normalizeLocation leaves an unmatched value unchanged", () => {
+  const libs = { locations: nodes, locationsById: byId, titles: [], stack: [] };
+  assert.equal(normalizeLocation(libs, "Nowhereville"), "Nowhereville");
+});
+
 test("resolveSimpleNode matches case-insensitively on name or alias", () => {
   const titles = [{ id: "backend-engineer", name: "Backend Engineer", aliases: ["SWE, Backend"] }];
   assert.equal(resolveSimpleNode(titles, "backend engineer")?.id, "backend-engineer");
   assert.equal(resolveSimpleNode(titles, "SWE, Backend")?.id, "backend-engineer");
   assert.equal(resolveSimpleNode(titles, "Frontend Engineer"), null);
+});
+
+test("normalizeSimple falls back to the original value with no match", () => {
+  const titles = [{ id: "backend-engineer", name: "Backend Engineer", aliases: [] }];
+  assert.equal(normalizeSimple(titles, "backend engineer"), "Backend Engineer");
+  assert.equal(normalizeSimple(titles, "Made Up Title"), "Made Up Title");
 });
 
 test("resolveLibraryFields normalizes matches and reports the rest as candidates", () => {

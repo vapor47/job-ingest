@@ -20,6 +20,7 @@
 
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { jobPostingSchema } from "../src/schema/job-posting.ts";
+import { loadLibraries, normalizeLocation, normalizeSimple, type Libraries } from "./library-resolve.ts";
 
 const POOL_FILE = "data/eval/pool.jsonl";
 const PRED_DIR = "data/eval/predictions";
@@ -156,6 +157,21 @@ function computeNumeric(field: string, truths: unknown[], preds: unknown[]) {
   };
 }
 
+// titleCanonical/locationGeo/stack are growable-library fields, and truth predates the
+// extractor resolving predictions against the same library (see scripts/library-resolve.ts) —
+// truth still has entries like bare "Mountain View" instead of "Mountain View, CA". Comparing
+// raw strings would score that as a total miss even when both sides name the same real place.
+// Resolving both sides through the library at scoring time (never writing back to pool.jsonl)
+// makes the comparison about substance, not string format.
+function normalizeForScoring<T extends Record<string, unknown>>(libs: Libraries, r: T): T {
+  return {
+    ...r,
+    titleCanonical: typeof r.titleCanonical === "string" ? normalizeSimple(libs.titles, r.titleCanonical) : r.titleCanonical,
+    locationGeo: Array.isArray(r.locationGeo) ? r.locationGeo.map((v: string) => normalizeLocation(libs, v)) : r.locationGeo,
+    stack: Array.isArray(r.stack) ? r.stack.map((v: string) => normalizeSimple(libs.stack, v)) : r.stack,
+  };
+}
+
 async function main() {
   const { path: predFile, runId } = await findPredFile(arg("run"));
 
@@ -168,12 +184,16 @@ async function main() {
   const missingPred = ids.filter((id) => !predById.has(id));
   if (missingPred.length) throw new Error(`${missingPred.length} split id(s) missing from ${predFile}: ${missingPred.slice(0, 5).join(", ")}...`);
 
-  const truths = ids.map((id) => truthById.get(id)!);
-  for (const t of truths) {
+  const rawTruths = ids.map((id) => truthById.get(id)!);
+  for (const t of rawTruths) {
     const r = jobPostingSchema.safeParse(t);
     if (!r.success) throw new Error(`ground truth ${t.id} fails schema: ${r.error.message}`);
   }
-  const preds = ids.map((id) => predById.get(id)!);
+  const rawPreds = ids.map((id) => predById.get(id)!);
+
+  const libs = await loadLibraries();
+  const truths = rawTruths.map((t) => normalizeForScoring(libs, t));
+  const preds = rawPreds.map((p) => normalizeForScoring(libs, p));
 
   const fields: Record<string, ReturnType<typeof computeCategorical> | ReturnType<typeof computeSet> | ReturnType<typeof computeNumeric>> = {};
   for (const f of CATEGORICAL_FIELDS) fields[f] = computeCategorical(f, truths.map((t) => t[f] ?? null), preds.map((p) => p[f] ?? null));
