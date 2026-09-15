@@ -9136,7 +9136,9 @@
     "countryCode": "AU",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Australia"
+    ]
   },
   {
     "id": "remote:CA",
@@ -9146,7 +9148,9 @@
     "countryCode": "CA",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Canada"
+    ]
   },
   {
     "id": "remote:DE",
@@ -9156,7 +9160,9 @@
     "countryCode": "DE",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Germany"
+    ]
   },
   {
     "id": "remote:ES",
@@ -9166,7 +9172,9 @@
     "countryCode": "ES",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Spain"
+    ]
   },
   {
     "id": "remote:FR",
@@ -9176,7 +9184,9 @@
     "countryCode": "FR",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — France"
+    ]
   },
   {
     "id": "remote:GB",
@@ -9186,7 +9196,9 @@
     "countryCode": "GB",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — United Kingdom"
+    ]
   },
   {
     "id": "remote:global",
@@ -9196,7 +9208,9 @@
     "countryCode": null,
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Global"
+    ]
   },
   {
     "id": "remote:IE",
@@ -9206,7 +9220,9 @@
     "countryCode": "IE",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Ireland"
+    ]
   },
   {
     "id": "remote:IN",
@@ -9216,7 +9232,9 @@
     "countryCode": "IN",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — India"
+    ]
   },
   {
     "id": "remote:israel",
@@ -9226,7 +9244,9 @@
     "countryCode": "IL",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Israel"
+    ]
   },
   {
     "id": "remote:JP",
@@ -9236,7 +9256,9 @@
     "countryCode": "JP",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Japan"
+    ]
   },
   {
     "id": "remote:MX",
@@ -9246,7 +9268,9 @@
     "countryCode": "MX",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Mexico"
+    ]
   },
   {
     "id": "remote:PL",
@@ -9256,7 +9280,9 @@
     "countryCode": "PL",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Poland"
+    ]
   },
   {
     "id": "remote:SG",
@@ -9266,7 +9292,9 @@
     "countryCode": "SG",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — Singapore"
+    ]
   },
   {
     "id": "remote:US",
@@ -9276,6 +9304,8 @@
     "countryCode": "US",
     "admin1Code": null,
     "population": null,
-    "aliases": []
+    "aliases": [
+      "Remote — United States"
+    ]
   }
 ]
